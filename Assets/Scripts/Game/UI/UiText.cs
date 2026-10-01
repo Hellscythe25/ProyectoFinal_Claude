@@ -57,6 +57,10 @@ namespace TTTXO.Game.UI
             public const string Online = "\U0001F310"; // 🌐
             public const string Streak = "\U0001F525"; // 🔥
             public const string EditLook = "✎"; // ✎
+            public const string Rps = "\U0001F590"; // 🖐
+            public const string RpsRock = "✊"; // ✊
+            public const string RpsPaper = "\U0001F590"; // 🖐
+            public const string RpsScissors = "✌"; // ✌
         }
 
         public static class Splash
@@ -81,6 +85,66 @@ namespace TTTXO.Game.UI
             public static string ProfileLabel => Localize("Home/ProfileLabel", "Profile");
             public static string StoreLabel => Localize("Home/StoreLabel", "Store");
             public static string SettingsLabel => Localize("Home/SettingsLabel", "Settings");
+            /// <summary>Short name of the Rock-Paper-Scissors mode on the Home secondary row.</summary>
+            public static string RpsLabel => Localize("Home/RpsLabel", "RPS");
+        }
+
+        /// <summary>
+        /// Rock-Paper-Scissors start menu (the RPS scene's home) - see RpsMenuScreenController and
+        /// Assets/Scenes/Rps.unity. "RPS" is kept as a short code in every locale, same treatment as
+        /// the Home secondary-row label.
+        /// </summary>
+        public static class RpsMenu
+        {
+            public static string Title => Localize("RpsMenu/Title", "RPS");
+            public static string Subtitle => Localize("RpsMenu/Subtitle", "Rock, paper, scissors");
+            public static string PlayButton => Localize("RpsMenu/PlayButton", "Play");
+            public static string ProfileLabel => Localize("RpsMenu/ProfileLabel", "Profile");
+            public static string StoreLabel => Localize("RpsMenu/StoreLabel", "Store");
+            public static string SettingsLabel => Localize("RpsMenu/SettingsLabel", "Settings");
+        }
+
+        public static class RpsModeSelect
+        {
+            public static string Title => Localize("RpsModeSelect/Title", "Choose a mode");
+            public static string SinglePlayerTitle => Localize("RpsModeSelect/SinglePlayerTitle", "Single Player");
+            public static string SinglePlayerDescription => Localize("RpsModeSelect/SinglePlayerDescription", "Best of five vs AI");
+            public static string LocalMultiplayerTitle => Localize("RpsModeSelect/LocalMultiplayerTitle", "Local 2P");
+            public static string LocalMultiplayerDescription => Localize("RpsModeSelect/LocalMultiplayerDescription", "Pass the device, round by round");
+            public static string OnlineTitle => Localize("RpsModeSelect/OnlineTitle", "Online");
+            public static string OnlineDescription => Localize("RpsModeSelect/OnlineDescription", "Versus a rival over UGS");
+            /// <summary>Toast shown until online RPS ships (Milestone contract pending, see Docs/05-UI-Pantallas-TicTacToe.md).</summary>
+            public static string OnlineComingSoonMessage => Localize("RpsModeSelect/OnlineComingSoonMessage", "Online RPS is coming soon!");
+        }
+
+        public static class RpsGame
+        {
+            public static string Rock => Localize("RpsGame/Rock", "Rock");
+            public static string Paper => Localize("RpsGame/Paper", "Paper");
+            public static string Scissors => Localize("RpsGame/Scissors", "Scissors");
+            /// <summary>Round label shown while a side still has to play - e.g. "Round 2 - your move".</summary>
+            public static string RoundYourMove => Localize("RpsGame/RoundYourMove", "Round {0} - your move");
+            /// <summary>Round label shown while waiting for the opponent in local 2P handoff - e.g. "Round 2 - waiting for Player 2".</summary>
+            public static string RoundWaiting => Localize("RpsGame/RoundWaiting", "Round {0} - waiting for {1}");
+            /// <summary>Round label shown while the AI picks (single player) between the human move and the reveal.</summary>
+            public static string AiThinking => Localize("RpsGame/AiThinking", "AI is thinking...");
+            public static string YouLabel => Localize("RpsGame/YouLabel", "You");
+            public static string AiLabel => Localize("RpsGame/AiLabel", "AI");
+            public static string Player1Label => Localize("RpsGame/Player1Label", "Player 1");
+            public static string Player2Label => Localize("RpsGame/Player2Label", "Player 2");
+            /// <summary>Handoff banner in local 2P: Player N submits hidden, then the device switches hands.</summary>
+            public static string HandoffLabel => Localize("RpsGame/HandoffLabel", "Pass the device to {0}");
+            /// <summary>Score chip value: side name + running score + series win target, e.g. "You 2 / 3".</summary>
+            public const string ScoreChipFormat = "{0} {1}";
+            /// <summary>Win target used inside <see cref="ScoreChipFormat"/>'s numbers, e.g. "2 / 3".</summary>
+            public const string WinPointsFormat = "{0} / {1}";
+            public static string YouWon => Localize("RpsGame/YouWon", "You won the series!");
+            public static string YouLost => Localize("RpsGame/YouLost", "AI won the series");
+            public static string Player1Won => Localize("RpsGame/Player1Won", "Player 1 won the series!");
+            public static string Player2Won => Localize("RpsGame/Player2Won", "Player 2 won the series!");
+            public static string SeriesDraw => Localize("RpsGame/SeriesDraw", "Series tied");
+            public static string RematchButton => Localize("RpsGame/RematchButton", "Rematch");
+            public static string MenuButton => Localize("RpsGame/MenuButton", "Menu");
         }
 
         public static class ModeSelect

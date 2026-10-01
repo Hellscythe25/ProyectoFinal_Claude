@@ -32,7 +32,19 @@ namespace TTTXO.Game.UI
             { ScreenId.Store, "screen-store" },
             { ScreenId.Settings, "screen-settings" },
             { ScreenId.Leaderboard, "screen-leaderboard" },
+            { ScreenId.RpsMenu, "screen-rps-menu" },
+            { ScreenId.RpsModeSelect, "screen-rps-mode-select" },
+            { ScreenId.RpsGame, "screen-rps-game" },
         };
+
+        /// <summary>
+        /// Where <see cref="Initialize"/> points the splash after startup. Home for the main scene;
+        /// <see cref="ScreenId.RpsMenu"/> for the Rock-Paper-Scissors scene (set by RpsSceneSetup).
+        /// </summary>
+        [SerializeField]
+        private ScreenId _startScreen = ScreenId.Home;
+
+        public ScreenId StartScreen => _startScreen;
 
         private UIDocument _document;
         private readonly Dictionary<ScreenId, VisualElement> _screenRoots = new();
@@ -43,6 +55,7 @@ namespace TTTXO.Game.UI
         public GameScreenController GameScreen { get; private set; }
         public ResultScreenController ResultScreen { get; private set; }
         public MatchmakingScreenController MatchmakingScreen { get; private set; }
+        public RpsGameScreenController RpsGameScreen { get; private set; }
 
         /// <summary>
         /// Navigation history for generic "back" buttons on sub-screens. The rules - and why a
@@ -102,6 +115,10 @@ namespace TTTXO.Game.UI
             _controllers[ScreenId.Store] = new StoreScreenController(_screenRoots[ScreenId.Store], this, gameManager);
             _controllers[ScreenId.Settings] = new SettingsScreenController(_screenRoots[ScreenId.Settings], this, gameManager);
             _controllers[ScreenId.Leaderboard] = new LeaderboardScreenController(_screenRoots[ScreenId.Leaderboard], this, gameManager);
+            RpsGameScreen = new RpsGameScreenController(_screenRoots[ScreenId.RpsGame], this);
+            _controllers[ScreenId.RpsMenu] = new RpsMenuScreenController(_screenRoots[ScreenId.RpsMenu], this);
+            _controllers[ScreenId.RpsModeSelect] = new RpsModeSelectScreenController(_screenRoots[ScreenId.RpsModeSelect], this);
+            _controllers[ScreenId.RpsGame] = RpsGameScreen;
 
             foreach (var pair in _screenRoots)
             {

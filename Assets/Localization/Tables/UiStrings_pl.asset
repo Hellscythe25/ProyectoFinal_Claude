@@ -503,6 +503,138 @@ MonoBehaviour:
     m_Localized: "{0} Id\u017A do Sklepu {1}"
     m_Metadata:
       m_Items: []
+  - m_Id: 24781258357747712
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623680
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623681
+    m_Localized: "Kamie\u0144, papier, no\u017Cyce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623682
+    m_Localized: Graj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623683
+    m_Localized: Profil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623684
+    m_Localized: Sklep
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817984
+    m_Localized: Ustawienia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817985
+    m_Localized: Wybierz tryb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817986
+    m_Localized: Jeden gracz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817987
+    m_Localized: Best of five z AI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817988
+    m_Localized: Lokalnie 2 os.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817989
+    m_Localized: "Podawaj urz\u0105dzenie rundami"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012288
+    m_Localized: Online
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012289
+    m_Localized: Przeciw rywalowi przez UGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206592
+    m_Localized: "RPS online wkr\xF3tce dost\u0119pny!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206593
+    m_Localized: "Kamie\u0144"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206594
+    m_Localized: Papier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206595
+    m_Localized: "No\u017Cyce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206596
+    m_Localized: "Runda {0} - Tw\xF3j ruch"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206597
+    m_Localized: Runda {0} - czekanie na {1}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206598
+    m_Localized: "SI my\u015Bli..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206599
+    m_Localized: Ty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206600
+    m_Localized: SI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206601
+    m_Localized: Gracz 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206602
+    m_Localized: Gracz 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206603
+    m_Localized: "Podaj urz\u0105dzenie {0}"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206604
+    m_Localized: "Wygra\u0142e\u015B seri\u0119!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206605
+    m_Localized: "SI wygra\u0142a seri\u0119"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206606
+    m_Localized: "Gracz 1 wygra\u0142 seri\u0119!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206607
+    m_Localized: "Gracz 2 wygra\u0142 seri\u0119!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206608
+    m_Localized: Seria remisowa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400896
+    m_Localized: "Rewan\u017C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400897
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

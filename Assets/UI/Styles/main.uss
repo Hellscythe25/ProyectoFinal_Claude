@@ -552,6 +552,40 @@
     -unity-text-align: upper-center;
 }
 
+.rps-menu-subtitle {
+    font-size: 18px;
+    color: var(--color-text-muted);
+    margin-bottom: 8px;
+    -unity-text-align: upper-center;
+}
+
+/* Score strip between the round status and the move buttons. Two chips with a separator. */
+.rps-score-row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 460px;
+    margin: 8px 0 4px 0;
+}
+
+.rps-score-separator {
+    font-size: 24px;
+    color: var(--color-text-muted);
+    margin: 0 12px;
+    -unity-text-align: upper-center;
+}
+
+.rps-handoff-label {
+    font-size: 18px;
+    color: var(--color-accent);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    margin: 20px 0 0 0;
+    width: 100%;
+    max-width: 420px;
+}
+
 /* Mode select */
 
 /*
@@ -1761,6 +1795,98 @@
     color: var(--color-text-muted);
     -unity-text-align: upper-center;
     white-space: normal;
+}
+
+/* Rock-Paper-Scissors (Milestone X, UI wireframe adaptation) */
+
+.screen-rps {
+    --content-padding-x: 24;
+    --content-padding-y: 32;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+}
+
+.rps-status-label {
+    font-size: 24px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    margin-bottom: 24px;
+    -unity-text-align: upper-center;
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Flex container that holds the three move buttons. */
+.rps-options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 460px;
+    margin: 16px 0;
+}
+
+.rps-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+    margin: 16px 0;
+}
+
+.rps-option {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg-panel);
+    border-width: 2px;
+    border-color: var(--color-border);
+    border-radius: 12px;
+    padding: 20px 14px;
+    margin: 8px;
+    min-width: 120px;
+    transition-property: border-color, background-color, scale;
+    transition-duration: 0.12s;
+}
+
+.rps-option:hover {
+    border-color: var(--color-accent);
+    background-color: var(--color-bg-panel-alt);
+}
+
+.rps-option:active {
+    scale: 0.96 0.96;
+}
+
+.rps-option--selected {
+    border-color: var(--color-accent-secondary);
+    background-color: var(--color-bg-panel-alt);
+    color: var(--color-accent-secondary);
+}
+
+.rps-option-icon {
+    font-size: 36px;
+    margin-bottom: 8px;
+    -unity-text-align: upper-center;
+}
+
+.rps-option-label {
+    font-size: 16px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+}
+
+.button-row .primary-button {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 24px;
 }
 
 /* Settings */

@@ -500,6 +500,138 @@ MonoBehaviour:
     m_Localized: '{0} Ke Toko {1}'
     m_Metadata:
       m_Items: []
+  - m_Id: 24781258357747712
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623680
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623681
+    m_Localized: Batu, kertas, gunting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623682
+    m_Localized: Main
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623683
+    m_Localized: Profil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623684
+    m_Localized: Toko
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817984
+    m_Localized: Pengaturan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817985
+    m_Localized: Pilih mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817986
+    m_Localized: Satu pemain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817987
+    m_Localized: Best of five lawan AI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817988
+    m_Localized: 2 pemain lokal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817989
+    m_Localized: Operkan perangkat secara bergantian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012288
+    m_Localized: Online
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012289
+    m_Localized: Melawan rival lewat UGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206592
+    m_Localized: Mode online RPS segera hadir!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206593
+    m_Localized: Batu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206594
+    m_Localized: Kertas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206595
+    m_Localized: Gunting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206596
+    m_Localized: Ronde {0} - giliranmu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206597
+    m_Localized: Ronde {0} - menunggu {1}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206598
+    m_Localized: AI sedang berpikir...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206599
+    m_Localized: Kamu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206600
+    m_Localized: AI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206601
+    m_Localized: Pemain 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206602
+    m_Localized: Pemain 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206603
+    m_Localized: Operkan perangkat ke {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206604
+    m_Localized: Kamu memenangkan seri!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206605
+    m_Localized: AI memenangkan seri
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206606
+    m_Localized: Pemain 1 memenangkan seri!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206607
+    m_Localized: Pemain 2 memenangkan seri!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206608
+    m_Localized: Seri imbang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400896
+    m_Localized: Main lagi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400897
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

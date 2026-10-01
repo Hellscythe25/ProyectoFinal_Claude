@@ -51,6 +51,9 @@ namespace TTTXO.Game.UI.Screens
             root.Q<Label>("home-settings-icon-label").text = UiText.Icons.Settings;
             root.Q<VisualElement>("home-settings-button").RegisterCallback<ClickEvent>(_ => _router.Show(ScreenId.Settings));
 
+            root.Q<Label>("home-rps-icon-label").text = UiText.Icons.Rps;
+            root.Q<VisualElement>("home-rps-button").RegisterCallback<ClickEvent>(_ => _router.Show(ScreenId.RpsMenu));
+
             // "home-profile-badge" (pending online match notification) stays hidden: there is no
             // online mode yet in Milestone 1, so there is no source of truth for it (see
             // Docs/05-UI-Pantallas-TicTacToe.md screen 2).
@@ -65,6 +68,7 @@ namespace TTTXO.Game.UI.Screens
             _root.Q<Label>("home-profile-label").text = UiText.Home.ProfileLabel;
             _root.Q<Label>("home-store-label").text = UiText.Home.StoreLabel;
             _root.Q<Label>("home-settings-label").text = UiText.Home.SettingsLabel;
+            _root.Q<Label>("home-rps-label").text = "RPS";
         }
 
         public void RefreshLocalizedText()

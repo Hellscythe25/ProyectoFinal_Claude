@@ -503,6 +503,138 @@ MonoBehaviour:
     m_Localized: "{0} Ma\u011Fazaya git {1}"
     m_Metadata:
       m_Items: []
+  - m_Id: 24781258357747712
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623680
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623681
+    m_Localized: "Ta\u015F, k\xE2\u011F\u0131t, makas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623682
+    m_Localized: Oyna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623683
+    m_Localized: Profil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623684
+    m_Localized: "Ma\u011Faza"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817984
+    m_Localized: Ayarlar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817985
+    m_Localized: "Bir mod se\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817986
+    m_Localized: Tek oyunculu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817987
+    m_Localized: "Be\u015Fte \xFC\xE7e kar\u015F\u0131 yapay zeka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817988
+    m_Localized: "Yerel 2 ki\u015Filik"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817989
+    m_Localized: "Cihaz\u0131 tur tur devret"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012288
+    m_Localized: "\xC7evrimi\xE7i"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012289
+    m_Localized: "UGS \xFCzerinden bir rakibe kar\u015F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206592
+    m_Localized: "\xC7evrimi\xE7i RPS yak\u0131nda geliyor!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206593
+    m_Localized: "Ta\u015F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206594
+    m_Localized: "K\xE2\u011F\u0131t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206595
+    m_Localized: Makas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206596
+    m_Localized: "Tur {0} - s\u0131ra sende"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206597
+    m_Localized: Tur {0} - {1} bekleniyor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206598
+    m_Localized: "YZ d\xFC\u015F\xFCn\xFCyor..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206599
+    m_Localized: Sen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206600
+    m_Localized: YZ
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206601
+    m_Localized: Oyuncu 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206602
+    m_Localized: Oyuncu 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206603
+    m_Localized: "Cihaz\u0131 {0}'a devret"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206604
+    m_Localized: "Seriyi kazand\u0131n!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206605
+    m_Localized: "YZ seriyi kazand\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206606
+    m_Localized: "Oyuncu 1 seriyi kazand\u0131!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206607
+    m_Localized: "Oyuncu 2 seriyi kazand\u0131!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206608
+    m_Localized: Seri berabere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400896
+    m_Localized: "R\xF6van\u015F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400897
+    m_Localized: "Men\xFC"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

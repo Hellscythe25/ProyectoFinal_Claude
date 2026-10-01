@@ -504,6 +504,138 @@ MonoBehaviour:
     m_Localized: '{0} Zum Shop {1}'
     m_Metadata:
       m_Items: []
+  - m_Id: 24781258357747712
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623680
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623681
+    m_Localized: Schnick, Schnack, Schnuck
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623682
+    m_Localized: Spielen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623683
+    m_Localized: Profil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623684
+    m_Localized: Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817984
+    m_Localized: Einstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817985
+    m_Localized: "Modus w\xE4hlen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817986
+    m_Localized: Einzelspieler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817987
+    m_Localized: Best of Five gegen die KI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817988
+    m_Localized: Lokal 2 Spieler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817989
+    m_Localized: "Ger\xE4t von Runde zu Runde weitergeben"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012288
+    m_Localized: Online
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012289
+    m_Localized: Gegen einen Rivalen per UGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206592
+    m_Localized: Online-RPS kommt bald!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206593
+    m_Localized: Stein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206594
+    m_Localized: Papier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206595
+    m_Localized: Schere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206596
+    m_Localized: Runde {0} - dein Zug
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206597
+    m_Localized: Runde {0} - warte auf {1}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206598
+    m_Localized: KI denkt nach...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206599
+    m_Localized: Du
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206600
+    m_Localized: KI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206601
+    m_Localized: Spieler 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206602
+    m_Localized: Spieler 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206603
+    m_Localized: "Ger\xE4t an {0} weitergeben"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206604
+    m_Localized: Du gewinnst die Serie!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206605
+    m_Localized: Die KI gewinnt die Serie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206606
+    m_Localized: Spieler 1 gewinnt die Serie!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206607
+    m_Localized: Spieler 2 gewinnt die Serie!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206608
+    m_Localized: Serie unentschieden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400896
+    m_Localized: Revanche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400897
+    m_Localized: "Men\xFC"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

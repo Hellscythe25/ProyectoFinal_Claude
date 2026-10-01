@@ -340,6 +340,109 @@ namespace TTTXO.Game.Editor
             ["Settings/MusicLabel"] = new[] { "Music", "Música", "Musique", "Musik", "Música", "Musica", "Musik", "Âm nhạc", "Müzik", "Muzyka" },
             ["Settings/DeleteAccountButton"] = new[] { "Delete account & data", "Eliminar cuenta y datos", "Supprimer le compte et les données", "Konto & Daten löschen", "Excluir conta e dados", "Elimina account e dati", "Hapus akun & data", "Xóa tài khoản & dữ liệu", "Hesabı ve verileri sil", "Usuń konto i dane" },
             ["Settings/DeleteAccountConfirmTitle"] = new[] { "Delete account & data?", "¿Eliminar cuenta y datos?", "Supprimer le compte et les données ?", "Konto & Daten löschen?", "Excluir conta e dados?", "Eliminare account e dati?", "Hapus akun & data?", "Xóa tài khoản & dữ liệu?", "Hesap ve veriler silinsin mi?", "Usunąć konto i dane?" },
+
+            // --- RPS (Rock-Paper-Scissors scene menu / mode picker / match screen) ---
+            // "RPS" stays an untranslated code in every locale, same as the TTT Home secondary-row label.
+            ["Home/RpsLabel"] = new[] { "RPS", "RPS", "RPS", "RPS", "RPS", "RPS", "RPS", "RPS", "RPS", "RPS" },
+            ["RpsMenu/Title"] = new[] { "RPS", "RPS", "RPS", "RPS", "RPS", "RPS", "RPS", "RPS", "RPS", "RPS" },
+            ["RpsMenu/Subtitle"] = new[]
+            {
+                "Rock, paper, scissors", "Piedra, papel o tijeras", "Pierre, papier, ciseaux", "Schnick, Schnack, Schnuck",
+                "Pedra, papel e tesoura", "Sasso, carta, forbici", "Batu, kertas, gunting", "Oẳn tù tì",
+                "Taş, kâğıt, makas", "Kamień, papier, nożyce",
+            },
+            ["RpsMenu/PlayButton"] = new[] { "Play", "Jugar", "Jouer", "Spielen", "Jogar", "Gioca", "Main", "Chơi", "Oyna", "Graj" },
+            ["RpsMenu/ProfileLabel"] = new[] { "Profile", "Perfil", "Profil", "Profil", "Perfil", "Profilo", "Profil", "Hồ sơ", "Profil", "Profil" },
+            ["RpsMenu/StoreLabel"] = new[] { "Store", "Tienda", "Boutique", "Shop", "Loja", "Negozio", "Toko", "Cửa hàng", "Mağaza", "Sklep" },
+            ["RpsMenu/SettingsLabel"] = new[] { "Settings", "Ajustes", "Réglages", "Einstellungen", "Ajustes", "Impostazioni", "Pengaturan", "Cài đặt", "Ayarlar", "Ustawienia" },
+
+            ["RpsModeSelect/Title"] = new[] { "Choose a mode", "Elige un modo", "Choisissez un mode", "Modus wählen", "Escolha um modo", "Scegli una modalità", "Pilih mode", "Chọn chế độ", "Bir mod seç", "Wybierz tryb" },
+            ["RpsModeSelect/SinglePlayerTitle"] = new[] { "Single Player", "Un jugador", "Un joueur", "Einzelspieler", "Um jogador", "Giocatore singolo", "Satu pemain", "Một người chơi", "Tek oyunculu", "Jeden gracz" },
+            ["RpsModeSelect/SinglePlayerDescription"] = new[]
+            {
+                "Best of five vs AI", "Mejor de cinco contra la IA", "Meilleure des cinq contre l'IA", "Best of Five gegen die KI",
+                "Melhor de cinco contra a IA", "Al meglio di cinque contro l'IA", "Best of five lawan AI", "Best of five với AI",
+                "Beşte üçe karşı yapay zeka", "Best of five z AI",
+            },
+            ["RpsModeSelect/LocalMultiplayerTitle"] = new[] { "Local 2P", "2 jugadores local", "2 joueurs local", "Lokal 2 Spieler", "2 jogadores local", "2 giocatori locale", "2 pemain lokal", "2 người local", "Yerel 2 kişilik", "Lokalnie 2 os." },
+            ["RpsModeSelect/LocalMultiplayerDescription"] = new[]
+            {
+                "Pass the device, round by round", "Pasa el dispositivo, ronda a ronda", "Passez l'appareil, manche après manche",
+                "Gerät von Runde zu Runde weitergeben", "Passe o dispositivo, rodada a rodada", "Passa il dispositivo, manche per manche",
+                "Operkan perangkat secara bergantian", "Chuyền thiết bị từng lượt", "Cihazı tur tur devret", "Podawaj urządzenie rundami",
+            },
+            ["RpsModeSelect/OnlineTitle"] = new[] { "Online", "Online", "En ligne", "Online", "Online", "Online", "Online", "Trực tuyến", "Çevrimiçi", "Online" },
+            ["RpsModeSelect/OnlineDescription"] = new[]
+            {
+                "Versus a rival over UGS", "Contra un rival vía UGS", "Contre un adversaire via UGS", "Gegen einen Rivalen per UGS",
+                "Contra um rival pela UGS", "Contro un rivale via UGS", "Melawan rival lewat UGS", "Đấu với đối thủ qua UGS",
+                "UGS üzerinden bir rakibe karşı", "Przeciw rywalowi przez UGS",
+            },
+            ["RpsModeSelect/OnlineComingSoonMessage"] = new[]
+            {
+                "Online RPS is coming soon!", "¡El RPS online llega pronto!", "Le RPS en ligne arrive bientôt !", "Online-RPS kommt bald!",
+                "O RPS online chega em breve!", "L'RPS online arriva presto!", "Mode online RPS segera hadir!", "RPS trực tuyến sắp ra mắt!",
+                "Çevrimiçi RPS yakında geliyor!", "RPS online wkrótce dostępny!",
+            },
+
+            ["RpsGame/Rock"] = new[] { "Rock", "Piedra", "Pierre", "Stein", "Pedra", "Sasso", "Batu", "Đá", "Taş", "Kamień" },
+            ["RpsGame/Paper"] = new[] { "Paper", "Papel", "Papier", "Papier", "Papel", "Carta", "Kertas", "Giấy", "Kâğıt", "Papier" },
+            ["RpsGame/Scissors"] = new[] { "Scissors", "Tijeras", "Ciseaux", "Schere", "Tesoura", "Forbici", "Gunting", "Kéo", "Makas", "Nożyce" },
+            ["RpsGame/RoundYourMove"] = new[]
+            {
+                "Round {0} - your move", "Ronda {0} - tu turno", "Manche {0} - à vous", "Runde {0} - dein Zug",
+                "Rodada {0} - sua vez", "Manche {0} - tocca a te", "Ronde {0} - giliranmu", "Vòng {0} - lượt của bạn",
+                "Tur {0} - sıra sende", "Runda {0} - Twój ruch",
+            },
+            ["RpsGame/RoundWaiting"] = new[]
+            {
+                "Round {0} - waiting for {1}", "Ronda {0} - esperando a {1}", "Manche {0} - en attente de {1}", "Runde {0} - warte auf {1}",
+                "Rodada {0} - esperando {1}", "Manche {0} - in attesa di {1}", "Ronde {0} - menunggu {1}", "Vòng {0} - chờ {1}",
+                "Tur {0} - {1} bekleniyor", "Runda {0} - czekanie na {1}",
+            },
+            ["RpsGame/AiThinking"] = new[] { "AI is thinking...", "La IA está pensando...", "L'IA réfléchit...", "KI denkt nach...", "A IA está pensando...", "L'IA sta pensando...", "AI sedang berpikir...", "AI đang suy nghĩ...", "YZ düşünüyor...", "SI myśli..." },
+            ["RpsGame/YouLabel"] = new[] { "You", "Tú", "Toi", "Du", "Você", "Tu", "Kamu", "Bạn", "Sen", "Ty" },
+            ["RpsGame/AiLabel"] = new[] { "AI", "IA", "IA", "KI", "IA", "IA", "AI", "AI", "YZ", "SI" },
+            ["RpsGame/Player1Label"] = new[] { "Player 1", "Jugador 1", "Joueur 1", "Spieler 1", "Jogador 1", "Giocatore 1", "Pemain 1", "Người chơi 1", "Oyuncu 1", "Gracz 1" },
+            ["RpsGame/Player2Label"] = new[] { "Player 2", "Jugador 2", "Joueur 2", "Spieler 2", "Jogador 2", "Giocatore 2", "Pemain 2", "Người chơi 2", "Oyuncu 2", "Gracz 2" },
+            ["RpsGame/HandoffLabel"] = new[]
+            {
+                "Pass the device to {0}", "Pasa el dispositivo a {0}", "Passez l'appareil à {0}", "Gerät an {0} weitergeben",
+                "Passe o dispositivo para {0}", "Passa il dispositivo a {0}", "Operkan perangkat ke {0}", "Chuyền thiết bị cho {0}",
+                "Cihazı {0}'a devret", "Podaj urządzenie {0}",
+            },
+            ["RpsGame/YouWon"] = new[]
+            {
+                "You won the series!", "¡Ganaste la serie!", "Vous avez gagné la série !", "Du gewinnst die Serie!",
+                "Você venceu a série!", "Hai vinto la serie!", "Kamu memenangkan seri!", "Bạn thắng cả loạt!",
+                "Seriyi kazandın!", "Wygrałeś serię!",
+            },
+            ["RpsGame/YouLost"] = new[]
+            {
+                "AI won the series", "La IA ganó la serie", "L'IA a gagné la série", "Die KI gewinnt die Serie",
+                "A IA venceu a série", "L'IA ha vinto la serie", "AI memenangkan seri", "AI thắng cả loạt",
+                "YZ seriyi kazandı", "SI wygrała serię",
+            },
+            ["RpsGame/Player1Won"] = new[]
+            {
+                "Player 1 won the series!", "¡El Jugador 1 ganó la serie!", "Le Joueur 1 a gagné la série !", "Spieler 1 gewinnt die Serie!",
+                "Jogador 1 venceu a série!", "Il Giocatore 1 ha vinto la serie!", "Pemain 1 memenangkan seri!", "Người chơi 1 thắng cả loạt!",
+                "Oyuncu 1 seriyi kazandı!", "Gracz 1 wygrał serię!",
+            },
+            ["RpsGame/Player2Won"] = new[]
+            {
+                "Player 2 won the series!", "¡El Jugador 2 ganó la serie!", "Le Joueur 2 a gagné la série !", "Spieler 2 gewinnt die Serie!",
+                "Jogador 2 venceu a série!", "Il Giocatore 2 ha vinto la serie!", "Pemain 2 memenangkan seri!", "Người chơi 2 thắng cả loạt!",
+                "Oyuncu 2 seriyi kazandı!", "Gracz 2 wygrał serię!",
+            },
+            ["RpsGame/SeriesDraw"] = new[]
+            {
+                "Series tied", "Serie empatada", "Série à égalité", "Serie unentschieden",
+                "Série empatada", "Serie in pareggio", "Seri imbang", "Loạt hòa",
+                "Seri berabere", "Seria remisowa",
+            },
+            ["RpsGame/RematchButton"] = new[] { "Rematch", "Revancha", "Revanche", "Revanche", "Revanche", "Rivincita", "Main lagi", "Đấu lại", "Rövanş", "Rewanż" },
+            ["RpsGame/MenuButton"] = new[] { "Menu", "Menú", "Menu", "Menü", "Menu", "Menu", "Menu", "Menu", "Menü", "Menu" },
         };
 
         [MenuItem("TTTXO/Setup/Create Localization Assets")]

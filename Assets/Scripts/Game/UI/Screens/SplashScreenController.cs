@@ -11,7 +11,8 @@ namespace TTTXO.Game.UI.Screens
     /// screen's documented flow ("init UGS → sign-in anonimo → primer GetGameConfig"):
     /// <see cref="UgsInitializer"/> initializes UGS + signs in anonymously, then (best-effort, never
     /// blocking) <see cref="GameConfigService"/> makes the first GetGameConfig call and
-    /// <see cref="PlayerDataService"/> loads the Cloud Save mirror, before navigating to Home.
+    /// <see cref="PlayerDataService"/> loads the Cloud Save mirror, before navigating to
+    /// <see cref="ScreenRouter.StartScreen"/> - Home in the main scene, the RPS menu in the RPS scene.
     ///
     /// On <see cref="UgsInitStatus.Failed"/> this shows a generic, non-technical error state with a
     /// Retry button (design-doc wireframe 1a) instead of navigating - Milestone 1 local/1P play is
@@ -117,7 +118,7 @@ namespace TTTXO.Game.UI.Screens
                 }
             }
 
-            _router.Show(ScreenId.Home);
+            _router.Show(_router.StartScreen);
         }
 
         private void OnRetryClicked()

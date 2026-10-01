@@ -501,6 +501,138 @@ MonoBehaviour:
     m_Localized: '{0} Vai al Negozio {1}'
     m_Metadata:
       m_Items: []
+  - m_Id: 24781258357747712
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623680
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623681
+    m_Localized: Sasso, carta, forbici
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623682
+    m_Localized: Gioca
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623683
+    m_Localized: Profilo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623684
+    m_Localized: Negozio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817984
+    m_Localized: Impostazioni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817985
+    m_Localized: "Scegli una modalit\xE0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817986
+    m_Localized: Giocatore singolo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817987
+    m_Localized: Al meglio di cinque contro l'IA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817988
+    m_Localized: 2 giocatori locale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817989
+    m_Localized: Passa il dispositivo, manche per manche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012288
+    m_Localized: Online
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012289
+    m_Localized: Contro un rivale via UGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206592
+    m_Localized: L'RPS online arriva presto!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206593
+    m_Localized: Sasso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206594
+    m_Localized: Carta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206595
+    m_Localized: Forbici
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206596
+    m_Localized: Manche {0} - tocca a te
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206597
+    m_Localized: Manche {0} - in attesa di {1}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206598
+    m_Localized: L'IA sta pensando...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206599
+    m_Localized: Tu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206600
+    m_Localized: IA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206601
+    m_Localized: Giocatore 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206602
+    m_Localized: Giocatore 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206603
+    m_Localized: Passa il dispositivo a {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206604
+    m_Localized: Hai vinto la serie!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206605
+    m_Localized: L'IA ha vinto la serie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206606
+    m_Localized: Il Giocatore 1 ha vinto la serie!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206607
+    m_Localized: Il Giocatore 2 ha vinto la serie!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206608
+    m_Localized: Serie in pareggio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400896
+    m_Localized: Rivincita
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400897
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

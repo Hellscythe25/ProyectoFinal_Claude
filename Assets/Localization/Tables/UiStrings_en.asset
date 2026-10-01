@@ -499,6 +499,138 @@ MonoBehaviour:
     m_Localized: '{0} Go to Store {1}'
     m_Metadata:
       m_Items: []
+  - m_Id: 24781258357747712
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623680
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623681
+    m_Localized: Rock, paper, scissors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623682
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623683
+    m_Localized: Profile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623684
+    m_Localized: Store
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817984
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817985
+    m_Localized: Choose a mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817986
+    m_Localized: Single Player
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817987
+    m_Localized: Best of five vs AI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817988
+    m_Localized: Local 2P
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817989
+    m_Localized: Pass the device, round by round
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012288
+    m_Localized: Online
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012289
+    m_Localized: Versus a rival over UGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206592
+    m_Localized: Online RPS is coming soon!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206593
+    m_Localized: Rock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206594
+    m_Localized: Paper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206595
+    m_Localized: Scissors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206596
+    m_Localized: Round {0} - your move
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206597
+    m_Localized: Round {0} - waiting for {1}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206598
+    m_Localized: AI is thinking...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206599
+    m_Localized: You
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206600
+    m_Localized: AI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206601
+    m_Localized: Player 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206602
+    m_Localized: Player 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206603
+    m_Localized: Pass the device to {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206604
+    m_Localized: You won the series!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206605
+    m_Localized: AI won the series
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206606
+    m_Localized: Player 1 won the series!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206607
+    m_Localized: Player 2 won the series!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206608
+    m_Localized: Series tied
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400896
+    m_Localized: Rematch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400897
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

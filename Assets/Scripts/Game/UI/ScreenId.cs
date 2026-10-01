@@ -9,6 +9,10 @@ namespace TTTXO.Game.UI
     /// Milestone 5 (Docs/06-Wireframes-UI.md screens 8/10) - both read live Ranked data from Cloud
     /// Code's <c>GetRankedProfile</c>/<c>GetRankedLeaderboard</c>, see ProfileScreenController/
     /// LeaderboardScreenController.
+    ///
+    /// The Rock-Paper-Scissors mode has its own menu, mode picker and game screen. The RPS scene
+    /// (Assets/Scenes/Rps.unity, Build Settings index 1) boots the same shell pointing its splash
+    /// at <see cref="RpsMenu"/> instead of <see cref="Home"/> - see RpsSceneSetup.
     /// </summary>
     public enum ScreenId
     {
@@ -23,6 +27,9 @@ namespace TTTXO.Game.UI
         MatchHistory,
         Store,
         Settings,
-        Leaderboard
+        Leaderboard,
+        RpsMenu,
+        RpsModeSelect,
+        RpsGame
     }
 }

@@ -495,6 +495,138 @@ MonoBehaviour:
     m_Key: Profile/StoreLinkFormat
     m_Metadata:
       m_Items: []
+  - m_Id: 24781258357747712
+    m_Key: Home/RpsLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623680
+    m_Key: RpsMenu/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623681
+    m_Key: RpsMenu/Subtitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623682
+    m_Key: RpsMenu/PlayButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623683
+    m_Key: RpsMenu/ProfileLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623684
+    m_Key: RpsMenu/StoreLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817984
+    m_Key: RpsMenu/SettingsLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817985
+    m_Key: RpsModeSelect/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817986
+    m_Key: RpsModeSelect/SinglePlayerTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817987
+    m_Key: RpsModeSelect/SinglePlayerDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817988
+    m_Key: RpsModeSelect/LocalMultiplayerTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817989
+    m_Key: RpsModeSelect/LocalMultiplayerDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012288
+    m_Key: RpsModeSelect/OnlineTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012289
+    m_Key: RpsModeSelect/OnlineDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206592
+    m_Key: RpsModeSelect/OnlineComingSoonMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206593
+    m_Key: RpsGame/Rock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206594
+    m_Key: RpsGame/Paper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206595
+    m_Key: RpsGame/Scissors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206596
+    m_Key: RpsGame/RoundYourMove
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206597
+    m_Key: RpsGame/RoundWaiting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206598
+    m_Key: RpsGame/AiThinking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206599
+    m_Key: RpsGame/YouLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206600
+    m_Key: RpsGame/AiLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206601
+    m_Key: RpsGame/Player1Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206602
+    m_Key: RpsGame/Player2Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206603
+    m_Key: RpsGame/HandoffLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206604
+    m_Key: RpsGame/YouWon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206605
+    m_Key: RpsGame/YouLost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206606
+    m_Key: RpsGame/Player1Won
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206607
+    m_Key: RpsGame/Player2Won
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206608
+    m_Key: RpsGame/SeriesDraw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400896
+    m_Key: RpsGame/RematchButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400897
+    m_Key: RpsGame/MenuButton
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

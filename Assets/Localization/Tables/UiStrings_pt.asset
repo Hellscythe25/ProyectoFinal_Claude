@@ -502,6 +502,138 @@ MonoBehaviour:
     m_Localized: "{0} Ir \xE0 Loja {1}"
     m_Metadata:
       m_Items: []
+  - m_Id: 24781258357747712
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623680
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623681
+    m_Localized: Pedra, papel e tesoura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623682
+    m_Localized: Jogar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623683
+    m_Localized: Perfil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623684
+    m_Localized: Loja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817984
+    m_Localized: Ajustes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817985
+    m_Localized: Escolha um modo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817986
+    m_Localized: Um jogador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817987
+    m_Localized: Melhor de cinco contra a IA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817988
+    m_Localized: 2 jogadores local
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817989
+    m_Localized: Passe o dispositivo, rodada a rodada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012288
+    m_Localized: Online
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012289
+    m_Localized: Contra um rival pela UGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206592
+    m_Localized: O RPS online chega em breve!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206593
+    m_Localized: Pedra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206594
+    m_Localized: Papel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206595
+    m_Localized: Tesoura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206596
+    m_Localized: Rodada {0} - sua vez
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206597
+    m_Localized: Rodada {0} - esperando {1}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206598
+    m_Localized: "A IA est\xE1 pensando..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206599
+    m_Localized: "Voc\xEA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206600
+    m_Localized: IA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206601
+    m_Localized: Jogador 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206602
+    m_Localized: Jogador 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206603
+    m_Localized: Passe o dispositivo para {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206604
+    m_Localized: "Voc\xEA venceu a s\xE9rie!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206605
+    m_Localized: "A IA venceu a s\xE9rie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206606
+    m_Localized: "Jogador 1 venceu a s\xE9rie!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206607
+    m_Localized: "Jogador 2 venceu a s\xE9rie!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206608
+    m_Localized: "S\xE9rie empatada"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400896
+    m_Localized: Revanche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400897
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

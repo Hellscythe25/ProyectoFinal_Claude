@@ -501,6 +501,138 @@ MonoBehaviour:
     m_Localized: "{0} Aller \xE0 la Boutique {1}"
     m_Metadata:
       m_Items: []
+  - m_Id: 24781258357747712
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623680
+    m_Localized: RPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623681
+    m_Localized: Pierre, papier, ciseaux
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623682
+    m_Localized: Jouer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623683
+    m_Localized: Profil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258743623684
+    m_Localized: Boutique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817984
+    m_Localized: "R\xE9glages"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817985
+    m_Localized: Choisissez un mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817986
+    m_Localized: Un joueur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817987
+    m_Localized: Meilleure des cinq contre l'IA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817988
+    m_Localized: 2 joueurs local
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258747817989
+    m_Localized: "Passez l'appareil, manche apr\xE8s manche"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012288
+    m_Localized: En ligne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258752012289
+    m_Localized: Contre un adversaire via UGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206592
+    m_Localized: "Le RPS en ligne arrive bient\xF4t !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206593
+    m_Localized: Pierre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206594
+    m_Localized: Papier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206595
+    m_Localized: Ciseaux
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206596
+    m_Localized: "Manche {0} - \xE0 vous"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206597
+    m_Localized: Manche {0} - en attente de {1}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206598
+    m_Localized: "L'IA r\xE9fl\xE9chit..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206599
+    m_Localized: Toi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206600
+    m_Localized: IA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206601
+    m_Localized: Joueur 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206602
+    m_Localized: Joueur 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206603
+    m_Localized: "Passez l'appareil \xE0 {0}"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206604
+    m_Localized: "Vous avez gagn\xE9 la s\xE9rie !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206605
+    m_Localized: "L'IA a gagn\xE9 la s\xE9rie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206606
+    m_Localized: "Le Joueur 1 a gagn\xE9 la s\xE9rie !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206607
+    m_Localized: "Le Joueur 2 a gagn\xE9 la s\xE9rie !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258756206608
+    m_Localized: "S\xE9rie \xE0 \xE9galit\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400896
+    m_Localized: Revanche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781258760400897
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
