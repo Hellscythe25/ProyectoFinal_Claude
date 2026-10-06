@@ -1,0 +1,813 @@
+fileFormatVersion: 2
+guid: f16eeb9caee4c0c41a15ac74e9aa801d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5169285539198543171
+    second: Hoja de sprites de caballero pixelado_0
+  - first:
+      213: -7407887656376752467
+    second: Hoja de sprites de caballero pixelado_1
+  - first:
+      213: 2393614888683348640
+    second: Hoja de sprites de caballero pixelado_2
+  - first:
+      213: -2747014263820749427
+    second: Hoja de sprites de caballero pixelado_3
+  - first:
+      213: 8559090902823404667
+    second: Hoja de sprites de caballero pixelado_4
+  - first:
+      213: -1226949901365603990
+    second: Hoja de sprites de caballero pixelado_5
+  - first:
+      213: -4977208512847700265
+    second: Hoja de sprites de caballero pixelado_6
+  - first:
+      213: 7808171893107071741
+    second: Hoja de sprites de caballero pixelado_7
+  - first:
+      213: 5882975427917598011
+    second: Hoja de sprites de caballero pixelado_8
+  - first:
+      213: -4214488694655472119
+    second: Hoja de sprites de caballero pixelado_9
+  - first:
+      213: 8331027722438121862
+    second: Hoja de sprites de caballero pixelado_10
+  - first:
+      213: 4416299042910746276
+    second: Hoja de sprites de caballero pixelado_11
+  - first:
+      213: 3535524719034881343
+    second: Hoja de sprites de caballero pixelado_12
+  - first:
+      213: -6545544940740641941
+    second: Hoja de sprites de caballero pixelado_13
+  - first:
+      213: 2968153098277507176
+    second: Hoja de sprites de caballero pixelado_14
+  - first:
+      213: 7424233436243411361
+    second: Hoja de sprites de caballero pixelado_15
+  - first:
+      213: -2834315389642193433
+    second: Hoja de sprites de caballero pixelado_16
+  - first:
+      213: 4249968854007891514
+    second: Hoja de sprites de caballero pixelado_17
+  - first:
+      213: 1183920802864653935
+    second: Hoja de sprites de caballero pixelado_18
+  - first:
+      213: 2805920103377970911
+    second: Hoja de sprites de caballero pixelado_19
+  - first:
+      213: 9075795022608326623
+    second: Hoja de sprites de caballero pixelado_20
+  - first:
+      213: 5405429805520947501
+    second: Hoja de sprites de caballero pixelado_21
+  - first:
+      213: 4850625080074092862
+    second: Hoja de sprites de caballero pixelado_22
+  - first:
+      213: 4890227621564651821
+    second: Hoja de sprites de caballero pixelado_23
+  - first:
+      213: 1132915653126378340
+    second: Hoja de sprites de caballero pixelado_24
+  - first:
+      213: 5864292687855763067
+    second: Hoja de sprites de caballero pixelado_25
+  - first:
+      213: -5014246305505096751
+    second: Hoja de sprites de caballero pixelado_26
+  - first:
+      213: 5518645619266512470
+    second: Hoja de sprites de caballero pixelado_27
+  - first:
+      213: -7258210109840995616
+    second: Hoja de sprites de caballero pixelado_28
+  - first:
+      213: 5489551806906011069
+    second: Hoja de sprites de caballero pixelado_29
+  - first:
+      213: 7967182612300237526
+    second: Hoja de sprites de caballero pixelado_30
+  - first:
+      213: 8653972222348493224
+    second: Hoja de sprites de caballero pixelado_31
+  - first:
+      213: -483162641437124850
+    second: Hoja de sprites de caballero pixelado_32
+  - first:
+      213: 3306863540911486976
+    second: Hoja de sprites de caballero pixelado_33
+  - first:
+      213: 9198160685518639600
+    second: Hoja de sprites de caballero pixelado_34
+  - first:
+      213: 6402964977714244934
+    second: Hoja de sprites de caballero pixelado_35
+  - first:
+      213: 8716581094015404616
+    second: Hoja de sprites de caballero pixelado_36
+  - first:
+      213: 5829814252434744322
+    second: Hoja de sprites de caballero pixelado_37
+  - first:
+      213: -5350545882380116986
+    second: Hoja de sprites de caballero pixelado_38
+  - first:
+      213: 4084891725393734523
+    second: Hoja de sprites de caballero pixelado_39
+  - first:
+      213: -1284737165793477235
+    second: Hoja de sprites de caballero pixelado_40
+  - first:
+      213: 2992064050390054452
+    second: Hoja de sprites de caballero pixelado_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Guerrero_Atack_6
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 395
+        width: 194
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3452e725fcdfcb740800000000000000
+      internalID: 5169285539198543171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Atack_7
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 395
+        width: 136
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6a9a9dc65e13990800000000000000
+      internalID: -7407887656376752467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 653
+        width: 153
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6b79ab498d94d30800000000000000
+      internalID: 4416299042910746276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 653
+        width: 148
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b7cc16e8d8925a0800000000000000
+      internalID: -6545544940740641941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 653
+        width: 141
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8605ec5548ff03920800000000000000
+      internalID: 2968153098277507176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 653
+        width: 143
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1cdd899fc280760800000000000000
+      internalID: 7424233436243411361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 653
+        width: 141
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e544f28b2d7aa8d0800000000000000
+      internalID: -2834315389642193433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 653
+        width: 163
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a364d99c72ceafa30800000000000000
+      internalID: 4249968854007891514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 653
+        width: 148
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6661f092b12e6010800000000000000
+      internalID: 1183920802864653935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 653
+        width: 143
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd6a8f5b771a0f620800000000000000
+      internalID: 2805920103377970911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Atack_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 395
+        width: 162
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdfd3d8cc73b3fd70800000000000000
+      internalID: 9075795022608326623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Atack_5
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 395
+        width: 151
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d298268d4c1f30b40800000000000000
+      internalID: 5405429805520947501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Atack_2
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 395
+        width: 146
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d291a2ebc149dd340800000000000000
+      internalID: 4890227621564651821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Atack_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 395
+        width: 172
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463d319b8cce8bf00800000000000000
+      internalID: 1132915653126378340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Atack_4
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 395
+        width: 168
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e30961127226150800000000000000
+      internalID: 5864292687855763067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de sprites de caballero pixelado_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 333
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea47c95c58a54b90800000000000000
+      internalID: -7258210109840995616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Recibe_Damage_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 110
+        width: 164
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a10e21b2e5191870800000000000000
+      internalID: 8653972222348493224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Recibe_Damage_2
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 110
+        width: 164
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f15d47d86e66af70800000000000000
+      internalID: 9198160685518639600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Recibe_Damage_3
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 110
+        width: 135
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64daced09b6ebd850800000000000000
+      internalID: 6402964977714244934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Recibe_Damage_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 110
+        width: 173
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204e1e6cc29a7e050800000000000000
+      internalID: 5829814252434744322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Recibe_Damage_5
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 110
+        width: 150
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60cdd4e4eda0fb5b0800000000000000
+      internalID: -5350545882380116986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Recibe_Damage_6
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 110
+        width: 145
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ba60ea16370b830800000000000000
+      internalID: 4084891725393734523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Recibe_Damage_7
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 110
+        width: 146
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d3323ca52bb2ee0800000000000000
+      internalID: -1284737165793477235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guerrero_Recibe_Damage_8
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 110
+        width: 164
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43637b4b662f58920800000000000000
+      internalID: 2992064050390054452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 63a0f7a1f962f9946b0b59bdaebdfbd3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Guerrero_Atack_1: 9075795022608326623
+      Guerrero_Atack_2: 4890227621564651821
+      Guerrero_Atack_3: 1132915653126378340
+      Guerrero_Atack_4: 5864292687855763067
+      Guerrero_Atack_5: 5405429805520947501
+      Guerrero_Atack_6: 5169285539198543171
+      Guerrero_Atack_7: -7407887656376752467
+      Guerrero_Idle_1: 4416299042910746276
+      Guerrero_Idle_2: -6545544940740641941
+      Guerrero_Idle_3: 2968153098277507176
+      Guerrero_Idle_4: 7424233436243411361
+      Guerrero_Idle_5: -2834315389642193433
+      Guerrero_Idle_6: 4249968854007891514
+      Guerrero_Idle_7: 1183920802864653935
+      Guerrero_Idle_8: 2805920103377970911
+      Guerrero_Recibe_Damage_1: 8653972222348493224
+      Guerrero_Recibe_Damage_2: 9198160685518639600
+      Guerrero_Recibe_Damage_3: 6402964977714244934
+      Guerrero_Recibe_Damage_4: 5829814252434744322
+      Guerrero_Recibe_Damage_5: -5350545882380116986
+      Guerrero_Recibe_Damage_6: 4084891725393734523
+      Guerrero_Recibe_Damage_7: -1284737165793477235
+      Guerrero_Recibe_Damage_8: 2992064050390054452
+      Hoja de sprites de caballero pixelado_10: 8331027722438121862
+      Hoja de sprites de caballero pixelado_12: 3535524719034881343
+      Hoja de sprites de caballero pixelado_2: 2393614888683348640
+      Hoja de sprites de caballero pixelado_22: 4850625080074092862
+      Hoja de sprites de caballero pixelado_26: -5014246305505096751
+      Hoja de sprites de caballero pixelado_27: 5518645619266512470
+      Hoja de sprites de caballero pixelado_28: -7258210109840995616
+      Hoja de sprites de caballero pixelado_29: 5489551806906011069
+      Hoja de sprites de caballero pixelado_3: -2747014263820749427
+      Hoja de sprites de caballero pixelado_30: 7967182612300237526
+      Hoja de sprites de caballero pixelado_32: -483162641437124850
+      Hoja de sprites de caballero pixelado_33: 3306863540911486976
+      Hoja de sprites de caballero pixelado_36: 8716581094015404616
+      Hoja de sprites de caballero pixelado_4: 8559090902823404667
+      Hoja de sprites de caballero pixelado_5: -1226949901365603990
+      Hoja de sprites de caballero pixelado_6: -4977208512847700265
+      Hoja de sprites de caballero pixelado_7: 7808171893107071741
+      Hoja de sprites de caballero pixelado_8: 5882975427917598011
+      Hoja de sprites de caballero pixelado_9: -4214488694655472119
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

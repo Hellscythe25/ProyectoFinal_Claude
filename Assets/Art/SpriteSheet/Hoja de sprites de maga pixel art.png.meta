@@ -1,0 +1,869 @@
+fileFormatVersion: 2
+guid: de931feaf77bf9041ac086c6b25db902
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1067782825266362195
+    second: Hoja de sprites de maga pixel art_0
+  - first:
+      213: -2270147763788422706
+    second: Hoja de sprites de maga pixel art_1
+  - first:
+      213: 6524952372411888720
+    second: Hoja de sprites de maga pixel art_2
+  - first:
+      213: -2507313852761600260
+    second: Hoja de sprites de maga pixel art_3
+  - first:
+      213: 5018017397394767637
+    second: Hoja de sprites de maga pixel art_4
+  - first:
+      213: 7553246905034869637
+    second: Hoja de sprites de maga pixel art_5
+  - first:
+      213: -5751167901436425315
+    second: Hoja de sprites de maga pixel art_6
+  - first:
+      213: -6787968359528622340
+    second: Hoja de sprites de maga pixel art_7
+  - first:
+      213: 8481085124860839082
+    second: Hoja de sprites de maga pixel art_8
+  - first:
+      213: -8797296682673807562
+    second: Hoja de sprites de maga pixel art_9
+  - first:
+      213: -5811727477225851889
+    second: Hoja de sprites de maga pixel art_10
+  - first:
+      213: -3146597123116520049
+    second: Hoja de sprites de maga pixel art_11
+  - first:
+      213: -128980979567383079
+    second: Hoja de sprites de maga pixel art_12
+  - first:
+      213: 8051608434090831804
+    second: Hoja de sprites de maga pixel art_13
+  - first:
+      213: 4365280941181478025
+    second: Hoja de sprites de maga pixel art_14
+  - first:
+      213: 1660307836192871819
+    second: Hoja de sprites de maga pixel art_15
+  - first:
+      213: -165082367564396985
+    second: Hoja de sprites de maga pixel art_16
+  - first:
+      213: -8902999842961897061
+    second: Hoja de sprites de maga pixel art_17
+  - first:
+      213: 8917172555097359578
+    second: Hoja de sprites de maga pixel art_18
+  - first:
+      213: 5684088135527770746
+    second: Hoja de sprites de maga pixel art_19
+  - first:
+      213: 695251239436049301
+    second: Hoja de sprites de maga pixel art_20
+  - first:
+      213: 5542686968702137671
+    second: Hoja de sprites de maga pixel art_21
+  - first:
+      213: -3660767516533013218
+    second: Hoja de sprites de maga pixel art_22
+  - first:
+      213: 5585878785320731617
+    second: Hoja de sprites de maga pixel art_23
+  - first:
+      213: -2522106402412985413
+    second: Hoja de sprites de maga pixel art_24
+  - first:
+      213: -5427848260411183342
+    second: Hoja de sprites de maga pixel art_25
+  - first:
+      213: -3665144585781038767
+    second: Hoja de sprites de maga pixel art_26
+  - first:
+      213: 1600237433458995470
+    second: Hoja de sprites de maga pixel art_27
+  - first:
+      213: -7557863027884898149
+    second: Hoja de sprites de maga pixel art_28
+  - first:
+      213: 3849586133920570484
+    second: Hoja de sprites de maga pixel art_29
+  - first:
+      213: 4712734053452550164
+    second: Hoja de sprites de maga pixel art_30
+  - first:
+      213: -6689844073011853216
+    second: Hoja de sprites de maga pixel art_31
+  - first:
+      213: 1337822359877950126
+    second: Hoja de sprites de maga pixel art_32
+  - first:
+      213: 3488580789787281073
+    second: Hoja de sprites de maga pixel art_33
+  - first:
+      213: -1400097451981459108
+    second: Hoja de sprites de maga pixel art_34
+  - first:
+      213: -4136577457970371786
+    second: Hoja de sprites de maga pixel art_35
+  - first:
+      213: 4231499129338742861
+    second: Hoja de sprites de maga pixel art_36
+  - first:
+      213: 847551731259811485
+    second: Hoja de sprites de maga pixel art_37
+  - first:
+      213: 4814810681768052164
+    second: Hoja de sprites de maga pixel art_38
+  - first:
+      213: 3057375587311903258
+    second: Hoja de sprites de maga pixel art_39
+  - first:
+      213: 5778673215800458875
+    second: Hoja de sprites de maga pixel art_40
+  - first:
+      213: 8767529201432120781
+    second: Hoja de sprites de maga pixel art_41
+  - first:
+      213: -2719397770889614960
+    second: Hoja de sprites de maga pixel art_42
+  - first:
+      213: 869301025363819213
+    second: Hoja de sprites de maga pixel art_43
+  - first:
+      213: 8004152154733967304
+    second: Hoja de sprites de maga pixel art_44
+  - first:
+      213: 4064839603567373695
+    second: Hoja de sprites de maga pixel art_45
+  - first:
+      213: -4095597478565227854
+    second: Hoja de sprites de maga pixel art_46
+  - first:
+      213: -7448454560691021326
+    second: Hoja de sprites de maga pixel art_47
+  - first:
+      213: 1141418854117835378
+    second: Hoja de sprites de maga pixel art_48
+  - first:
+      213: -8211661899375523799
+    second: Hoja de sprites de maga pixel art_49
+  - first:
+      213: 4263310288435319433
+    second: Hoja de sprites de maga pixel art_50
+  - first:
+      213: -4888311820328998287
+    second: Hoja de sprites de maga pixel art_51
+  - first:
+      213: -7708357864759750028
+    second: Hoja de sprites de maga pixel art_52
+  - first:
+      213: -5464208710188516504
+    second: Hoja de sprites de maga pixel art_53
+  - first:
+      213: 576621244601359211
+    second: Hoja de sprites de maga pixel art_54
+  - first:
+      213: 6544907592751400237
+    second: Hoja de sprites de maga pixel art_55
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Maga_Atack_6
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 346
+        width: 175
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da84cb28d297e21f0800000000000000
+      internalID: -1067782825266362195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Atack_7
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 348
+        width: 156
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec16eb7f2a0de70e0800000000000000
+      internalID: -2270147763788422706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Atack_8
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 348
+        width: 155
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054f3fdac994d8a50800000000000000
+      internalID: 6524952372411888720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Recibe_Damage_3
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 55
+        width: 139
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe8ab1d55b343dd0800000000000000
+      internalID: -2507313852761600260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Recibe_Damage_6
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 55
+        width: 136
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ff1708c3493a540800000000000000
+      internalID: 5018017397394767637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 664
+        width: 146
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b5c34915706a900800000000000000
+      internalID: 695251239436049301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 664
+        width: 140
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7457dae7e649bec40800000000000000
+      internalID: 5542686968702137671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 664
+        width: 144
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15c2cbd657523dc0800000000000000
+      internalID: -3660767516533013218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 664
+        width: 146
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb38f66f69daffcd0800000000000000
+      internalID: -2522106402412985413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 664
+        width: 154
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15133120b6ac22dc0800000000000000
+      internalID: -3665144585781038767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 664
+        width: 141
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98ccd19e931d1790800000000000000
+      internalID: -7557863027884898149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 664
+        width: 144
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47cda9c513a7c6530800000000000000
+      internalID: 3849586133920570484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 664
+        width: 144
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4101de807aef66140800000000000000
+      internalID: 4712734053452550164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Atack_5
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 348
+        width: 235
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5137b319cad19ce0800000000000000
+      internalID: -1400097451981459108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Atack_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 348
+        width: 154
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d484c97e90e49ba30800000000000000
+      internalID: 4231499129338742861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Atack_2
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 348
+        width: 148
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96228e1fcb13cb00800000000000000
+      internalID: 847551731259811485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Atack_3
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 348
+        width: 135
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c58a8b1ec4a1d240800000000000000
+      internalID: 4814810681768052164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Atack_4
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 348
+        width: 162
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099a227a222c24ad0800000000000000
+      internalID: -2719397770889614960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Recibe_Damage_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 55
+        width: 149
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7da29f3516396830800000000000000
+      internalID: 4064839603567373695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Recibe_Damage_2
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 55
+        width: 152
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f99f586a06c1a890800000000000000
+      internalID: -7448454560691021326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Recibe_Damage_4
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 55
+        width: 137
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27280ab766227df00800000000000000
+      internalID: 1141418854117835378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Recibe_Damage_5
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 55
+        width: 163
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928cc1082015a0e80800000000000000
+      internalID: -8211661899375523799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Recibe_Damage_8
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 55
+        width: 165
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4721865dc59660590800000000000000
+      internalID: -7708357864759750028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maga_Recibe_Damage_7
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 55
+        width: 165
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2544b977ce24da50800000000000000
+      internalID: 6544907592751400237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b55f88619b651ef418f2674a5450e740
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Hoja de sprites de maga pixel art_10: -5811727477225851889
+      Hoja de sprites de maga pixel art_11: -3146597123116520049
+      Hoja de sprites de maga pixel art_12: -128980979567383079
+      Hoja de sprites de maga pixel art_13: 8051608434090831804
+      Hoja de sprites de maga pixel art_14: 4365280941181478025
+      Hoja de sprites de maga pixel art_15: 1660307836192871819
+      Hoja de sprites de maga pixel art_16: -165082367564396985
+      Hoja de sprites de maga pixel art_17: -8902999842961897061
+      Hoja de sprites de maga pixel art_18: 8917172555097359578
+      Hoja de sprites de maga pixel art_19: 5684088135527770746
+      Hoja de sprites de maga pixel art_23: 5585878785320731617
+      Hoja de sprites de maga pixel art_25: -5427848260411183342
+      Hoja de sprites de maga pixel art_27: 1600237433458995470
+      Hoja de sprites de maga pixel art_31: -6689844073011853216
+      Hoja de sprites de maga pixel art_32: 1337822359877950126
+      Hoja de sprites de maga pixel art_33: 3488580789787281073
+      Hoja de sprites de maga pixel art_35: -4136577457970371786
+      Hoja de sprites de maga pixel art_39: 3057375587311903258
+      Hoja de sprites de maga pixel art_40: 5778673215800458875
+      Hoja de sprites de maga pixel art_41: 8767529201432120781
+      Hoja de sprites de maga pixel art_43: 869301025363819213
+      Hoja de sprites de maga pixel art_44: 8004152154733967304
+      Hoja de sprites de maga pixel art_46: -4095597478565227854
+      Hoja de sprites de maga pixel art_5: 7553246905034869637
+      Hoja de sprites de maga pixel art_50: 4263310288435319433
+      Hoja de sprites de maga pixel art_51: -4888311820328998287
+      Hoja de sprites de maga pixel art_53: -5464208710188516504
+      Hoja de sprites de maga pixel art_54: 576621244601359211
+      Hoja de sprites de maga pixel art_6: -5751167901436425315
+      Hoja de sprites de maga pixel art_7: -6787968359528622340
+      Hoja de sprites de maga pixel art_8: 8481085124860839082
+      Hoja de sprites de maga pixel art_9: -8797296682673807562
+      Maga_Atack_1: 4231499129338742861
+      Maga_Atack_2: 847551731259811485
+      Maga_Atack_3: 4814810681768052164
+      Maga_Atack_4: -2719397770889614960
+      Maga_Atack_5: -1400097451981459108
+      Maga_Atack_6: -1067782825266362195
+      Maga_Atack_7: -2270147763788422706
+      Maga_Atack_8: 6524952372411888720
+      Maga_Idle_1: -3665144585781038767
+      Maga_Idle_2: 695251239436049301
+      Maga_Idle_3: -7557863027884898149
+      Maga_Idle_4: 5542686968702137671
+      Maga_Idle_5: -3660767516533013218
+      Maga_Idle_6: 3849586133920570484
+      Maga_Idle_7: 4712734053452550164
+      Maga_Idle_8: -2522106402412985413
+      Maga_Recibe_Damage_1: 4064839603567373695
+      Maga_Recibe_Damage_2: -7448454560691021326
+      Maga_Recibe_Damage_3: -2507313852761600260
+      Maga_Recibe_Damage_4: 1141418854117835378
+      Maga_Recibe_Damage_5: -8211661899375523799
+      Maga_Recibe_Damage_6: 5018017397394767637
+      Maga_Recibe_Damage_7: 6544907592751400237
+      Maga_Recibe_Damage_8: -7708357864759750028
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
