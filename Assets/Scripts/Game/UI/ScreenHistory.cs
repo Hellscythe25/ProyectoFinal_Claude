@@ -6,20 +6,20 @@ namespace TTTXO.Game.UI
     /// Navigation history behind the generic "back" buttons on sub-screens.
     ///
     /// Extracted from <see cref="ScreenRouter"/> so the rules can be exercised on their own: the
-    /// router builds all twelve screens against a live <c>UIDocument</c> inside
+    /// router builds every screen against a live <c>UIDocument</c> inside
     /// <see cref="ScreenRouter.Initialize"/>, which put this logic out of reach of any test even
     /// though it is the part most likely to strand a player. Nothing here touches UnityEngine.
     ///
-    /// The four rules, all of which existed before this class and none of which changed:
+    /// The rules:
     /// <list type="bullet">
     /// <item>forward navigation pushes the screen being left, so a sub-screen reachable from more
     /// than one place returns wherever the player actually came from;</item>
     /// <item>navigating to the screen already showing pushes nothing, so a redundant Show cannot
     /// make "back" a no-op that appears broken;</item>
     /// <item>going back pops instead of pushing - a single "previous screen" field would make
-    /// Profile -&gt; Store -&gt; back loop between the two forever;</item>
-    /// <item>arriving at Home clears everything, because Home is the hub and has no back button, so
-    /// match-flow cycles never accumulate.</item>
+    /// Store -&gt; Settings -&gt; back loop between the two forever;</item>
+    /// <item>arriving at the RPS menu clears everything, because the menu is the hub and has no
+    /// back button, so match-flow cycles never accumulate.</item>
     /// </list>
     /// </summary>
     public sealed class ScreenHistory
@@ -48,7 +48,7 @@ namespace TTTXO.Game.UI
                 _entries.Push(leaving.Value);
             }
 
-            if (target == ScreenId.Home)
+            if (target == ScreenId.RpsMenu)
             {
                 _entries.Clear();
             }

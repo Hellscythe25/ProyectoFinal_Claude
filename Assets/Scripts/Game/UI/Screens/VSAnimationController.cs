@@ -25,6 +25,7 @@ namespace TTTXO.Game.UI.Screens
         private AnimationState _state;
         private readonly Action _onAnimationComplete;
         private bool _disposed;
+        private Label _fallbackLabel;
 
         public enum AnimationState
         {
@@ -58,6 +59,11 @@ namespace TTTXO.Game.UI.Screens
             _hurtTextures = hurtFrames ?? Array.Empty<Texture2D>();
             _onAnimationComplete = onAnimationComplete;
 
+            // A sprite element is reused across rounds; drop any fallback label left by a previous
+            // controller before deciding whether this character needs one.
+            var previousFallback = _spriteElement.Q<Label>(className: "vs-sprite-fallback-label");
+            previousFallback?.RemoveFromHierarchy();
+
             if (_nameLabel != null) _nameLabel.text = characterName;
         }
 
@@ -72,16 +78,34 @@ namespace TTTXO.Game.UI.Screens
             _currentFrame = 0;
             if (_idleTextures.Length > 0)
             {
+                _spriteElement.RemoveFromClassList("vs-sprite--draw");
+                _spriteElement.RemoveFromClassList("vs-sprite--fallback");
+                if (_fallbackLabel != null)
+                {
+                    _fallbackLabel.style.display = DisplayStyle.None;
+                }
+
                 ApplyFrame(_idleTextures[0]);
                 // Idle at 12 FPS (~83ms per frame)
                 _animationTask = _spriteElement.schedule.Execute(TickIdle).Every(83);
             }
             else
             {
-                // Fallback: no frames (e.g., Asesino) - show emoji via USS class
+                // Fallback for characters without extracted frames (e.g. Asesino until the setup
+                // tool has run). A letter inside the frame reads better than an empty grey box.
                 _spriteElement.style.backgroundImage = StyleKeyword.Null;
-                _spriteElement.RemoveFromClassList("vs-sprite--animated");
+                _spriteElement.RemoveFromClassList("vs-sprite--draw");
                 _spriteElement.AddToClassList("vs-sprite--fallback");
+
+                if (_fallbackLabel == null)
+                {
+                    _fallbackLabel = new Label();
+                    _fallbackLabel.AddToClassList("vs-sprite-fallback-label");
+                    _spriteElement.Add(_fallbackLabel);
+                }
+
+                _fallbackLabel.text = string.IsNullOrEmpty(_characterName) ? "?" : _characterName.Substring(0, 1);
+                _fallbackLabel.style.display = DisplayStyle.Flex;
             }
         }
 
@@ -112,8 +136,12 @@ namespace TTTXO.Game.UI.Screens
             StopAnimation();
             _state = AnimationState.Draw;
             _spriteElement.style.backgroundImage = StyleKeyword.Null;
+            _spriteElement.RemoveFromClassList("vs-sprite--fallback");
             _spriteElement.AddToClassList("vs-sprite--draw");
-            if (_nameLabel != null) _nameLabel.text = "EMPATE";
+            if (_fallbackLabel != null)
+            {
+                _fallbackLabel.style.display = DisplayStyle.None;
+            }
         }
 
         /// <summary>
@@ -131,6 +159,9 @@ namespace TTTXO.Game.UI.Screens
         {
             if (frames.Length == 0)
             {
+                // No frames for this clip: finish immediately so the VS screen's pending-animation
+                // counter can still reach zero (the other side may animate normally).
+                StopAnimation();
                 _onAnimationComplete?.Invoke();
                 return;
             }
@@ -175,6 +206,13 @@ namespace TTTXO.Game.UI.Screens
         private void ApplyFrame(Texture2D tex)
         {
             if (tex == null) return;
+            _spriteElement.RemoveFromClassList("vs-sprite--fallback");
+            _spriteElement.RemoveFromClassList("vs-sprite--draw");
+            if (_fallbackLabel != null)
+            {
+                _fallbackLabel.style.display = DisplayStyle.None;
+            }
+
             _spriteElement.style.backgroundImage = new StyleBackground(tex);
             // Element size is fixed in USS; background-size: contain centers the frame
         }

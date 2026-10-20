@@ -6,14 +6,17 @@ using UnityEngine.UIElements;
 namespace TTTXO.Game.UI.Screens
 {
     /// <summary>
-    /// Character selection for Single Player RPS: shows the 3 combatants in Idle,
-    /// player picks one (which = their move), AI picks randomly, then goes to VS Screen.
+    /// Character selection for both RPS modes. Shows the three combatants in Idle and turns the
+    /// chosen fighter into the player's move (Guerrero = Rock, Maga = Paper, Asesino = Scissors).
+    ///
+    /// Single player: one pick resolves the round against the AI and opens the VS screen.
+    /// Local 2P: Player One picks, the turn label switches, Player Two picks, then the VS screen
+    /// reveals both choices. A tie is a valid result and the series continues.
     /// </summary>
     public sealed class RpsCharacterSelectScreenController : IScreenController
     {
         private readonly VisualElement _root;
         private readonly ScreenRouter _router;
-        private readonly System.Random _rng = new();
 
         private readonly VisualElement _caballeroBtn;
         private readonly VisualElement _magaBtn;
@@ -21,6 +24,9 @@ namespace TTTXO.Game.UI.Screens
         private readonly Label _caballeroName;
         private readonly Label _magaName;
         private readonly Label _asesinoName;
+        private readonly Label _subtitleLabel;
+        private readonly Label _turnLabel;
+        private readonly Label _scoreLabel;
 
         private VSAnimationController _caballeroAnim;
         private VSAnimationController _magaAnim;
@@ -40,10 +46,17 @@ namespace TTTXO.Game.UI.Screens
             _caballeroName = _root.Q<Label>("charselect-caballero-name");
             _magaName = _root.Q<Label>("charselect-maga-name");
             _asesinoName = _root.Q<Label>("charselect-asesino-name");
+            _subtitleLabel = _root.Q<Label>("charselect-subtitle-label");
+            _turnLabel = _root.Q<Label>("charselect-turn-label");
+            _scoreLabel = _root.Q<Label>("charselect-score-label");
 
             var backButton = _root.Q<Button>("charselect-back-button");
             backButton.text = UiText.Common.BackIcon;
-            backButton.clicked += () => _router.Show(ScreenId.RpsModeSelect);
+            backButton.clicked += () =>
+            {
+                _router.RpsSeries.End();
+                _router.Show(ScreenId.RpsModeSelect);
+            };
 
             _caballeroBtn.RegisterCallback<ClickEvent>(_ => OnCharacterPicked(RpsMove.Rock));
             _magaBtn.RegisterCallback<ClickEvent>(_ => OnCharacterPicked(RpsMove.Paper));
@@ -55,26 +68,40 @@ namespace TTTXO.Game.UI.Screens
         private void ApplyLocalizedText()
         {
             _root.Q<Label>("charselect-title-label").text = UiText.RpsCharacterSelect.Title;
-            _root.Q<Label>("charselect-subtitle-label").text = UiText.RpsCharacterSelect.Subtitle;
-            _caballeroName.text = "Caballero";
-            _magaName.text = "Maga";
-            _asesinoName.text = "Asesino";
+            _caballeroName.text = DisplayName(RpsMove.Rock);
+            _magaName.text = DisplayName(RpsMove.Paper);
+            _asesinoName.text = DisplayName(RpsMove.Scissors);
+        }
+
+        private string DisplayName(RpsMove move)
+        {
+            if (_database != null)
+            {
+                return _database.GetDisplayName(move);
+            }
+
+            return move switch
+            {
+                RpsMove.Rock => UiText.RpsCharacterSelect.Guerrero,
+                RpsMove.Paper => UiText.RpsCharacterSelect.Maga,
+                _ => UiText.RpsCharacterSelect.Asesino
+            };
         }
 
         public void OnShow()
         {
-            // Ensure database is loaded (might not be ready in constructor if Resources not loaded yet)
             if (_database == null)
             {
                 _database = Resources.Load<RpsCharacterDatabase>("RpsCharacterDatabase");
             }
 
-            // Start idle animations for all 3 characters
+            DisposeAnimations();
+
             if (_database != null)
             {
-                var cabFrames = _database.GetFrames(RpsMove.Rock);
-                var magaFrames = _database.GetFrames(RpsMove.Paper);
-                // Asesino has no frames - fallback
+                var rock = _database.GetFrames(RpsMove.Rock);
+                var paper = _database.GetFrames(RpsMove.Paper);
+                var scissors = _database.GetFrames(RpsMove.Scissors);
 
                 var cabSpriteEl = _caballeroBtn.Q<VisualElement>("charselect-caballero-sprite");
                 var magaSpriteEl = _magaBtn.Q<VisualElement>("charselect-maga-sprite");
@@ -82,9 +109,9 @@ namespace TTTXO.Game.UI.Screens
 
                 if (cabSpriteEl != null && magaSpriteEl != null && asesinoSpriteEl != null)
                 {
-                    _caballeroAnim = new VSAnimationController(cabSpriteEl, _caballeroName, "Caballero", cabFrames.Idle, cabFrames.Attack, cabFrames.Hurt);
-                    _magaAnim = new VSAnimationController(magaSpriteEl, _magaName, "Maga", magaFrames.Idle, magaFrames.Attack, magaFrames.Hurt);
-                    _asesinoAnim = new VSAnimationController(asesinoSpriteEl, _asesinoName, "Asesino", Array.Empty<Texture2D>(), Array.Empty<Texture2D>(), Array.Empty<Texture2D>());
+                    _caballeroAnim = new VSAnimationController(cabSpriteEl, _caballeroName, DisplayName(RpsMove.Rock), rock.Idle, rock.Attack, rock.Hurt);
+                    _magaAnim = new VSAnimationController(magaSpriteEl, _magaName, DisplayName(RpsMove.Paper), paper.Idle, paper.Attack, paper.Hurt);
+                    _asesinoAnim = new VSAnimationController(asesinoSpriteEl, _asesinoName, DisplayName(RpsMove.Scissors), scissors.Idle, scissors.Attack, scissors.Hurt);
                 }
                 else
                 {
@@ -99,27 +126,92 @@ namespace TTTXO.Game.UI.Screens
             _caballeroAnim?.PlayIdle();
             _magaAnim?.PlayIdle();
             _asesinoAnim?.PlayIdle();
+
+            ApplyLocalizedText();
+            UpdateStatusUi();
         }
 
         public void OnHide()
         {
+            DisposeAnimations();
+        }
+
+        private void DisposeAnimations()
+        {
             _caballeroAnim?.Dispose();
             _magaAnim?.Dispose();
             _asesinoAnim?.Dispose();
+            _caballeroAnim = null;
+            _magaAnim = null;
+            _asesinoAnim = null;
         }
 
-        private void OnCharacterPicked(RpsMove playerMove)
+        private void OnCharacterPicked(RpsMove move)
         {
-            // AI picks randomly FROM THE OTHER TWO MOVES (not the same as player)
-            var otherMoves = new System.Collections.Generic.List<RpsMove> { RpsMove.Rock, RpsMove.Paper, RpsMove.Scissors };
-            otherMoves.Remove(playerMove);
-            RpsMove aiMove = otherMoves[_rng.Next(otherMoves.Count)];
+            var series = _router.RpsSeries;
 
-            // Navigate to VS Screen
-            _router.RpsVsScreen.SetUp(playerMove, aiMove, RpsMatchMode.SinglePlayer, RpsPlayer.One);
-            _router.Show(ScreenId.RpsVs);
+            if (!series.IsActive)
+            {
+                series.Start(RpsMatchMode.SinglePlayer);
+            }
+
+            if (series.Mode == RpsMatchMode.LocalTwoPlayer)
+            {
+                if (series.AwaitingPlayerTwo)
+                {
+                    if (series.TrySubmitPlayerTwo(move, out var result) && result != null)
+                    {
+                        _router.Show(ScreenId.RpsVs);
+                    }
+
+                    return;
+                }
+
+                if (series.TrySubmitPlayerOne(move, out _))
+                {
+                    UpdateStatusUi();
+                }
+
+                return;
+            }
+
+            if (series.TrySubmitPlayerOne(move, out var singleResult) && singleResult != null)
+            {
+                _router.Show(ScreenId.RpsVs);
+            }
         }
 
-        public void RefreshLocalizedText() => ApplyLocalizedText();
+        private void UpdateStatusUi()
+        {
+            var series = _router.RpsSeries;
+            var isTwoPlayer = series.Mode == RpsMatchMode.LocalTwoPlayer;
+
+            _subtitleLabel.text = string.Format(
+                System.Globalization.CultureInfo.InvariantCulture,
+                UiText.RpsCharacterSelect.RoundFormat,
+                series.RoundNumber + 1);
+
+            _turnLabel.text = series.AwaitingPlayerTwo
+                ? UiText.RpsCharacterSelect.PlayerTwoTurn
+                : isTwoPlayer
+                    ? UiText.RpsCharacterSelect.PlayerOneTurn
+                    : UiText.RpsCharacterSelect.SingleTurn;
+
+            var oneLabel = isTwoPlayer ? UiText.RpsGame.Player1Label : UiText.RpsGame.YouLabel;
+            var twoLabel = isTwoPlayer ? UiText.RpsGame.Player2Label : UiText.RpsGame.AiLabel;
+            _scoreLabel.text = string.Format(
+                System.Globalization.CultureInfo.InvariantCulture,
+                UiText.RpsCharacterSelect.ScoreFormat,
+                oneLabel,
+                series.ScoreOne,
+                twoLabel,
+                series.ScoreTwo);
+        }
+
+        public void RefreshLocalizedText()
+        {
+            ApplyLocalizedText();
+            UpdateStatusUi();
+        }
     }
 }

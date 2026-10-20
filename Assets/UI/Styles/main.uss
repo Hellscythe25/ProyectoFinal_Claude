@@ -422,7 +422,6 @@
     width: 180px;
     height: 180px;
     border-radius: 24px;
-    background-image: url("/Assets/Art/Generated/brand-ui/brand_mark_icon.png");
     background-size: contain;
     background-color: transparent;
     border-width: 0;
@@ -490,7 +489,8 @@
     margin-bottom: 32px;
 }
 
-.screen-home {
+.screen-home,
+.screen-rps-menu {
     background-color: var(--color-bg);
     background-image: url("/Assets/Art/Generated/brand-ui/menu_background.jpg");
     background-size: cover;
@@ -655,7 +655,6 @@
 }
 
 .card-icon--online {
-    background-image: url("/Assets/Art/Generated/brand-ui/mode_icon_online.png");
 }
 
 .card-title {
@@ -1040,7 +1039,6 @@
 
 /* Burst on placement: starts small and opaque, expands and fades out. */
 .fx-place {
-    background-image: url("/Assets/Art/Generated/effects/fx_place_particle.png");
     background-size: contain;
     opacity: 0.9;
     scale: 0.4 0.4;
@@ -1056,7 +1054,6 @@
 
 /* Winning line: fades in and stays until the next board is built. */
 .fx-winline {
-    background-image: url("/Assets/Art/Generated/effects/fx_winline_glow.png");
     background-size: cover;
     opacity: 0;
     transition-property: opacity;
@@ -1069,7 +1066,6 @@
 
 /* Victory confetti: drifts down over the result screen and fades. */
 .fx-confetti {
-    background-image: url("/Assets/Art/Generated/effects/fx_victory_confetti.png");
     background-size: cover;
     opacity: 0;
     translate: 0 -40px;
@@ -1100,20 +1096,6 @@
     background-position-y: center;
 }
 
-.piece-skin--neon .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_neon_x.png"); }
-.piece-skin--neon .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_neon_o.png"); }
-.piece-skin--minimalist .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_minimalist_x.png"); }
-.piece-skin--minimalist .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_minimalist_o.png"); }
-.piece-skin--wood .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_wood_x.png"); }
-.piece-skin--wood .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_wood_o.png"); }
-.piece-skin--space .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_space_x.png"); }
-.piece-skin--space .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_space_o.png"); }
-.piece-skin--animals .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_animals_x.png"); }
-.piece-skin--animals .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_animals_o.png"); }
-.piece-skin--retro .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_retro_x.png"); }
-.piece-skin--retro .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_retro_o.png"); }
-.piece-skin--elemental .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_elemental_x.png"); }
-.piece-skin--elemental .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_elemental_o.png"); }
 
 /*
  * Board skins are the surface behind the grid, so they sit on the container and the cells go transparent
@@ -1138,10 +1120,6 @@
     background-color: rgba(0, 0, 0, 0);
 }
 
-.board-skin--neon { background-image: url("/Assets/Art/Generated/board-skins/board_neon.jpg"); }
-.board-skin--wood { background-image: url("/Assets/Art/Generated/board-skins/board_wood.jpg"); }
-.board-skin--space { background-image: url("/Assets/Art/Generated/board-skins/board_space.jpg"); }
-.board-skin--paper { background-image: url("/Assets/Art/Generated/board-skins/board_paper.jpg"); }
 
 .board-cell--win {
     background-color: var(--color-bg-elevated);
@@ -1316,26 +1294,13 @@
     background-position-y: center;
 }
 
-.profile-banner--neon { background-image: url("/Assets/Art/Generated/profile/profile_banner_neon.jpg"); }
-.profile-banner--space { background-image: url("/Assets/Art/Generated/profile/profile_banner_space.jpg"); }
 
 /*
  * Skin swatches. A piece skin shows its X - one glyph is enough to recognise the set, and showing both
  * would halve each at this size. A board skin shows its surface, squared off like a board rather than
  * rounded like an avatar.
  */
-.equip-preview--piece-neon { background-image: url("/Assets/Art/Generated/piece-skins/piece_neon_x.png"); }
-.equip-preview--piece-minimalist { background-image: url("/Assets/Art/Generated/piece-skins/piece_minimalist_x.png"); }
-.equip-preview--piece-wood { background-image: url("/Assets/Art/Generated/piece-skins/piece_wood_x.png"); }
-.equip-preview--piece-space { background-image: url("/Assets/Art/Generated/piece-skins/piece_space_x.png"); }
-.equip-preview--piece-animals { background-image: url("/Assets/Art/Generated/piece-skins/piece_animals_x.png"); }
-.equip-preview--piece-retro { background-image: url("/Assets/Art/Generated/piece-skins/piece_retro_x.png"); }
-.equip-preview--piece-elemental { background-image: url("/Assets/Art/Generated/piece-skins/piece_elemental_x.png"); }
 
-.equip-preview--board-neon { background-image: url("/Assets/Art/Generated/board-skins/board_neon.jpg"); }
-.equip-preview--board-wood { background-image: url("/Assets/Art/Generated/board-skins/board_wood.jpg"); }
-.equip-preview--board-space { background-image: url("/Assets/Art/Generated/board-skins/board_space.jpg"); }
-.equip-preview--board-paper { background-image: url("/Assets/Art/Generated/board-skins/board_paper.jpg"); }
 
 /*
  * Avatar and frame are two overlaid images whose sizes come from how the art was normalized, not from
@@ -1398,15 +1363,7 @@
     height: 64px;
 }
 
-.profile-avatar--fox { background-image: url("/Assets/Art/Generated/profile/avatar_fox.png"); }
-.profile-avatar--cat { background-image: url("/Assets/Art/Generated/profile/avatar_cat.png"); }
-.profile-avatar--robot { background-image: url("/Assets/Art/Generated/profile/avatar_robot.png"); }
-.profile-avatar--owl { background-image: url("/Assets/Art/Generated/profile/avatar_owl.png"); }
-.profile-avatar--dragon { background-image: url("/Assets/Art/Generated/profile/avatar_dragon.png"); }
-.profile-avatar--astronaut { background-image: url("/Assets/Art/Generated/profile/avatar_astronaut.png"); }
 
-.profile-avatar-frame--neon { background-image: url("/Assets/Art/Generated/profile/profile_frame_neon.png"); }
-.profile-avatar-frame--gold { background-image: url("/Assets/Art/Generated/profile/profile_frame_gold_ornate.png"); }
 
 /*
  * Equip panel: the "editable desde acá" half of Docs/05-UI-Pantallas #131. The Store link stays, but it
@@ -1459,11 +1416,9 @@
  * face for either would be showing something the game does not know.
  */
 .turn-avatar--ai {
-    background-image: url("/Assets/Art/Generated/profile/avatar_robot.png");
 }
 
 .turn-avatar--human {
-    background-image: url("/Assets/Art/Generated/store/store_icon_profile.png");
 }
 
 /*
@@ -1599,11 +1554,6 @@
     background-position-y: center;
 }
 
-.tier-badge--bronze { background-image: url("/Assets/Art/Generated/ranked/ranked_badge_bronze.png"); }
-.tier-badge--silver { background-image: url("/Assets/Art/Generated/ranked/ranked_badge_silver.png"); }
-.tier-badge--gold { background-image: url("/Assets/Art/Generated/ranked/ranked_badge_gold.png"); }
-.tier-badge--platinum { background-image: url("/Assets/Art/Generated/ranked/ranked_badge_platinum.png"); }
-.tier-badge--diamond { background-image: url("/Assets/Art/Generated/ranked/ranked_badge_diamond.png"); }
 
 .profile-ranked-board-label {
     font-size: 13px;
@@ -1955,15 +1905,67 @@
     white-space: nowrap;
 }
 
+.charselect-turn {
+    font-size: 22px;
+    color: var(--color-accent);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    margin-top: 4px;
+}
+
+.charselect-score {
+    font-size: 16px;
+    color: var(--color-text-muted);
+    -unity-text-align: upper-center;
+    margin-top: 4px;
+}
+
 /* VS Screen (Rock-Paper-Scissors animated showdown) */
 .screen-rps-vs {
     --content-padding-x: 24;
     --content-padding-y: 32;
     flex-grow: 1;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 32px 24px;
+    gap: 8px;
+}
+
+.vs-round-label {
+    font-size: 20px;
+    color: var(--color-text-muted);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+}
+
+.vs-score-label {
+    font-size: 18px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    margin-bottom: 8px;
+}
+
+.vs-stage {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 720px;
+}
+
+.vs-series-label {
+    font-size: 28px;
+    color: var(--color-accent);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    margin-top: 8px;
+}
+
+.vs-button-row {
+    margin-top: 24px;
 }
 
 .vs-side {
@@ -1994,8 +1996,23 @@
 }
 
 .vs-sprite--fallback {
-    /* Fallback for characters without sprites (Asesino) - shows emoji via pseudo-element or text */
+    /* Fallback for characters without extracted frames (e.g. Asesino until setup runs). */
     background-image: none;
+    border-width: 2px;
+    border-color: var(--color-border);
+    border-radius: 16px;
+}
+
+.vs-sprite-fallback-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 56px;
+    color: var(--color-accent);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
 }
 
 .vs-name {

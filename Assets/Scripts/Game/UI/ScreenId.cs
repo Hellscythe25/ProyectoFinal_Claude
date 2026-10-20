@@ -1,37 +1,17 @@
 namespace TTTXO.Game.UI
 {
     /// <summary>
-    /// Identifies every screen the <see cref="ScreenRouter"/> can navigate to.
-    /// Splash/Home/ModeSelect/BoardSelect/Game/Result are playable in Milestone 1;
-    /// MatchHistory/Store/Settings are local-only stubs added in Milestone 1.5
-    /// (see Docs/06-Wireframes-UI.md, "Alcance por milestone"). Matchmaking is Milestone 4
-    /// (Docs/06-Wireframes-UI.md screen 5, "Buscando partida"). Profile and Leaderboard are
-    /// Milestone 5 (Docs/06-Wireframes-UI.md screens 8/10) - both read live Ranked data from Cloud
-    /// Code's <c>GetRankedProfile</c>/<c>GetRankedLeaderboard</c>, see ProfileScreenController/
-    /// LeaderboardScreenController.
-    ///
-    /// The Rock-Paper-Scissors mode has its own menu, mode picker and game screen. The RPS scene
-    /// (Assets/Scenes/Rps.unity, Build Settings index 1) boots the same shell pointing its splash
-    /// at <see cref="RpsMenu"/> instead of <see cref="Home"/> - see RpsSceneSetup.
+    /// The screens the <see cref="ScreenRouter"/> can navigate to. This build is the
+    /// Rock-Paper-Scissors game: the RPS menu is the hub, the match flow is
+    /// Mode Select -> Character Select -> VS, and Store/Settings are the secondary screens.
     /// </summary>
     public enum ScreenId
     {
-        Splash,
-        Home,
-        ModeSelect,
-        BoardSelect,
-        Matchmaking,
-        Game,
-        Result,
-        Profile,
-        MatchHistory,
-        Store,
-        Settings,
-        Leaderboard,
-        RpsMenu,
-        RpsModeSelect,
-        RpsGame,
-        RpsVs,
-        RpsCharacterSelect
+        RpsMenu = 0,
+        RpsModeSelect = 1,
+        RpsCharacterSelect = 2,
+        RpsVs = 3,
+        Store = 4,
+        Settings = 5
     }
 }

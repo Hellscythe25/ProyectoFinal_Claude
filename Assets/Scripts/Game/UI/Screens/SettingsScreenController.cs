@@ -43,7 +43,7 @@ namespace TTTXO.Game.UI.Screens
             _gameManager = gameManager;
 
             root.Q<Button>("settings-back-button").text = UiText.Common.BackIcon;
-            root.Q<Button>("settings-back-button").clicked += () => _router.GoBack(ScreenId.Home);
+            root.Q<Button>("settings-back-button").clicked += () => _router.GoBack(ScreenId.RpsMenu);
 
             foreach (var entry in SupportedLocales.All)
             {
@@ -191,7 +191,7 @@ namespace TTTXO.Game.UI.Screens
                 {
                     _gameManager.DeleteAllPlayerData();
                     OnShow();
-                    _router.Show(ScreenId.Home);
+                    _router.Show(ScreenId.RpsMenu);
                 });
         }
     }

@@ -20,31 +20,17 @@ namespace TTTXO.Game.UI
     {
         private static readonly IReadOnlyDictionary<ScreenId, string> ScreenElementNames = new Dictionary<ScreenId, string>
         {
-            { ScreenId.Splash, "screen-splash" },
-            { ScreenId.Home, "screen-home" },
-            { ScreenId.ModeSelect, "screen-mode-select" },
-            { ScreenId.BoardSelect, "screen-board-select" },
-            { ScreenId.Matchmaking, "screen-matchmaking" },
-            { ScreenId.Game, "screen-game" },
-            { ScreenId.Result, "screen-result" },
-            { ScreenId.Profile, "screen-profile" },
-            { ScreenId.MatchHistory, "screen-match-history" },
-            { ScreenId.Store, "screen-store" },
-            { ScreenId.Settings, "screen-settings" },
-            { ScreenId.Leaderboard, "screen-leaderboard" },
             { ScreenId.RpsMenu, "screen-rps-menu" },
             { ScreenId.RpsModeSelect, "screen-rps-mode-select" },
-            { ScreenId.RpsGame, "screen-rps-game" },
-            { ScreenId.RpsVs, "screen-rps-vs" },
             { ScreenId.RpsCharacterSelect, "screen-rps-character-select" },
+            { ScreenId.RpsVs, "screen-rps-vs" },
+            { ScreenId.Store, "screen-store" },
+            { ScreenId.Settings, "screen-settings" }
         };
 
-        /// <summary>
-        /// Where <see cref="Initialize"/> points the splash after startup. Home for the main scene;
-        /// <see cref="ScreenId.RpsMenu"/> for the Rock-Paper-Scissors scene (set by RpsSceneSetup).
-        /// </summary>
+        /// <summary>Where <see cref="Initialize"/> lands after startup.</summary>
         [SerializeField]
-        private ScreenId _startScreen = ScreenId.Home;
+        private ScreenId _startScreen = ScreenId.RpsMenu;
 
         public ScreenId StartScreen => _startScreen;
 
@@ -54,12 +40,17 @@ namespace TTTXO.Game.UI
         private ScreenId? _currentScreen;
         private bool _initialized;
 
-        public GameScreenController GameScreen { get; private set; }
-        public ResultScreenController ResultScreen { get; private set; }
-        public MatchmakingScreenController MatchmakingScreen { get; private set; }
-        public RpsGameScreenController RpsGameScreen { get; private set; }
         public RpsVsScreenController RpsVsScreen { get; private set; }
         public RpsCharacterSelectScreenController RpsCharacterSelectScreen { get; private set; }
+
+        /// <summary>The screen currently visible, or null before <see cref="Initialize"/> shows one.</summary>
+        public ScreenId? CurrentScreen => _currentScreen;
+
+        /// <summary>
+        /// Match state shared by Character Select and the VS screen. It survives the navigation
+        /// between rounds and is reset when a new series starts or the player returns to the menu.
+        /// </summary>
+        public RpsSeries RpsSeries { get; } = new();
 
         /// <summary>
         /// Navigation history for generic "back" buttons on sub-screens. The rules - and why a
@@ -75,7 +66,7 @@ namespace TTTXO.Game.UI
         /// <summary>Keeps every screen's content clear of the notch and the home indicator.</summary>
         public SafeAreaController SafeArea { get; private set; }
 
-        /// <summary>Binds every screen root, constructs the per-screen controllers, and shows Splash.</summary>
+        /// <summary>Binds every screen root, constructs the per-screen controllers, and shows the menu.</summary>
         public void Initialize()
         {
             if (_initialized)
@@ -103,30 +94,14 @@ namespace TTTXO.Game.UI
 
             var gameManager = GameManager.Instance;
 
-            GameScreen = new GameScreenController(_screenRoots[ScreenId.Game], this, gameManager);
-            ResultScreen = new ResultScreenController(_screenRoots[ScreenId.Result], this, gameManager);
-            MatchmakingScreen = new MatchmakingScreenController(_screenRoots[ScreenId.Matchmaking], this, gameManager);
-
-            _controllers[ScreenId.Splash] = new SplashScreenController(_screenRoots[ScreenId.Splash], this);
-            _controllers[ScreenId.Home] = new HomeScreenController(_screenRoots[ScreenId.Home], this, gameManager);
-            _controllers[ScreenId.ModeSelect] = new ModeSelectScreenController(_screenRoots[ScreenId.ModeSelect], this, gameManager);
-            _controllers[ScreenId.BoardSelect] = new BoardSelectScreenController(_screenRoots[ScreenId.BoardSelect], this, gameManager);
-            _controllers[ScreenId.Matchmaking] = MatchmakingScreen;
-            _controllers[ScreenId.Game] = GameScreen;
-            _controllers[ScreenId.Result] = ResultScreen;
-            _controllers[ScreenId.Profile] = new ProfileScreenController(_screenRoots[ScreenId.Profile], this, gameManager);
-            _controllers[ScreenId.MatchHistory] = new MatchHistoryScreenController(_screenRoots[ScreenId.MatchHistory], this, gameManager);
             _controllers[ScreenId.Store] = new StoreScreenController(_screenRoots[ScreenId.Store], this, gameManager);
             _controllers[ScreenId.Settings] = new SettingsScreenController(_screenRoots[ScreenId.Settings], this, gameManager);
-            _controllers[ScreenId.Leaderboard] = new LeaderboardScreenController(_screenRoots[ScreenId.Leaderboard], this, gameManager);
-            RpsGameScreen = new RpsGameScreenController(_screenRoots[ScreenId.RpsGame], this);
-            RpsVsScreen = new RpsVsScreenController(_screenRoots[ScreenId.RpsVs], this);
-            RpsCharacterSelectScreen = new RpsCharacterSelectScreenController(_screenRoots[ScreenId.RpsCharacterSelect], this);
             _controllers[ScreenId.RpsMenu] = new RpsMenuScreenController(_screenRoots[ScreenId.RpsMenu], this);
             _controllers[ScreenId.RpsModeSelect] = new RpsModeSelectScreenController(_screenRoots[ScreenId.RpsModeSelect], this);
-            _controllers[ScreenId.RpsGame] = RpsGameScreen;
-            _controllers[ScreenId.RpsVs] = RpsVsScreen;
+            RpsCharacterSelectScreen = new RpsCharacterSelectScreenController(_screenRoots[ScreenId.RpsCharacterSelect], this);
+            RpsVsScreen = new RpsVsScreenController(_screenRoots[ScreenId.RpsVs], this);
             _controllers[ScreenId.RpsCharacterSelect] = RpsCharacterSelectScreen;
+            _controllers[ScreenId.RpsVs] = RpsVsScreen;
 
             foreach (var pair in _screenRoots)
             {
@@ -140,15 +115,16 @@ namespace TTTXO.Game.UI
 
             _initialized = true;
 
-            // Milestone 3 (Docs/02-GDD-TicTacToe.md#8 Localización): every screen's static UiText-
-            // sourced labels/buttons are only ever assigned once, from each controller's constructor
-            // (see IScreenController.RefreshLocalizedText). Re-run that assignment - for every
-            // constructed screen, not just the visible one, so a screen the player later navigates
-            // back to is already correct - whenever the player picks a different language on the
-            // Settings screen (see SettingsScreenController's language dropdown).
+            // Every screen's static UiText-sourced labels/buttons are assigned once from each
+            // controller's constructor (see IScreenController.RefreshLocalizedText). Re-run that
+            // assignment for every constructed screen whenever the player picks a different language
+            // on the Settings screen.
             LocalizationSettings.SelectedLocaleChanged += OnSelectedLocaleChanged;
 
-            Show(ScreenId.Splash);
+            // The scene was serialized with the old enum value (Splash/Home) before this build.
+            // Falling back to the menu keeps an out-of-date scene playable without a re-save.
+            var start = ScreenElementNames.ContainsKey(_startScreen) ? _startScreen : ScreenId.RpsMenu;
+            Show(start);
         }
 
         private void OnDestroy()
@@ -158,8 +134,8 @@ namespace TTTXO.Game.UI
 
         private void OnSelectedLocaleChanged(Locale _)
         {
-            // Defensive like GameAnalytics/UiText: a broken screen refresh must never take down the
-            // rest of the app or block navigation, so each controller is refreshed independently.
+            // Defensive: a broken screen refresh must never take down the rest of the app or block
+            // navigation, so each controller is refreshed independently.
             foreach (var pair in _controllers)
             {
                 try
@@ -209,8 +185,8 @@ namespace TTTXO.Game.UI
 
         /// <summary>
         /// Convenience for sub-screens whose back button should return wherever the player came from
-        /// (Profile/Store/Settings/MatchHistory can be reached from more than one place), falling back
-        /// to <paramref name="fallback"/> if there is no recorded history. Pops the history instead of
+        /// (Store/Settings can be reached from more than one place), falling back to
+        /// <paramref name="fallback"/> if there is no recorded history. Pops the history instead of
         /// pushing onto it, so back-and-forth between two screens can never loop.
         /// </summary>
         public void GoBack(ScreenId fallback)

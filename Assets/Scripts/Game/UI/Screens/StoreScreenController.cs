@@ -6,23 +6,20 @@ using UnityEngine.UIElements;
 namespace TTTXO.Game.UI.Screens
 {
     /// <summary>
-    /// Store screen (Docs/06-Wireframes-UI.md screen 11): navigable stub. Category tabs switch the
-    /// active class only - the catalog itself does not exist yet (requires Remote Config
-    /// <c>STORE_CATALOG</c> and IAP, see Docs/03-Arquitectura-UGS-TicTacToe.md), so every tab shows
-    /// the same placeholder "Coming soon" grid and there is no purchase logic. Reachable from Home
-    /// and from Profile's "edit look" link.
+    /// Store screen: a navigable stub. Category tabs switch the active class only - the catalog does
+    /// not exist yet - so every tab shows the same placeholder "Coming soon" grid and there is no
+    /// purchase logic. Reachable from the RPS menu.
     /// </summary>
     public class StoreScreenController : IScreenController
     {
         private enum Tab
         {
-            Pieces,
-            Boards,
-            Fx,
-            Sound
+            Skins,
+            Arenas,
+            Fx
         }
 
-        private static readonly Tab[] TabOrder = { Tab.Pieces, Tab.Boards, Tab.Fx, Tab.Sound };
+        private static readonly Tab[] TabOrder = { Tab.Skins, Tab.Arenas, Tab.Fx };
         private const int PlaceholderCardCount = 4;
 
         private readonly ScreenRouter _router;
@@ -40,7 +37,7 @@ namespace TTTXO.Game.UI.Screens
             _gameManager = gameManager;
 
             root.Q<Button>("store-back-button").text = UiText.Common.BackIcon;
-            root.Q<Button>("store-back-button").clicked += () => _router.GoBack(ScreenId.Home);
+            root.Q<Button>("store-back-button").clicked += () => _router.GoBack(ScreenId.RpsMenu);
             _titleLabel = root.Q<Label>("store-title-label");
 
             _hardCurrencyLabel = root.Q<Label>("store-hard-currency-label");
@@ -69,7 +66,7 @@ namespace TTTXO.Game.UI.Screens
 
         public void OnShow()
         {
-            _hardCurrencyLabel.text = string.Format(CultureInfo.InvariantCulture, UiText.Home.CurrencyFormat, _gameManager.HardCurrencyBalance);
+            _hardCurrencyLabel.text = _gameManager.HardCurrencyBalance.ToString(CultureInfo.InvariantCulture);
         }
 
         public void OnHide()
@@ -98,17 +95,16 @@ namespace TTTXO.Game.UI.Screens
                 _tabButtons[tab] = button;
             }
 
-            SelectTab(Tab.Pieces);
+            SelectTab(Tab.Skins);
         }
 
         private static string TabLabelFor(Tab tab)
         {
             return tab switch
             {
-                Tab.Pieces => UiText.Store.TabPieces,
-                Tab.Boards => UiText.Store.TabBoards,
+                Tab.Skins => UiText.Store.TabSkins,
+                Tab.Arenas => UiText.Store.TabArenas,
                 Tab.Fx => UiText.Store.TabFx,
-                Tab.Sound => UiText.Store.TabSound,
                 _ => tab.ToString(),
             };
         }

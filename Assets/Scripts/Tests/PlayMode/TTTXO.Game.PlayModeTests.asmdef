@@ -1,0 +1,22 @@
+{
+    "name": "TTTXO.Game.PlayModeTests",
+    "rootNamespace": "TTTXO.Game.PlayModeTests",
+    "references": [
+        "TTTXO.Core",
+        "TTTXO.Game",
+        "UnityEngine.TestRunner"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

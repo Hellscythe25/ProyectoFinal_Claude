@@ -8,11 +8,13 @@ using UnityEngine;
 namespace TTTXO.Game.Editor
 {
     /// <summary>
-    /// Batch-mode utility to create and populate the RpsCharacterDatabase asset
-    /// from the already-sliced spritesheets. Extracts individual frame Texture2Ds
-    /// and saves them as assets so they work at runtime (spritesheets are not readable).
+    /// Batch-mode utility to create and populate the RpsCharacterDatabase asset from the sliced
+    /// spritesheets. Every frame is copied onto a per-character canvas of the same size, anchored
+    /// bottom-center, so the character does not jump or change scale when the animation swaps
+    /// textures at runtime.
     /// Run via:
     ///   Unity -batchmode -executeMethod TTTXO.Game.Editor.RpsCharacterDatabaseSetup.CreateDatabase -quit
+    /// or from the menu TTTXO/Setup/Create RPS Character Database.
     /// </summary>
     public static class RpsCharacterDatabaseSetup
     {
@@ -20,6 +22,13 @@ namespace TTTXO.Game.Editor
         private const string FramesFolder = "Assets/Resources/RPSFrames";
         private const string CaballeroAtlasPath = "Assets/Art/SpriteSheet/Hoja de sprites de caballero pixelado.png";
         private const string MagaAtlasPath = "Assets/Art/SpriteSheet/Hoja de sprites de maga pixel art.png";
+        private const string AsesinoAtlasPath = "Assets/Art/SpriteSheet/Hoja de sprites de asesino encapuchado.png";
+
+        private sealed class ExtractedFrame
+        {
+            public string Name;
+            public Texture2D Texture;
+        }
 
         [MenuItem("TTTXO/Setup/Create RPS Character Database")]
         public static void CreateDatabase()
@@ -28,16 +37,13 @@ namespace TTTXO.Game.Editor
             try
             {
                 EnsureFolder("Assets/Resources");
-                EnsureFolder(FramesFolder + "/Caballero/Idle");
-                EnsureFolder(FramesFolder + "/Caballero/Attack");
-                EnsureFolder(FramesFolder + "/Caballero/Hurt");
-                EnsureFolder(FramesFolder + "/Maga/Idle");
-                EnsureFolder(FramesFolder + "/Maga/Attack");
-                EnsureFolder(FramesFolder + "/Maga/Hurt");
+                EnsureCharacterFolders("Caballero");
+                EnsureCharacterFolders("Maga");
+                EnsureCharacterFolders("Asesino");
 
-                // Make atlases readable and reimport
                 MakeReadableAndReimport(CaballeroAtlasPath);
                 MakeReadableAndReimport(MagaAtlasPath);
+                MakeReadableAndReimport(AsesinoAtlasPath);
 
                 var database = AssetDatabase.LoadAssetAtPath<RpsCharacterDatabase>(DatabasePath);
                 if (database == null)
@@ -52,45 +58,23 @@ namespace TTTXO.Game.Editor
                     Debug.Log("Existing RpsCharacterDatabase found, updating...");
                 }
 
-                // Load all sub-sprites from both atlases
-                Debug.Log($"Loading sprites from {CaballeroAtlasPath}");
-                var caballeroSprites = LoadAllSpritesFromAtlas(CaballeroAtlasPath);
-                Debug.Log($"Caballero atlas: {caballeroSprites.Count} sprites loaded");
+                BuildCharacter(database, "Caballero", CaballeroAtlasPath,
+                    "Guerrero_Idle_", 8, "Guerrero_Atack_", 7, "Guerrero_Recibe_Damage_", 8);
 
-                Debug.Log($"Loading sprites from {MagaAtlasPath}");
-                var magaSprites = LoadAllSpritesFromAtlas(MagaAtlasPath);
-                Debug.Log($"Maga atlas: {magaSprites.Count} sprites loaded");
+                BuildCharacter(database, "Maga", MagaAtlasPath,
+                    "Maga_Idle_", 8, "Maga_Atack_", 8, "Maga_Recibe_Damage_", 8);
 
-                if (caballeroSprites.Count == 0)
-                {
-                    Debug.LogError($"No sprites found in {CaballeroAtlasPath}. Is Sprite Mode = Multiple?");
-                    return;
-                }
-                if (magaSprites.Count == 0)
-                {
-                    Debug.LogError($"No sprites found in {MagaAtlasPath}. Is Sprite Mode = Multiple?");
-                    return;
-                }
-
-                // Caballero (Rock) - 8 Idle, 7 Attack, 8 Hurt
-                database.Caballero_Idle = ExtractAndSaveFrames(caballeroSprites, "Guerrero_Idle_", 8, FramesFolder + "/Caballero/Idle");
-                database.Caballero_Attack = ExtractAndSaveFrames(caballeroSprites, "Guerrero_Atack_", 7, FramesFolder + "/Caballero/Attack");
-                database.Caballero_Hurt = ExtractAndSaveFrames(caballeroSprites, "Guerrero_Recibe_Damage_", 8, FramesFolder + "/Caballero/Hurt");
-
-                // Maga (Paper) - 8 Idle, 8 Attack, 8 Hurt
-                database.Maga_Idle = ExtractAndSaveFrames(magaSprites, "Maga_Idle_", 8, FramesFolder + "/Maga/Idle");
-                database.Maga_Attack = ExtractAndSaveFrames(magaSprites, "Maga_Atack_", 8, FramesFolder + "/Maga/Attack");
-                database.Maga_Hurt = ExtractAndSaveFrames(magaSprites, "Maga_Recibe_Damage_", 8, FramesFolder + "/Maga/Hurt");
-
-                // Asesino (Scissors) - leave empty for now
+                BuildCharacter(database, "Asesino", AsesinoAtlasPath,
+                    "Asesino_Idle_", 8, "Asesino_Attack_", 8, "Asesino_Recibe_Damage_", 8);
 
                 EditorUtility.SetDirty(database);
                 AssetDatabase.SaveAssets();
                 AssetDatabase.Refresh();
 
-                Debug.Log($"=== RpsCharacterDatabase created at {DatabasePath} ===");
-                Debug.Log($"  Caballero: Idle={database.Caballero_Idle?.Length ?? 0}, Attack={database.Caballero_Attack?.Length ?? 0}, Hurt={database.Caballero_Hurt?.Length ?? 0}");
+                Debug.Log($"=== RpsCharacterDatabase updated at {DatabasePath} ===");
+                Debug.Log($"  Guerrero: Idle={database.Caballero_Idle?.Length ?? 0}, Attack={database.Caballero_Attack?.Length ?? 0}, Hurt={database.Caballero_Hurt?.Length ?? 0}");
                 Debug.Log($"  Maga: Idle={database.Maga_Idle?.Length ?? 0}, Attack={database.Maga_Attack?.Length ?? 0}, Hurt={database.Maga_Hurt?.Length ?? 0}");
+                Debug.Log($"  Asesino: Idle={database.Asesino_Idle?.Length ?? 0}, Attack={database.Asesino_Attack?.Length ?? 0}, Hurt={database.Asesino_Hurt?.Length ?? 0}");
                 Debug.Log("=== RpsCharacterDatabaseSetup.CreateDatabase END ===");
             }
             catch (System.Exception ex)
@@ -98,6 +82,77 @@ namespace TTTXO.Game.Editor
                 Debug.LogError($"RpsCharacterDatabaseSetup failed: {ex}");
                 throw;
             }
+        }
+
+        private static void BuildCharacter(
+            RpsCharacterDatabase database,
+            string characterFolder,
+            string atlasPath,
+            string idlePrefix, int idleCount,
+            string attackPrefix, int attackCount,
+            string hurtPrefix, int hurtCount)
+        {
+            Debug.Log($"Loading sprites from {atlasPath}");
+            var sprites = LoadAllSpritesFromAtlas(atlasPath);
+            Debug.Log($"{characterFolder} atlas: {sprites.Count} sprites loaded");
+            if (sprites.Count == 0)
+            {
+                Debug.LogError($"No sprites found in {atlasPath}. Is Sprite Mode = Multiple?");
+                return;
+            }
+
+            var idle = ExtractFrames(sprites, idlePrefix, idleCount);
+            var attack = ExtractFrames(sprites, attackPrefix, attackCount);
+            var hurt = ExtractFrames(sprites, hurtPrefix, hurtCount);
+
+            var all = idle.Concat(attack).Concat(hurt).ToList();
+            if (all.Count == 0)
+            {
+                Debug.LogError($"{characterFolder}: no frames matched the expected names.");
+                return;
+            }
+
+            // One canvas for the whole character: the largest frame in any clip. Every frame is
+            // bottom-center aligned inside it, which is what keeps the feet planted across clips.
+            int canvasWidth = all.Max(f => f.Texture.width);
+            int canvasHeight = all.Max(f => f.Texture.height);
+
+            var idleAssets = SaveFrames(idle, FramesFolder + "/" + characterFolder + "/Idle", canvasWidth, canvasHeight);
+            var attackAssets = SaveFrames(attack, FramesFolder + "/" + characterFolder + "/Attack", canvasWidth, canvasHeight);
+            var hurtAssets = SaveFrames(hurt, FramesFolder + "/" + characterFolder + "/Hurt", canvasWidth, canvasHeight);
+
+            switch (characterFolder)
+            {
+                case "Caballero":
+                    database.Caballero_Idle = idleAssets;
+                    database.Caballero_Attack = attackAssets;
+                    database.Caballero_Hurt = hurtAssets;
+                    break;
+                case "Maga":
+                    database.Maga_Idle = idleAssets;
+                    database.Maga_Attack = attackAssets;
+                    database.Maga_Hurt = hurtAssets;
+                    break;
+                case "Asesino":
+                    database.Asesino_Idle = idleAssets;
+                    database.Asesino_Attack = attackAssets;
+                    database.Asesino_Hurt = hurtAssets;
+                    break;
+            }
+
+            foreach (var frame in all)
+            {
+                Object.DestroyImmediate(frame.Texture);
+            }
+
+            Debug.Log($"  {characterFolder}: canvas {canvasWidth}x{canvasHeight}, frames idle={idleAssets.Length}, attack={attackAssets.Length}, hurt={hurtAssets.Length}");
+        }
+
+        private static void EnsureCharacterFolders(string character)
+        {
+            EnsureFolder(FramesFolder + "/" + character + "/Idle");
+            EnsureFolder(FramesFolder + "/" + character + "/Attack");
+            EnsureFolder(FramesFolder + "/" + character + "/Hurt");
         }
 
         private static void MakeReadableAndReimport(string atlasPath)
@@ -121,7 +176,6 @@ namespace TTTXO.Game.Editor
                 return result;
             }
 
-            Debug.Log($"LoadAllAssetsAtPath returned {allAssets.Length} assets for {atlasPath}");
             foreach (var asset in allAssets)
             {
                 if (asset is Sprite sprite && sprite != null)
@@ -129,37 +183,67 @@ namespace TTTXO.Game.Editor
                     result[sprite.name] = sprite;
                 }
             }
+
             return result;
         }
 
-        private static Texture2D[] ExtractAndSaveFrames(Dictionary<string, Sprite> atlas, string prefix, int count, string outputFolder)
+        private static List<ExtractedFrame> ExtractFrames(Dictionary<string, Sprite> atlas, string prefix, int count)
         {
-            var list = new List<Texture2D>(count);
+            var frames = new List<ExtractedFrame>(count);
             for (int i = 1; i <= count; i++)
             {
                 string name = $"{prefix}{i}";
-                if (atlas.TryGetValue(name, out var sprite))
-                {
-                    var tex = ExtractFrameAsTexture2D(sprite);
-                    if (tex != null)
-                    {
-                        string assetPath = $"{outputFolder}/{name}.asset";
-                        AssetDatabase.CreateAsset(tex, assetPath);
-                        list.Add(tex);
-                        Debug.Log($"  Extracted & saved: {name} -> {assetPath}");
-                    }
-                }
-                else
+                if (!atlas.TryGetValue(name, out var sprite))
                 {
                     Debug.LogWarning($"Sprite not found: {name} (atlas has {atlas.Count} sprites)");
+                    continue;
+                }
+
+                var texture = ExtractFrameAsTexture2D(sprite);
+                if (texture != null)
+                {
+                    frames.Add(new ExtractedFrame { Name = name, Texture = texture });
                 }
             }
-            return list.ToArray();
+
+            return frames;
+        }
+
+        private static Texture2D[] SaveFrames(List<ExtractedFrame> frames, string outputFolder, int canvasWidth, int canvasHeight)
+        {
+            var saved = new List<Texture2D>(frames.Count);
+            foreach (var frame in frames)
+            {
+                var canvas = new Texture2D(canvasWidth, canvasHeight, TextureFormat.RGBA32, false)
+                {
+                    filterMode = FilterMode.Point,
+                    wrapMode = TextureWrapMode.Clamp
+                };
+
+                // Transparent background, then paste the frame with its bottom edge on the canvas
+                // bottom and its horizontal center on the canvas center.
+                canvas.SetPixels32(new Color32[canvasWidth * canvasHeight]);
+                int x = (canvasWidth - frame.Texture.width) / 2;
+                int y = 0;
+                canvas.SetPixels32(x, y, frame.Texture.width, frame.Texture.height, frame.Texture.GetPixels32());
+                canvas.Apply();
+
+                string assetPath = $"{outputFolder}/{frame.Name}.asset";
+                AssetDatabase.DeleteAsset(assetPath);
+                AssetDatabase.CreateAsset(canvas, assetPath);
+                saved.Add(canvas);
+                Debug.Log($"  Saved: {assetPath}");
+            }
+
+            return saved.ToArray();
         }
 
         private static Texture2D ExtractFrameAsTexture2D(Sprite sprite)
         {
-            if (sprite == null || sprite.texture == null) return null;
+            if (sprite == null || sprite.texture == null)
+            {
+                return null;
+            }
 
             var rect = sprite.rect;
             int w = Mathf.RoundToInt(rect.width);
@@ -171,7 +255,7 @@ namespace TTTXO.Game.Editor
                 wrapMode = TextureWrapMode.Clamp
             };
 
-            // Use the readable atlas texture
+            // Use the readable atlas texture.
             var oldActive = RenderTexture.active;
             var rt = RenderTexture.GetTemporary(w, h, 0, RenderTextureFormat.ARGB32);
             Graphics.Blit(sprite.texture, rt, new Vector2(rect.x / sprite.texture.width, rect.y / sprite.texture.height), Vector2.zero);
@@ -186,11 +270,18 @@ namespace TTTXO.Game.Editor
 
         private static void EnsureFolder(string path)
         {
-            if (AssetDatabase.IsValidFolder(path)) return;
+            if (AssetDatabase.IsValidFolder(path))
+            {
+                return;
+            }
+
             string parent = Path.GetDirectoryName(path)?.Replace('\\', '/');
             string folderName = Path.GetFileName(path);
             if (!string.IsNullOrEmpty(parent) && !AssetDatabase.IsValidFolder(parent))
+            {
                 EnsureFolder(parent);
+            }
+
             AssetDatabase.CreateFolder(parent, folderName);
         }
     }

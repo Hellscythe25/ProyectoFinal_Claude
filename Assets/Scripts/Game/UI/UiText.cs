@@ -96,10 +96,9 @@ namespace TTTXO.Game.UI
         /// </summary>
         public static class RpsMenu
         {
-            public static string Title => Localize("RpsMenu/Title", "RPS");
+            public static string Title => Localize("RpsMenu/GameTitle", "Guerrero, Maga y Asesino");
             public static string Subtitle => Localize("RpsMenu/Subtitle", "Rock, paper, scissors");
             public static string PlayButton => Localize("RpsMenu/PlayButton", "Play");
-            public static string ProfileLabel => Localize("RpsMenu/ProfileLabel", "Profile");
             public static string StoreLabel => Localize("RpsMenu/StoreLabel", "Store");
             public static string SettingsLabel => Localize("RpsMenu/SettingsLabel", "Settings");
         }
@@ -121,10 +120,19 @@ namespace TTTXO.Game.UI
         {
             public static string Title => Localize("RpsCharacterSelect/Title", "Choose your fighter");
             public static string Subtitle => Localize("RpsCharacterSelect/Subtitle", "Each fighter has unique animations");
+            public static string Guerrero => Localize("RpsCharacterSelect/Guerrero", "Guerrero");
+            public static string Maga => Localize("RpsCharacterSelect/Maga", "Maga");
+            public static string Asesino => Localize("RpsCharacterSelect/Asesino", "Asesino");
+            public static string SingleTurn => Localize("RpsCharacterSelect/SingleTurn", "Choose your fighter");
+            public static string PlayerOneTurn => Localize("RpsCharacterSelect/PlayerOneTurn", "Player 1, choose your fighter");
+            public static string PlayerTwoTurn => Localize("RpsCharacterSelect/PlayerTwoTurn", "Player 2, choose your fighter");
+            public static string RoundFormat => Localize("RpsCharacterSelect/RoundFormat", "Round {0} · Best of five");
+            public static string ScoreFormat => Localize("RpsCharacterSelect/ScoreFormat", "{0} {1}   ·   {2} {3}");
         }
 
         public static class RpsGame
         {
+            public static string RoundFormat => Localize("RpsGame/RoundFormat", "Round {0}");
             public static string Rock => Localize("RpsGame/Rock", "Rock");
             public static string Paper => Localize("RpsGame/Paper", "Paper");
             public static string Scissors => Localize("RpsGame/Scissors", "Scissors");
@@ -368,10 +376,9 @@ namespace TTTXO.Game.UI
         public static class Store
         {
             public static string Title => Localize("Store/Title", "Store");
-            public static string TabPieces => Localize("Store/TabPieces", "Pieces");
-            public static string TabBoards => Localize("Store/TabBoards", "Boards");
+            public static string TabSkins => Localize("Store/TabSkins", "Skins");
+            public static string TabArenas => Localize("Store/TabArenas", "Arenas");
             public static string TabFx => Localize("Store/TabFx", "FX");
-            public static string TabSound => Localize("Store/TabSound", "Sound");
             public static string ComingSoonCardTitle => Localize("Store/ComingSoonCardTitle", "Coming soon");
             public static string ComingSoonCardDescription => Localize("Store/ComingSoonCardDescription", "New cosmetics are on their way.");
             public static string BuyCurrencyToast => Localize("Store/BuyCurrencyToast", "Currency purchases are coming soon!");

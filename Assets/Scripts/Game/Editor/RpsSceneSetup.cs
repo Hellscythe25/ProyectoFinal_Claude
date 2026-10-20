@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using TTTXO.Game.Bootstrap;
@@ -11,15 +12,15 @@ using UnityEngine.UIElements;
 namespace TTTXO.Game.Editor
 {
     /// <summary>
-    /// Creates Assets/Scenes/Rps.unity: a second boot of the same app shell as Main, starting at the
-    /// RPS menu instead of Home. The root GameObject "AppRoot" holds UIDocument (Root.uxml +
-    /// MainPanelSettings), GameManager, ScreenRouter, AppBootstrap and the runtime SceneUiBootstrap
-    /// bridge that re-applies the document references at play time (see SceneUiBootstrap for the
-    /// stale-reference quirk). The router's StartScreen serialized field is switched to RpsMenu so the
-    /// boot sequence lands on the RPS screens.
+    /// Creates (or repairs) Assets/Scenes/Rps.unity, the game's only scene. The root GameObject
+    /// "AppRoot" holds UIDocument (Root.uxml + MainPanelSettings), GameManager, ScreenRouter,
+    /// AppBootstrap and the runtime SceneUiBootstrap bridge that re-applies the document references
+    /// at play time (see SceneUiBootstrap for the stale-reference quirk). The router's StartScreen
+    /// serialized field is set to RpsMenu so the boot sequence lands on the menu.
     ///
-    /// Re-running the menu item is safe: existing assets/objects are reused and re-wired; a leftover
-    /// pre-refactor "RpsRoot" (whose standalone controller was deleted) is cleaned up.
+    /// Re-running the menu item is safe: existing assets/objects are reused and re-wired. It also
+    /// removes the leftover world-space Animator/SpriteRenderer preview objects from the old art
+    /// experiments, which are not used by the UI-frame animations.
     /// </summary>
     public static class RpsSceneSetup
     {
@@ -42,6 +43,7 @@ namespace TTTXO.Game.Editor
 
             var scene = OpenOrCreateScene();
             RemoveLegacyRoot();
+            RemovePreviewObjects(scene);
 
             var appRoot = GameObject.Find(AppRootObjectName) ?? new GameObject(AppRootObjectName);
 
@@ -58,10 +60,7 @@ namespace TTTXO.Game.Editor
 
             GetOrAddComponent<GameManager>(appRoot);
             var router = GetOrAddComponent<ScreenRouter>(appRoot);
-            // Boot straight into the RPS menu instead of the TTT home screen.
-            var routerSerialized = new SerializedObject(router);
-            routerSerialized.FindProperty("_startScreen").enumValueIndex = (int)ScreenId.RpsMenu;
-            routerSerialized.ApplyModifiedPropertiesWithoutUndo();
+            ConfigureRouter(router);
             GetOrAddComponent<AppBootstrap>(appRoot);
 
             // A scene needs at least one camera for the game view to render.
@@ -96,16 +95,23 @@ namespace TTTXO.Game.Editor
             }
 
             var scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
-            bool changed = false;
+            bool changed = RemovePreviewObjects(scene);
 
             foreach (var go in scene.GetRootGameObjects())
             {
-                if (go.GetComponent<UIDocument>() == null)
+                var router = go.GetComponent<ScreenRouter>();
+                if (router != null)
+                {
+                    ConfigureRouter(router);
+                    changed = true;
+                }
+
+                var document = go.GetComponent<UIDocument>();
+                if (document == null)
                 {
                     continue;
                 }
 
-                var document = go.GetComponent<UIDocument>();
                 if (WireDocument(document, rootUxml, panelSettings))
                 {
                     changed = true;
@@ -134,17 +140,56 @@ namespace TTTXO.Game.Editor
 
             if (panelSettings == null)
             {
-                Debug.LogError($"RpsSceneSetup: could not load '{PanelSettingsPath}'. Run 'TTTXO/Setup/Create Main Scene' first.");
+                Debug.LogError($"RpsSceneSetup: could not load '{PanelSettingsPath}'. Check the UI settings asset.");
                 return false;
             }
 
             return true;
         }
 
+        private static void ConfigureRouter(ScreenRouter router)
+        {
+            var routerSerialized = new SerializedObject(router);
+            routerSerialized.FindProperty("_startScreen").enumValueIndex = (int)ScreenId.RpsMenu;
+            routerSerialized.ApplyModifiedPropertiesWithoutUndo();
+        }
+
+        /// <summary>
+        /// Removes the old world-space animation previews. The game renders the fighters through
+        /// UI Toolkit frames, so these Animator/SpriteRenderer objects are unused duplicates.
+        /// </summary>
+        private static bool RemovePreviewObjects(Scene scene)
+        {
+            var toRemove = new List<GameObject>();
+            foreach (var root in scene.GetRootGameObjects())
+            {
+                foreach (var transform in root.GetComponentsInChildren<Transform>(true))
+                {
+                    var go = transform.gameObject;
+                    if (go.name == AppRootObjectName || go.name == "Main Camera")
+                    {
+                        continue;
+                    }
+
+                    if (go.GetComponent<Animator>() != null || go.GetComponent<SpriteRenderer>() != null)
+                    {
+                        toRemove.Add(go);
+                    }
+                }
+            }
+
+            foreach (var go in toRemove)
+            {
+                Object.DestroyImmediate(go);
+            }
+
+            return toRemove.Count > 0;
+        }
+
         /// <summary>
         /// Assigns the PanelSettings and the UXML to a UIDocument. Deliberately the same direct
-        /// property writes MainSceneSetup uses (which do persist): the SerializedObject rewrite was
-        /// proven to be reverted in batch mode, and the runtime SceneUiBootstrap submits the true
+        /// property writes the old scene setup used (which do persist): the SerializedObject rewrite
+        /// was proven to be reverted in batch mode, and the runtime SceneUiBootstrap submits the true
         /// fallback if even these do not stick.
         /// </summary>
         private static bool WireDocument(UIDocument document, VisualTreeAsset rootUxml, PanelSettings panelSettings)
@@ -194,20 +239,9 @@ namespace TTTXO.Game.Editor
 
         private static void AddSceneToBuildSettings(string scenePath)
         {
-            var scenes = EditorBuildSettings.scenes.ToList();
-            var existing = scenes.FirstOrDefault(s => s.path == scenePath);
-
-            if (existing != null)
-            {
-                existing.enabled = true;
-            }
-            else
-            {
-                // Append after the Main scene so Main keeps build index 0.
-                scenes.Add(new EditorBuildSettingsScene(scenePath, true));
-            }
-
-            EditorBuildSettings.scenes = scenes.ToArray();
+            // Rps is the only scene in this build. Replacing the list also drops the deleted Main
+            // scene reference instead of leaving a missing entry at build index 0.
+            EditorBuildSettings.scenes = new[] { new EditorBuildSettingsScene(scenePath, true) };
         }
 
         private static void EnsureFolder(string folderPath)

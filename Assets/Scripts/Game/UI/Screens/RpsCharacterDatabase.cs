@@ -12,7 +12,7 @@ namespace TTTXO.Game.UI.Screens
     [CreateAssetMenu(fileName = "RpsCharacterDatabase", menuName = "TTTXO/RPS Character Database")]
     public sealed class RpsCharacterDatabase : ScriptableObject
     {
-        [Header("Caballero (Piedra)")]
+        [Header("Guerrero (Piedra)")]
         public Texture2D[] Caballero_Idle;
         public Texture2D[] Caballero_Attack;
         public Texture2D[] Caballero_Hurt;
@@ -42,7 +42,7 @@ namespace TTTXO.Game.UI.Screens
         {
             return move switch
             {
-                RpsMove.Rock => "Caballero",
+                RpsMove.Rock => "Guerrero",
                 RpsMove.Paper => "Maga",
                 RpsMove.Scissors => "Asesino",
                 _ => "?"
