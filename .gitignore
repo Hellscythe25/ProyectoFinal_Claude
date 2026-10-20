@@ -113,3 +113,7 @@ CloudCode~/**/.vs/
 
 # Claude Code skills: symlink al pack externo claude-kit (ver CLAUDE.md "Skills").
 .claude/skills/
+
+# Local dev tooling - not part of the game (MCP server for the Editor).
+/Conduit/
+/.mcp.json

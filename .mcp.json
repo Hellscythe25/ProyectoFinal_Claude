@@ -1,9 +1,0 @@
-{
-  "mcpServers": {
-    "unity": {
-      "command": "D:\\OneDrive_Juan\\GitHub\\ProyectoFinal_Claude\\Conduit\\conduit.exe",
-      "args": [],
-      "type": "stdio"
-    }
-  }
-}
