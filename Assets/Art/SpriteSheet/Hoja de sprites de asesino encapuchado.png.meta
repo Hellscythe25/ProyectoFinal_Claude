@@ -1,0 +1,1093 @@
+fileFormatVersion: 2
+guid: 6b71c20c34f15864582afb43a205a708
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -89349609226159729
+    second: Hoja de sprites de asesino encapuchado_0
+  - first:
+      213: 4788607577205068151
+    second: Hoja de sprites de asesino encapuchado_1
+  - first:
+      213: -3836220927997603616
+    second: Hoja de sprites de asesino encapuchado_2
+  - first:
+      213: 3913027184325079515
+    second: Hoja de sprites de asesino encapuchado_3
+  - first:
+      213: -809499359932450194
+    second: Hoja de sprites de asesino encapuchado_4
+  - first:
+      213: -2902464053314464911
+    second: Hoja de sprites de asesino encapuchado_5
+  - first:
+      213: -5828617744688957588
+    second: Hoja de sprites de asesino encapuchado_6
+  - first:
+      213: 2869672267112448518
+    second: Hoja de sprites de asesino encapuchado_7
+  - first:
+      213: -1820381057014864444
+    second: Hoja de sprites de asesino encapuchado_8
+  - first:
+      213: 1232109568296100820
+    second: Hoja de sprites de asesino encapuchado_9
+  - first:
+      213: 8081807315244214295
+    second: Hoja de sprites de asesino encapuchado_10
+  - first:
+      213: -2050448034330551763
+    second: Hoja de sprites de asesino encapuchado_11
+  - first:
+      213: 4408677944915914847
+    second: Hoja de sprites de asesino encapuchado_12
+  - first:
+      213: 7330360132259070856
+    second: Hoja de sprites de asesino encapuchado_13
+  - first:
+      213: 5114878248302008104
+    second: Hoja de sprites de asesino encapuchado_14
+  - first:
+      213: -6211108165292610448
+    second: Hoja de sprites de asesino encapuchado_15
+  - first:
+      213: 6144694572499014902
+    second: Hoja de sprites de asesino encapuchado_16
+  - first:
+      213: -3990566938363859837
+    second: Hoja de sprites de asesino encapuchado_17
+  - first:
+      213: -3997520276026876842
+    second: Hoja de sprites de asesino encapuchado_18
+  - first:
+      213: 7492162615592515742
+    second: Hoja de sprites de asesino encapuchado_19
+  - first:
+      213: -2251572072157651736
+    second: Hoja de sprites de asesino encapuchado_20
+  - first:
+      213: 5308225958791588050
+    second: Hoja de sprites de asesino encapuchado_21
+  - first:
+      213: 3247369590667193455
+    second: Hoja de sprites de asesino encapuchado_22
+  - first:
+      213: -3933856292049116437
+    second: Hoja de sprites de asesino encapuchado_23
+  - first:
+      213: -4170238482790010918
+    second: Hoja de sprites de asesino encapuchado_24
+  - first:
+      213: -294964167478744615
+    second: Hoja de sprites de asesino encapuchado_25
+  - first:
+      213: 5946682603827251085
+    second: Hoja de sprites de asesino encapuchado_26
+  - first:
+      213: 5228343567233555608
+    second: Hoja de sprites de asesino encapuchado_27
+  - first:
+      213: -8703833909408447459
+    second: Hoja de sprites de asesino encapuchado_28
+  - first:
+      213: -2343764817027924011
+    second: Hoja de sprites de asesino encapuchado_29
+  - first:
+      213: 3306210693674143427
+    second: Hoja de sprites de asesino encapuchado_30
+  - first:
+      213: 786537310614694874
+    second: Hoja de sprites de asesino encapuchado_31
+  - first:
+      213: 6536620822345390083
+    second: Hoja de sprites de asesino encapuchado_32
+  - first:
+      213: 7521910698106471185
+    second: Hoja de sprites de asesino encapuchado_33
+  - first:
+      213: 3459951205284836911
+    second: Hoja de sprites de asesino encapuchado_34
+  - first:
+      213: 7666246632923445227
+    second: Hoja de sprites de asesino encapuchado_35
+  - first:
+      213: -700568264561928943
+    second: Hoja de sprites de asesino encapuchado_36
+  - first:
+      213: -8647505975965151552
+    second: Hoja de sprites de asesino encapuchado_37
+  - first:
+      213: -3495174576905233162
+    second: Hoja de sprites de asesino encapuchado_38
+  - first:
+      213: -1001327035954546696
+    second: Hoja de sprites de asesino encapuchado_39
+  - first:
+      213: 8282109410766127571
+    second: Hoja de sprites de asesino encapuchado_40
+  - first:
+      213: 2252883653646543943
+    second: Hoja de sprites de asesino encapuchado_41
+  - first:
+      213: -7739276940662679339
+    second: Hoja de sprites de asesino encapuchado_42
+  - first:
+      213: 7967706897242319858
+    second: Hoja de sprites de asesino encapuchado_43
+  - first:
+      213: -4142966814720423796
+    second: Hoja de sprites de asesino encapuchado_44
+  - first:
+      213: -2307496407161217787
+    second: Hoja de sprites de asesino encapuchado_45
+  - first:
+      213: -4399799466407275415
+    second: Hoja de sprites de asesino encapuchado_46
+  - first:
+      213: 1408424128287620479
+    second: Hoja de sprites de asesino encapuchado_47
+  - first:
+      213: -336365204720567327
+    second: Hoja de sprites de asesino encapuchado_48
+  - first:
+      213: -1209669633269910281
+    second: Hoja de sprites de asesino encapuchado_49
+  - first:
+      213: 5987976339229401873
+    second: Hoja de sprites de asesino encapuchado_50
+  - first:
+      213: 3396455004656925729
+    second: Hoja de sprites de asesino encapuchado_51
+  - first:
+      213: -4363531324002529427
+    second: Hoja de sprites de asesino encapuchado_52
+  - first:
+      213: 8868884375408955986
+    second: Hoja de sprites de asesino encapuchado_53
+  - first:
+      213: -3203751663440824007
+    second: Hoja de sprites de asesino encapuchado_54
+  - first:
+      213: 2227922507922468736
+    second: Hoja de sprites de asesino encapuchado_55
+  - first:
+      213: -3149698501968794579
+    second: Hoja de sprites de asesino encapuchado_56
+  - first:
+      213: 8439667838249487100
+    second: Hoja de sprites de asesino encapuchado_57
+  - first:
+      213: 8357820525343256788
+    second: Hoja de sprites de asesino encapuchado_58
+  - first:
+      213: -4451125520391388969
+    second: Hoja de sprites de asesino encapuchado_59
+  - first:
+      213: 4473634956772907412
+    second: Hoja de sprites de asesino encapuchado_60
+  - first:
+      213: 5377037595184528111
+    second: Hoja de sprites de asesino encapuchado_61
+  - first:
+      213: 5913509039297762414
+    second: Hoja de sprites de asesino encapuchado_62
+  - first:
+      213: 6710739043889954844
+    second: Hoja de sprites de asesino encapuchado_63
+  - first:
+      213: -2082310732089260639
+    second: Hoja de sprites de asesino encapuchado_64
+  - first:
+      213: -2119062015988253782
+    second: Hoja de sprites de asesino encapuchado_65
+  - first:
+      213: 6696021889762600297
+    second: Hoja de sprites de asesino encapuchado_66
+  - first:
+      213: 665511710069219741
+    second: Hoja de sprites de asesino encapuchado_67
+  - first:
+      213: 2598507831902767230
+    second: Hoja de sprites de asesino encapuchado_68
+  - first:
+      213: 2044157183025770107
+    second: Hoja de sprites de asesino encapuchado_69
+  - first:
+      213: -1091045654542384639
+    second: Hoja de sprites de asesino encapuchado_70
+  - first:
+      213: 8009920259620188167
+    second: Hoja de sprites de asesino encapuchado_71
+  - first:
+      213: 3294327461914649250
+    second: Hoja de sprites de asesino encapuchado_72
+  - first:
+      213: 8648822211376105085
+    second: Hoja de sprites de asesino encapuchado_73
+  - first:
+      213: -2925904166343230608
+    second: Hoja de sprites de asesino encapuchado_74
+  - first:
+      213: 2567545677332460322
+    second: Hoja de sprites de asesino encapuchado_75
+  - first:
+      213: 5252120994574260546
+    second: Hoja de sprites de asesino encapuchado_76
+  - first:
+      213: -1107208132654626527
+    second: Hoja de sprites de asesino encapuchado_77
+  - first:
+      213: 4783037382060504933
+    second: Hoja de sprites de asesino encapuchado_78
+  - first:
+      213: -8874885115077875139
+    second: Hoja de sprites de asesino encapuchado_79
+  - first:
+      213: -7501724932251323222
+    second: Hoja de sprites de asesino encapuchado_80
+  - first:
+      213: 4326951465577734689
+    second: Hoja de sprites de asesino encapuchado_81
+  - first:
+      213: -7895157444305699610
+    second: Hoja de sprites de asesino encapuchado_82
+  - first:
+      213: 3245728106829370967
+    second: Hoja de sprites de asesino encapuchado_83
+  - first:
+      213: -278997835130446310
+    second: Hoja de sprites de asesino encapuchado_84
+  - first:
+      213: 6282988606468404404
+    second: Hoja de sprites de asesino encapuchado_85
+  - first:
+      213: -7829380195892797796
+    second: Hoja de sprites de asesino encapuchado_86
+  - first:
+      213: 7507025932575311068
+    second: Hoja de sprites de asesino encapuchado_87
+  - first:
+      213: 764205328266692068
+    second: Hoja de sprites de asesino encapuchado_88
+  - first:
+      213: -8613042280304890545
+    second: Hoja de sprites de asesino encapuchado_89
+  - first:
+      213: -472818236380092869
+    second: Hoja de sprites de asesino encapuchado_90
+  - first:
+      213: -8940534852868256303
+    second: Hoja de sprites de asesino encapuchado_91
+  - first:
+      213: 1025295021931870005
+    second: Hoja de sprites de asesino encapuchado_92
+  - first:
+      213: -8143658653417199906
+    second: Hoja de sprites de asesino encapuchado_93
+  - first:
+      213: 3780961387846744217
+    second: Hoja de sprites de asesino encapuchado_94
+  - first:
+      213: 3068310398308279329
+    second: Hoja de sprites de asesino encapuchado_95
+  - first:
+      213: 6834586125509228651
+    second: Hoja de sprites de asesino encapuchado_96
+  - first:
+      213: -4455034264594760957
+    second: Hoja de sprites de asesino encapuchado_97
+  - first:
+      213: -5890549056740762937
+    second: Hoja de sprites de asesino encapuchado_98
+  - first:
+      213: 6284919505258675358
+    second: Hoja de sprites de asesino encapuchado_99
+  - first:
+      213: 5586802815775575732
+    second: Hoja de sprites de asesino encapuchado_100
+  - first:
+      213: 2183645490361703777
+    second: Hoja de sprites de asesino encapuchado_101
+  - first:
+      213: -8013124069666991119
+    second: Hoja de sprites de asesino encapuchado_102
+  - first:
+      213: 7588838403056868183
+    second: Hoja de sprites de asesino encapuchado_103
+  - first:
+      213: -2457615062311214927
+    second: Hoja de sprites de asesino encapuchado_104
+  - first:
+      213: -5462164833337096550
+    second: Hoja de sprites de asesino encapuchado_105
+  - first:
+      213: -5547542180985069706
+    second: Hoja de sprites de asesino encapuchado_106
+  - first:
+      213: 7225142095245222902
+    second: Hoja de sprites de asesino encapuchado_107
+  - first:
+      213: 1384182711229955139
+    second: Hoja de sprites de asesino encapuchado_108
+  - first:
+      213: -6978096047395150296
+    second: Hoja de sprites de asesino encapuchado_109
+  - first:
+      213: -7173976521378391900
+    second: Hoja de sprites de asesino encapuchado_110
+  - first:
+      213: 4860413752505177936
+    second: Hoja de sprites de asesino encapuchado_111
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Asesino_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 680
+        width: 146
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f893149f00192cef0800000000000000
+      internalID: -89349609226159729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 680
+        width: 146
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7715d08683d847240800000000000000
+      internalID: 4788607577205068151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 680
+        width: 146
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e098c2246103cac0800000000000000
+      internalID: -3836220927997603616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 680
+        width: 146
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1b426fd7ddd4630800000000000000
+      internalID: 3913027184325079515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 358
+        width: 159
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6af15dfe9414c4f0800000000000000
+      internalID: -809499359932450194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 358
+        width: 153
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173d9d8425068b7d0800000000000000
+      internalID: -2902464053314464911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 358
+        width: 208
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67b644ea079c1fa0800000000000000
+      internalID: -5828617744688957588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 358
+        width: 188
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602070709bf13d720800000000000000
+      internalID: 2869672267112448518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 358
+        width: 194
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c567ccc215bcb6e0800000000000000
+      internalID: -1820381057014864444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 358
+        width: 184
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d326a6df15591110800000000000000
+      internalID: 1232109568296100820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 358
+        width: 184
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718e8481fe8582070800000000000000
+      internalID: 8081807315244214295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 358
+        width: 158
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a545360685b83e0800000000000000
+      internalID: -2050448034330551763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Recibe_Damage_2
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 49
+        width: 164
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50ffc39b35ce2d30800000000000000
+      internalID: 4408677944915914847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Recibe_Damage_3
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 49
+        width: 154
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883ccfec3bbaab560800000000000000
+      internalID: 7330360132259070856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Recibe_Damage_4
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 49
+        width: 149
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827d963caa2bbf640800000000000000
+      internalID: 5114878248302008104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Recibe_Damage_5
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 49
+        width: 157
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ca4321806bdc9a0800000000000000
+      internalID: -6211108165292610448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Recibe_Damage_6
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 49
+        width: 154
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f4131f5827564550800000000000000
+      internalID: 6144694572499014902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Recibe_Damage_7
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 49
+        width: 154
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c67623388ae98c0800000000000000
+      internalID: -3990566938363859837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Recibe_Damage_8
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 49
+        width: 154
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c1ffc1d74f588c0800000000000000
+      internalID: -3997520276026876842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 680
+        width: 146
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec5ad4312fc0c0e0800000000000000
+      internalID: -2251572072157651736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 680
+        width: 146
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6caf1aff69f01d20800000000000000
+      internalID: 3247369590667193455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 680
+        width: 146
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be22afa7b822869c0800000000000000
+      internalID: -3933856292049116437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 678
+        width: 146
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d874e11425cd68250800000000000000
+      internalID: 5946682603827251085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asesino_Recibe_Damage_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 47
+        width: 153
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3aa16d420316d480800000000000000
+      internalID: -8874885115077875139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c47ceadd901b6ae4d8fbc46f1bd0684d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Asesino_Attack_1: -809499359932450194
+      Asesino_Attack_2: -2902464053314464911
+      Asesino_Attack_3: -5828617744688957588
+      Asesino_Attack_4: 2869672267112448518
+      Asesino_Attack_5: -1820381057014864444
+      Asesino_Attack_6: 1232109568296100820
+      Asesino_Attack_7: 8081807315244214295
+      Asesino_Attack_8: -2050448034330551763
+      Asesino_Idle_1: -89349609226159729
+      Asesino_Idle_2: 4788607577205068151
+      Asesino_Idle_3: -2251572072157651736
+      Asesino_Idle_4: 3247369590667193455
+      Asesino_Idle_5: 5946682603827251085
+      Asesino_Idle_6: -3933856292049116437
+      Asesino_Idle_7: -3836220927997603616
+      Asesino_Idle_8: 3913027184325079515
+      Asesino_Recibe_Damage_1: -8874885115077875139
+      Asesino_Recibe_Damage_2: 4408677944915914847
+      Asesino_Recibe_Damage_3: 7330360132259070856
+      Asesino_Recibe_Damage_4: 5114878248302008104
+      Asesino_Recibe_Damage_5: -6211108165292610448
+      Asesino_Recibe_Damage_6: 6144694572499014902
+      Asesino_Recibe_Damage_7: -3990566938363859837
+      Asesino_Recibe_Damage_8: -3997520276026876842
+      Hoja de sprites de asesino encapuchado_100: 5586802815775575732
+      Hoja de sprites de asesino encapuchado_101: 2183645490361703777
+      Hoja de sprites de asesino encapuchado_102: -8013124069666991119
+      Hoja de sprites de asesino encapuchado_103: 7588838403056868183
+      Hoja de sprites de asesino encapuchado_104: -2457615062311214927
+      Hoja de sprites de asesino encapuchado_105: -5462164833337096550
+      Hoja de sprites de asesino encapuchado_106: -5547542180985069706
+      Hoja de sprites de asesino encapuchado_107: 7225142095245222902
+      Hoja de sprites de asesino encapuchado_108: 1384182711229955139
+      Hoja de sprites de asesino encapuchado_109: -6978096047395150296
+      Hoja de sprites de asesino encapuchado_110: -7173976521378391900
+      Hoja de sprites de asesino encapuchado_111: 4860413752505177936
+      Hoja de sprites de asesino encapuchado_19: 7492162615592515742
+      Hoja de sprites de asesino encapuchado_21: 5308225958791588050
+      Hoja de sprites de asesino encapuchado_24: -4170238482790010918
+      Hoja de sprites de asesino encapuchado_25: -294964167478744615
+      Hoja de sprites de asesino encapuchado_27: 5228343567233555608
+      Hoja de sprites de asesino encapuchado_28: -8703833909408447459
+      Hoja de sprites de asesino encapuchado_29: -2343764817027924011
+      Hoja de sprites de asesino encapuchado_30: 3306210693674143427
+      Hoja de sprites de asesino encapuchado_31: 786537310614694874
+      Hoja de sprites de asesino encapuchado_32: 6536620822345390083
+      Hoja de sprites de asesino encapuchado_33: 7521910698106471185
+      Hoja de sprites de asesino encapuchado_34: 3459951205284836911
+      Hoja de sprites de asesino encapuchado_35: 7666246632923445227
+      Hoja de sprites de asesino encapuchado_36: -700568264561928943
+      Hoja de sprites de asesino encapuchado_37: -8647505975965151552
+      Hoja de sprites de asesino encapuchado_38: -3495174576905233162
+      Hoja de sprites de asesino encapuchado_39: -1001327035954546696
+      Hoja de sprites de asesino encapuchado_40: 8282109410766127571
+      Hoja de sprites de asesino encapuchado_41: 2252883653646543943
+      Hoja de sprites de asesino encapuchado_42: -7739276940662679339
+      Hoja de sprites de asesino encapuchado_43: 7967706897242319858
+      Hoja de sprites de asesino encapuchado_44: -4142966814720423796
+      Hoja de sprites de asesino encapuchado_45: -2307496407161217787
+      Hoja de sprites de asesino encapuchado_46: -4399799466407275415
+      Hoja de sprites de asesino encapuchado_47: 1408424128287620479
+      Hoja de sprites de asesino encapuchado_48: -336365204720567327
+      Hoja de sprites de asesino encapuchado_49: -1209669633269910281
+      Hoja de sprites de asesino encapuchado_50: 5987976339229401873
+      Hoja de sprites de asesino encapuchado_51: 3396455004656925729
+      Hoja de sprites de asesino encapuchado_52: -4363531324002529427
+      Hoja de sprites de asesino encapuchado_53: 8868884375408955986
+      Hoja de sprites de asesino encapuchado_54: -3203751663440824007
+      Hoja de sprites de asesino encapuchado_55: 2227922507922468736
+      Hoja de sprites de asesino encapuchado_56: -3149698501968794579
+      Hoja de sprites de asesino encapuchado_57: 8439667838249487100
+      Hoja de sprites de asesino encapuchado_58: 8357820525343256788
+      Hoja de sprites de asesino encapuchado_59: -4451125520391388969
+      Hoja de sprites de asesino encapuchado_60: 4473634956772907412
+      Hoja de sprites de asesino encapuchado_61: 5377037595184528111
+      Hoja de sprites de asesino encapuchado_62: 5913509039297762414
+      Hoja de sprites de asesino encapuchado_63: 6710739043889954844
+      Hoja de sprites de asesino encapuchado_64: -2082310732089260639
+      Hoja de sprites de asesino encapuchado_65: -2119062015988253782
+      Hoja de sprites de asesino encapuchado_66: 6696021889762600297
+      Hoja de sprites de asesino encapuchado_67: 665511710069219741
+      Hoja de sprites de asesino encapuchado_68: 2598507831902767230
+      Hoja de sprites de asesino encapuchado_69: 2044157183025770107
+      Hoja de sprites de asesino encapuchado_70: -1091045654542384639
+      Hoja de sprites de asesino encapuchado_71: 8009920259620188167
+      Hoja de sprites de asesino encapuchado_72: 3294327461914649250
+      Hoja de sprites de asesino encapuchado_73: 8648822211376105085
+      Hoja de sprites de asesino encapuchado_74: -2925904166343230608
+      Hoja de sprites de asesino encapuchado_75: 2567545677332460322
+      Hoja de sprites de asesino encapuchado_76: 5252120994574260546
+      Hoja de sprites de asesino encapuchado_77: -1107208132654626527
+      Hoja de sprites de asesino encapuchado_78: 4783037382060504933
+      Hoja de sprites de asesino encapuchado_80: -7501724932251323222
+      Hoja de sprites de asesino encapuchado_81: 4326951465577734689
+      Hoja de sprites de asesino encapuchado_82: -7895157444305699610
+      Hoja de sprites de asesino encapuchado_83: 3245728106829370967
+      Hoja de sprites de asesino encapuchado_84: -278997835130446310
+      Hoja de sprites de asesino encapuchado_85: 6282988606468404404
+      Hoja de sprites de asesino encapuchado_86: -7829380195892797796
+      Hoja de sprites de asesino encapuchado_87: 7507025932575311068
+      Hoja de sprites de asesino encapuchado_88: 764205328266692068
+      Hoja de sprites de asesino encapuchado_89: -8613042280304890545
+      Hoja de sprites de asesino encapuchado_90: -472818236380092869
+      Hoja de sprites de asesino encapuchado_91: -8940534852868256303
+      Hoja de sprites de asesino encapuchado_92: 1025295021931870005
+      Hoja de sprites de asesino encapuchado_93: -8143658653417199906
+      Hoja de sprites de asesino encapuchado_94: 3780961387846744217
+      Hoja de sprites de asesino encapuchado_95: 3068310398308279329
+      Hoja de sprites de asesino encapuchado_96: 6834586125509228651
+      Hoja de sprites de asesino encapuchado_97: -4455034264594760957
+      Hoja de sprites de asesino encapuchado_98: -5890549056740762937
+      Hoja de sprites de asesino encapuchado_99: 6284919505258675358
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
