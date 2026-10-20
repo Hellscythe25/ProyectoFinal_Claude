@@ -232,6 +232,7 @@ namespace TTTXO.Game.UI.Screens
                 return;
             }
 
+            // Both moves submitted - resolve and navigate to VS Screen
             ResolveAndRender();
         }
 
@@ -239,18 +240,14 @@ namespace TTTXO.Game.UI.Screens
         {
             RpsRoundResult result = _match.ResolveRound();
 
-            RevealLastRound();
-            _options.SetEnabled(true);
+            // For both modes, navigate to VS Screen after resolution
+            NavigateToVsScreen(result.MoveOne, result.MoveTwo);
+        }
 
-            if (result.IsSeriesOver)
-            {
-                _awaitingPlayer = null;
-                ShowSeriesEnded(result);
-                return;
-            }
-
-            _awaitingPlayer = RpsPlayer.One;
-            RefreshRoundUi();
+        private void NavigateToVsScreen(RpsMove playerMove, RpsMove opponentMove)
+        {
+            _router.RpsVsScreen.SetUp(playerMove, opponentMove, _mode, RpsPlayer.One);
+            _router.Show(ScreenId.RpsVs);
         }
 
         private void ShowSeriesEnded(RpsRoundResult result)

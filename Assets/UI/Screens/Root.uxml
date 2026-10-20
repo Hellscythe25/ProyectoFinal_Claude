@@ -399,6 +399,44 @@
             </ui:VisualElement>
         </ui:VisualElement>
 
+        <ui:VisualElement name="screen-rps-character-select" class="screen screen-rps-character-select" style="display: none;">
+            <ui:VisualElement class="screen-header">
+                <ui:Button name="charselect-back-button" class="icon-button back-button" />
+                <ui:Label name="charselect-title-label" class="screen-header-title" />
+            </ui:VisualElement>
+            <ui:Label name="charselect-subtitle-label" class="rps-menu-subtitle" />
+            <ui:VisualElement name="charselect-character-list" class="charselect-character-row">
+                <ui:VisualElement name="charselect-caballero" class="charselect-character-card">
+                    <ui:VisualElement name="charselect-caballero-sprite" class="charselect-character-sprite" />
+                    <ui:Label name="charselect-caballero-name" class="charselect-character-name" />
+                </ui:VisualElement>
+                <ui:VisualElement name="charselect-maga" class="charselect-character-card">
+                    <ui:VisualElement name="charselect-maga-sprite" class="charselect-character-sprite" />
+                    <ui:Label name="charselect-maga-name" class="charselect-character-name" />
+                </ui:VisualElement>
+                <ui:VisualElement name="charselect-asesino" class="charselect-character-card">
+                    <ui:VisualElement name="charselect-asesino-sprite" class="charselect-character-sprite" />
+                    <ui:Label name="charselect-asesino-name" class="charselect-character-name" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-rps-vs" class="screen screen-rps-vs" style="display: none;">
+            <ui:VisualElement name="vs-left" class="vs-side">
+                <ui:VisualElement name="vs-left-sprite" class="vs-sprite" />
+                <ui:Label name="vs-left-name" class="vs-name" />
+            </ui:VisualElement>
+            <ui:VisualElement name="vs-right" class="vs-side">
+                <ui:VisualElement name="vs-right-sprite" class="vs-sprite" />
+                <ui:Label name="vs-right-name" class="vs-name" />
+            </ui:VisualElement>
+            <ui:Label name="vs-draw-label" class="vs-draw-label" text="EMPATE" style="display: none;" />
+            <ui:VisualElement class="button-row" style="margin-top: 32px;">
+                <ui:Button name="vs-rematch-button" class="primary-button" />
+                <ui:Button name="vs-menu-button" class="secondary-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
         <ui:VisualElement name="screen-leaderboard" class="screen screen-leaderboard" style="display: none;">
             <ui:VisualElement class="screen-header">
                 <ui:Button name="leaderboard-back-button" class="icon-button back-button" />

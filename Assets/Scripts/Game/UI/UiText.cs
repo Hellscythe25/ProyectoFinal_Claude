@@ -117,6 +117,12 @@ namespace TTTXO.Game.UI
             public static string OnlineComingSoonMessage => Localize("RpsModeSelect/OnlineComingSoonMessage", "Online RPS is coming soon!");
         }
 
+        public static class RpsCharacterSelect
+        {
+            public static string Title => Localize("RpsCharacterSelect/Title", "Choose your fighter");
+            public static string Subtitle => Localize("RpsCharacterSelect/Subtitle", "Each fighter has unique animations");
+        }
+
         public static class RpsGame
         {
             public static string Rock => Localize("RpsGame/Rock", "Rock");
@@ -143,6 +149,8 @@ namespace TTTXO.Game.UI
             public static string Player1Won => Localize("RpsGame/Player1Won", "Player 1 won the series!");
             public static string Player2Won => Localize("RpsGame/Player2Won", "Player 2 won the series!");
             public static string SeriesDraw => Localize("RpsGame/SeriesDraw", "Series tied");
+            /// <summary>Draw label shown on VS Screen when both players pick the same move.</summary>
+            public static string DrawLabel => Localize("RpsGame/DrawLabel", "EMPATE");
             public static string RematchButton => Localize("RpsGame/RematchButton", "Rematch");
             public static string MenuButton => Localize("RpsGame/MenuButton", "Menu");
         }

@@ -30,6 +30,8 @@ namespace TTTXO.Game.UI
         Leaderboard,
         RpsMenu,
         RpsModeSelect,
-        RpsGame
+        RpsGame,
+        RpsVs,
+        RpsCharacterSelect
     }
 }

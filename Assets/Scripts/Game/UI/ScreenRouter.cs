@@ -35,6 +35,8 @@ namespace TTTXO.Game.UI
             { ScreenId.RpsMenu, "screen-rps-menu" },
             { ScreenId.RpsModeSelect, "screen-rps-mode-select" },
             { ScreenId.RpsGame, "screen-rps-game" },
+            { ScreenId.RpsVs, "screen-rps-vs" },
+            { ScreenId.RpsCharacterSelect, "screen-rps-character-select" },
         };
 
         /// <summary>
@@ -56,6 +58,8 @@ namespace TTTXO.Game.UI
         public ResultScreenController ResultScreen { get; private set; }
         public MatchmakingScreenController MatchmakingScreen { get; private set; }
         public RpsGameScreenController RpsGameScreen { get; private set; }
+        public RpsVsScreenController RpsVsScreen { get; private set; }
+        public RpsCharacterSelectScreenController RpsCharacterSelectScreen { get; private set; }
 
         /// <summary>
         /// Navigation history for generic "back" buttons on sub-screens. The rules - and why a
@@ -116,9 +120,13 @@ namespace TTTXO.Game.UI
             _controllers[ScreenId.Settings] = new SettingsScreenController(_screenRoots[ScreenId.Settings], this, gameManager);
             _controllers[ScreenId.Leaderboard] = new LeaderboardScreenController(_screenRoots[ScreenId.Leaderboard], this, gameManager);
             RpsGameScreen = new RpsGameScreenController(_screenRoots[ScreenId.RpsGame], this);
+            RpsVsScreen = new RpsVsScreenController(_screenRoots[ScreenId.RpsVs], this);
+            RpsCharacterSelectScreen = new RpsCharacterSelectScreenController(_screenRoots[ScreenId.RpsCharacterSelect], this);
             _controllers[ScreenId.RpsMenu] = new RpsMenuScreenController(_screenRoots[ScreenId.RpsMenu], this);
             _controllers[ScreenId.RpsModeSelect] = new RpsModeSelectScreenController(_screenRoots[ScreenId.RpsModeSelect], this);
             _controllers[ScreenId.RpsGame] = RpsGameScreen;
+            _controllers[ScreenId.RpsVs] = RpsVsScreen;
+            _controllers[ScreenId.RpsCharacterSelect] = RpsCharacterSelectScreen;
 
             foreach (var pair in _screenRoots)
             {

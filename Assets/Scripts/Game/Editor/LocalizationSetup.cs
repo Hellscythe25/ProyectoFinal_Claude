@@ -385,6 +385,9 @@ namespace TTTXO.Game.Editor
                 "Çevrimiçi RPS yakında geliyor!", "RPS online wkrótce dostępny!",
             },
 
+            ["RpsCharacterSelect/Title"] = new[] { "Choose your fighter", "Elige a tu luchador", "Choisis ton combattant", "Wähle deinen Kämpfer", "Escolha seu lutador", "Scegli il tuo combattente", "Pilih petarungmu", "Chọn đấu sĩ của bạn", "Dövüşçünü seç", "Wybierz swojego wojownika" },
+            ["RpsCharacterSelect/Subtitle"] = new[] { "Each fighter has unique animations", "Cada luchador tiene animaciones únicas", "Chaque combattant a des animations uniques", "Jeder Kämpfer hat einzigartige Animationen", "Cada lutador tem animações únicas", "Ogni combattente ha animazioni uniche", "Setiap petarung punya animasi unik", "Mỗi đấu sĩ có animation riêng", "Her dövüşçünün benzersiz animasyonları var", "Każdy wojownik ma unikalne animacje" },
+
             ["RpsGame/Rock"] = new[] { "Rock", "Piedra", "Pierre", "Stein", "Pedra", "Sasso", "Batu", "Đá", "Taş", "Kamień" },
             ["RpsGame/Paper"] = new[] { "Paper", "Papel", "Papier", "Papier", "Papel", "Carta", "Kertas", "Giấy", "Kâğıt", "Papier" },
             ["RpsGame/Scissors"] = new[] { "Scissors", "Tijeras", "Ciseaux", "Schere", "Tesoura", "Forbici", "Gunting", "Kéo", "Makas", "Nożyce" },
@@ -441,6 +444,7 @@ namespace TTTXO.Game.Editor
                 "Série empatada", "Serie in pareggio", "Seri imbang", "Loạt hòa",
                 "Seri berabere", "Seria remisowa",
             },
+            ["RpsGame/DrawLabel"] = new[] { "EMPATE", "EMPATE", "ÉGALITÉ", "UNENTSCHIEDEN", "EMPATE", "PAREGGIO", "SERI", "HÒA", "BERABERE", "REMIS" },
             ["RpsGame/RematchButton"] = new[] { "Rematch", "Revancha", "Revanche", "Revanche", "Revanche", "Rivincita", "Main lagi", "Đấu lại", "Rövanş", "Rewanż" },
             ["RpsGame/MenuButton"] = new[] { "Menu", "Menú", "Menu", "Menü", "Menu", "Menu", "Menu", "Menu", "Menü", "Menu" },
         };

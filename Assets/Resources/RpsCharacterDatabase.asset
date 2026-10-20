@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a056741c1ba28d14995e603e4624f92f, type: 3}
+  m_Name: RpsCharacterDatabase
+  m_EditorClassIdentifier: TTTXO.Game::TTTXO.Game.UI.Screens.RpsCharacterDatabase
+  Caballero_Idle:
+  - {fileID: 2800000, guid: f2465310a4195484e9fae7f6d0e76812, type: 2}
+  - {fileID: 2800000, guid: e244727446e17ee4c9a22449b924abc9, type: 2}
+  - {fileID: 2800000, guid: 0074553717bba4c4f9346623a15d5d3a, type: 2}
+  - {fileID: 2800000, guid: cf8058d6312cd9c48b0334822c4b3b9b, type: 2}
+  - {fileID: 2800000, guid: 2c173eab382b5b24ba70c3cf4efa1c04, type: 2}
+  - {fileID: 2800000, guid: 2b56779e791cd06478ed0ffa659cdc0e, type: 2}
+  - {fileID: 2800000, guid: 56a6beee3fd36504fbbf4a8e739a481f, type: 2}
+  - {fileID: 2800000, guid: f0d7b19b49b8180448f7d0b8a1da8543, type: 2}
+  Caballero_Attack:
+  - {fileID: 2800000, guid: 73670ccc1eaee974da02d6c01a7312d9, type: 2}
+  - {fileID: 2800000, guid: 793a9a5724c81e44ba083df3b12c722b, type: 2}
+  - {fileID: 2800000, guid: edfff9468d6b17941bd2867c62ec3db6, type: 2}
+  - {fileID: 2800000, guid: 7a977d643a5665c4cb2fc3494e74b747, type: 2}
+  - {fileID: 2800000, guid: b3a2e68904d2b014ba32451b5fef41ef, type: 2}
+  - {fileID: 2800000, guid: 5a30898378aaa6d4f8e608cc2640b646, type: 2}
+  - {fileID: 2800000, guid: a3116ed35d88c044d9fa36887969c6a3, type: 2}
+  Caballero_Hurt:
+  - {fileID: 2800000, guid: 77cfbe918b662b34eac947599bca290b, type: 2}
+  - {fileID: 2800000, guid: c9348c48481a5f04790655b63d8b19fd, type: 2}
+  - {fileID: 2800000, guid: 7d7b19fd4f5cc634eb0c877451df4244, type: 2}
+  - {fileID: 2800000, guid: 5f39c76b1cb16334a8ea693258ed0ab5, type: 2}
+  - {fileID: 2800000, guid: ec7d3c3b341a6464e89bea998cd04e73, type: 2}
+  - {fileID: 2800000, guid: 645b9585b92899642abe439ca85c4238, type: 2}
+  - {fileID: 2800000, guid: 22487fb8dc06d8e4aba2b21a51725b07, type: 2}
+  - {fileID: 2800000, guid: 4517ffb5ded6fce4a9a02224e09391e2, type: 2}
+  Maga_Idle:
+  - {fileID: 2800000, guid: 2a52a4975896b7a42ae75a60fe16c700, type: 2}
+  - {fileID: 2800000, guid: 4d3147226aa790b4c9008ac15edd07db, type: 2}
+  - {fileID: 2800000, guid: 1513897a96d8cf14281aaa2173569e1e, type: 2}
+  - {fileID: 2800000, guid: 809295a4fa4ca804ea2aaf8d592d6ec8, type: 2}
+  - {fileID: 2800000, guid: 2f7c717f03e6b9144a2fee4bcf22171d, type: 2}
+  - {fileID: 2800000, guid: cee437fe147e5d048a9fbb470f3337e4, type: 2}
+  - {fileID: 2800000, guid: af8bc2e3a0b98ff47a9915bbdca6b8d8, type: 2}
+  - {fileID: 2800000, guid: 06bdf973fbce32f418bf8f726eadc341, type: 2}
+  Maga_Attack:
+  - {fileID: 2800000, guid: cf95bc4ee5d636041b55f01070a3b583, type: 2}
+  - {fileID: 2800000, guid: 0c55249b3cd595d489b46d91b3bd78ae, type: 2}
+  - {fileID: 2800000, guid: cc39d02a69547de41a41ef1aa209af29, type: 2}
+  - {fileID: 2800000, guid: 89830d74f15f8994b8fbdeccbf9b0107, type: 2}
+  - {fileID: 2800000, guid: 93f923838531f1947841f6e86c0c52f3, type: 2}
+  - {fileID: 2800000, guid: 9d746c90caff0fd44a3fc3193ab4311d, type: 2}
+  - {fileID: 2800000, guid: 71031918dacc7de4b9bf8121c6403014, type: 2}
+  - {fileID: 2800000, guid: 8fcabf9bfa1538c4781352ede19bf9bd, type: 2}
+  Maga_Hurt:
+  - {fileID: 2800000, guid: d130b4ddcee3c184bbc0f5d7b4eb3c68, type: 2}
+  - {fileID: 2800000, guid: 5e2d313220048de4e8bddd7f44c3218a, type: 2}
+  - {fileID: 2800000, guid: 658b0cde9f3f00b4f9c53fece6312959, type: 2}
+  - {fileID: 2800000, guid: f3d06af6e9122194b9dd23ebe2d4db8d, type: 2}
+  - {fileID: 2800000, guid: 8066f027a7fab2141b12d902cced14e8, type: 2}
+  - {fileID: 2800000, guid: 9a68c121f7d25fc40a23493218acde55, type: 2}
+  - {fileID: 2800000, guid: 4cc34c3f00d4ba14e95b8656a471e56d, type: 2}
+  - {fileID: 2800000, guid: 1ad92f5b0f4489847bfd0ece68c6b067, type: 2}
+  Asesino_Idle: []
+  Asesino_Attack: []
+  Asesino_Hurt: []

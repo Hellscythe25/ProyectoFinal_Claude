@@ -1889,6 +1889,137 @@
     margin-top: 24px;
 }
 
+/* Character Select Screen (Rock-Paper-Scissors Single Player) */
+.screen-rps-character-select {
+    --content-padding-x: 24;
+    --content-padding-y: 32;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+}
+
+.charselect-character-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 600px;
+    margin: 24px 0;
+    gap: 16px;
+}
+
+.charselect-character-card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg-panel);
+    border-width: 2px;
+    border-color: var(--color-border);
+    border-radius: 16px;
+    padding: 24px 16px;
+    min-width: 160px;
+    max-width: 180px;
+    flex: 1;
+    transition-property: border-color, background-color, scale;
+    transition-duration: 0.12s;
+    cursor: pointer;
+}
+
+.charselect-character-card:hover {
+    border-color: var(--color-accent);
+    background-color: var(--color-bg-panel-alt);
+    scale: 1.02 1.02;
+}
+
+.charselect-character-card:active {
+    scale: 0.98 0.98;
+}
+
+.charselect-character-sprite {
+    width: 160px;
+    height: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 12px;
+}
+
+.charselect-character-name {
+    font-size: 18px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    white-space: nowrap;
+}
+
+/* VS Screen (Rock-Paper-Scissors animated showdown) */
+.screen-rps-vs {
+    --content-padding-x: 24;
+    --content-padding-y: 32;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+}
+
+.vs-side {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.vs-sprite {
+    width: 256px;
+    height: 256px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 16px;
+    transition: scale 0.1s ease-out;
+}
+
+.vs-sprite:active {
+    scale: 0.95 0.95;
+}
+
+.vs-sprite--draw {
+    background-image: none !important;
+}
+
+.vs-sprite--fallback {
+    /* Fallback for characters without sprites (Asesino) - shows emoji via pseudo-element or text */
+    background-image: none;
+}
+
+.vs-name {
+    font-size: 20px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    white-space: nowrap;
+}
+
+.vs-draw-label {
+    font-size: 48px;
+    color: var(--color-warning);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    margin: 0 24px;
+    animation: vs-draw-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes vs-draw-pulse {
+    0%, 100% { opacity: 1; scale: 1 1; }
+    50% { opacity: 0.7; scale: 1.05 1.05; }
+}
+
 /* Settings */
 
 .settings-content {
