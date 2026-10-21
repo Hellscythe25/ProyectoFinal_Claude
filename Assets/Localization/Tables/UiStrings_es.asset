@@ -633,6 +633,62 @@ MonoBehaviour:
     m_Localized: "Men\xFA"
     m_Metadata:
       m_Items: []
+  - m_Id: 32699714749067264
+    m_Localized: Aspectos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593216
+    m_Localized: Arenas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593217
+    m_Localized: Elige a tu luchador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593218
+    m_Localized: "Cada luchador tiene animaciones \xFAnicas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593219
+    m_Localized: Guerrero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593220
+    m_Localized: Maga
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593221
+    m_Localized: Asesino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593222
+    m_Localized: Elige a tu luchador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593223
+    m_Localized: Jugador 1, elige a tu luchador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593224
+    m_Localized: Jugador 2, elige a tu luchador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593225
+    m_Localized: "Ronda {0} \xB7 Mejor de cinco"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593226
+    m_Localized: "{0} {1}   \xB7   {2} {3}"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593227
+    m_Localized: Ronda {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593228
+    m_Localized: EMPATE
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

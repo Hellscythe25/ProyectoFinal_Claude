@@ -633,6 +633,62 @@ MonoBehaviour:
     m_Localized: Menu
     m_Metadata:
       m_Items: []
+  - m_Id: 32699714749067264
+    m_Localized: Apparences
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593216
+    m_Localized: "Ar\xE8nes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593217
+    m_Localized: Choisis ton combattant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593218
+    m_Localized: Chaque combattant a des animations uniques
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593219
+    m_Localized: Guerrier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593220
+    m_Localized: Mage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593221
+    m_Localized: Assassin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593222
+    m_Localized: Choisis ton combattant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593223
+    m_Localized: Joueur 1, choisis ton combattant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593224
+    m_Localized: Joueur 2, choisis ton combattant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593225
+    m_Localized: "Manche {0} \xB7 Au meilleur des cinq"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593226
+    m_Localized: "{0} {1}   \xB7   {2} {3}"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593227
+    m_Localized: Manche {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593228
+    m_Localized: "\xC9GALIT\xC9"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

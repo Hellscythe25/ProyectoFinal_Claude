@@ -46,21 +46,22 @@ namespace TTTXO.Game.UI
         /// Glyph/emoji icons used in place of real art assets in Milestone 1. These are symbols, not
         /// language content - there is nothing to translate, so unlike the rest of this file they are
         /// NOT routed through Unity Localization.
+        /// Note: Using simple characters that render in Unity's default font to avoid missing-glyph boxes.
         /// </summary>
         public static class Icons
         {
-            public const string Profile = "\U0001F464"; // 👤
-            public const string Store = "\U0001F6CD"; // 🛍
-            public const string Settings = "⚙"; // ⚙
-            public const string SinglePlayer = "\U0001F464"; // 👤
-            public const string LocalMultiplayer = "\U0001F465"; // 👥
-            public const string Online = "\U0001F310"; // 🌐
-            public const string Streak = "\U0001F525"; // 🔥
-            public const string EditLook = "✎"; // ✎
-            public const string Rps = "\U0001F590"; // 🖐
-            public const string RpsRock = "✊"; // ✊
-            public const string RpsPaper = "\U0001F590"; // 🖐
-            public const string RpsScissors = "✌"; // ✌
+            public const string Profile = "👤";
+            public const string Store = "S";
+            public const string Settings = "⚙";
+            public const string SinglePlayer = "1P";
+            public const string LocalMultiplayer = "2P";
+            public const string Online = "🌐";
+            public const string Streak = "🔥";
+            public const string EditLook = "✎";
+            public const string Rps = "✋";
+            public const string RpsRock = "✊";
+            public const string RpsPaper = "✋";
+            public const string RpsScissors = "✌";
         }
 
         public static class Splash
@@ -96,7 +97,7 @@ namespace TTTXO.Game.UI
         /// </summary>
         public static class RpsMenu
         {
-            public static string Title => Localize("RpsMenu/GameTitle", "Guerrero, Maga y Asesino");
+            public static string Title => Localize("RpsMenu/Title", "Guerrero, Maga y Asesino");
             public static string Subtitle => Localize("RpsMenu/Subtitle", "Rock, paper, scissors");
             public static string PlayButton => Localize("RpsMenu/PlayButton", "Play");
             public static string StoreLabel => Localize("RpsMenu/StoreLabel", "Store");

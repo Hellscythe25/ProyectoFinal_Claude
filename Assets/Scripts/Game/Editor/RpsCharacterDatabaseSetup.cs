@@ -246,6 +246,8 @@ namespace TTTXO.Game.Editor
             }
 
             var rect = sprite.rect;
+            int x = Mathf.RoundToInt(rect.x);
+            int y = Mathf.RoundToInt(rect.y);
             int w = Mathf.RoundToInt(rect.width);
             int h = Mathf.RoundToInt(rect.height);
 
@@ -255,15 +257,10 @@ namespace TTTXO.Game.Editor
                 wrapMode = TextureWrapMode.Clamp
             };
 
-            // Use the readable atlas texture.
-            var oldActive = RenderTexture.active;
-            var rt = RenderTexture.GetTemporary(w, h, 0, RenderTextureFormat.ARGB32);
-            Graphics.Blit(sprite.texture, rt, new Vector2(rect.x / sprite.texture.width, rect.y / sprite.texture.height), Vector2.zero);
-            RenderTexture.active = rt;
-            tex.ReadPixels(new Rect(0, 0, w, h), 0, 0);
+            // Read pixels directly from the readable atlas texture (CPU path - works in batch mode)
+            Color[] pixels = sprite.texture.GetPixels(x, y, w, h);
+            tex.SetPixels(pixels);
             tex.Apply();
-            RenderTexture.active = oldActive;
-            RenderTexture.ReleaseTemporary(rt);
 
             return tex;
         }

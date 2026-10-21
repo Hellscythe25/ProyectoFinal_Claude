@@ -631,6 +631,62 @@ MonoBehaviour:
     m_Localized: Menu
     m_Metadata:
       m_Items: []
+  - m_Id: 32699714749067264
+    m_Localized: Skins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593216
+    m_Localized: Arenas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593217
+    m_Localized: Choose your fighter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593218
+    m_Localized: Each fighter has unique animations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593219
+    m_Localized: Guerrero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593220
+    m_Localized: Maga
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593221
+    m_Localized: Asesino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593222
+    m_Localized: Choose your fighter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593223
+    m_Localized: Player 1, choose your fighter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593224
+    m_Localized: Player 2, choose your fighter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593225
+    m_Localized: "Round {0} \xB7 Best of five"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593226
+    m_Localized: "{0} {1}   \xB7   {2} {3}"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593227
+    m_Localized: Round {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593228
+    m_Localized: EMPATE
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

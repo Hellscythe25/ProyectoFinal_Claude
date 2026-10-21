@@ -640,6 +640,64 @@ MonoBehaviour:
     m_Localized: Menu
     m_Metadata:
       m_Items: []
+  - m_Id: 32699714749067264
+    m_Localized: "Giao di\u1EC7n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593216
+    m_Localized: "\u0110\u1EA5u tr\u01B0\u1EDDng"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593217
+    m_Localized: "Ch\u1ECDn \u0111\u1EA5u s\u0129 c\u1EE7a b\u1EA1n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593218
+    m_Localized: "M\u1ED7i \u0111\u1EA5u s\u0129 c\xF3 animation ri\xEAng"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593219
+    m_Localized: "Chi\u1EBFn binh"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593220
+    m_Localized: "Ph\xE1p s\u01B0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593221
+    m_Localized: "S\xE1t th\u1EE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593222
+    m_Localized: "Ch\u1ECDn \u0111\u1EA5u s\u0129 c\u1EE7a b\u1EA1n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593223
+    m_Localized: "Ng\u01B0\u1EDDi ch\u01A1i 1, ch\u1ECDn \u0111\u1EA5u s\u0129 c\u1EE7a
+      b\u1EA1n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593224
+    m_Localized: "Ng\u01B0\u1EDDi ch\u01A1i 2, ch\u1ECDn \u0111\u1EA5u s\u0129 c\u1EE7a
+      b\u1EA1n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593225
+    m_Localized: "V\xF2ng {0} \xB7 Best of five"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593226
+    m_Localized: "{0} {1}   \xB7   {2} {3}"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593227
+    m_Localized: "V\xF2ng {0}"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593228
+    m_Localized: "H\xD2A"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

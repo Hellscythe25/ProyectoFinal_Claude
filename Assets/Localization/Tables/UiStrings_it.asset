@@ -633,6 +633,62 @@ MonoBehaviour:
     m_Localized: Menu
     m_Metadata:
       m_Items: []
+  - m_Id: 32699714749067264
+    m_Localized: Skin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593216
+    m_Localized: Arene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593217
+    m_Localized: Scegli il tuo combattente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593218
+    m_Localized: Ogni combattente ha animazioni uniche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593219
+    m_Localized: Guerriero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593220
+    m_Localized: Maga
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593221
+    m_Localized: Assassino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593222
+    m_Localized: Scegli il tuo combattente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593223
+    m_Localized: Giocatore 1, scegli il tuo combattente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593224
+    m_Localized: Giocatore 2, scegli il tuo combattente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593225
+    m_Localized: "Manche {0} \xB7 Al meglio di cinque"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593226
+    m_Localized: "{0} {1}   \xB7   {2} {3}"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593227
+    m_Localized: Manche {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593228
+    m_Localized: PAREGGIO
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

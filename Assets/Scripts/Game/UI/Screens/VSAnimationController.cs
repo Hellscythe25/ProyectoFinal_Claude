@@ -27,6 +27,25 @@ namespace TTTXO.Game.UI.Screens
         private bool _disposed;
         private Label _fallbackLabel;
 
+        /// <summary>
+        /// Ensure the sprite element has no Label children that could render "tofu" (□) glyphs.
+        /// Also forces background to transparent instead of relying on StyleKeyword.Null.
+        /// </summary>
+        private void SanitizeSpriteElement()
+        {
+            // Remove any Label children that might render emoji/tofu glyphs
+            var labels = _spriteElement.Query<Label>().ToList();
+            foreach (var lbl in labels)
+            {
+                lbl.text = string.Empty;
+                lbl.style.display = DisplayStyle.None;
+            }
+
+            // Force transparent background (StyleKeyword.Null restores USS which may have gray)
+            _spriteElement.style.backgroundColor = new StyleColor(Color.clear);
+            // Note: background sizing/repeat/position handled by USS classes
+        }
+
         public enum AnimationState
         {
             Idle,
@@ -85,27 +104,27 @@ namespace TTTXO.Game.UI.Screens
                     _fallbackLabel.style.display = DisplayStyle.None;
                 }
 
+                SanitizeSpriteElement();
+                
                 ApplyFrame(_idleTextures[0]);
                 // Idle at 12 FPS (~83ms per frame)
                 _animationTask = _spriteElement.schedule.Execute(TickIdle).Every(83);
             }
             else
             {
-                // Fallback for characters without extracted frames (e.g. Asesino until the setup
-                // tool has run). A letter inside the frame reads better than an empty grey box.
+                // Fallback for characters without extracted frames.
+                // Don't create a Label (causes "tofu" □ glyph). Just leave sprite element
+                // with a neutral border - the USS class handles the visual fallback.
                 _spriteElement.style.backgroundImage = StyleKeyword.Null;
+                SanitizeSpriteElement();
                 _spriteElement.RemoveFromClassList("vs-sprite--draw");
                 _spriteElement.AddToClassList("vs-sprite--fallback");
 
-                if (_fallbackLabel == null)
+                // Ensure no fallback label exists
+                if (_fallbackLabel != null)
                 {
-                    _fallbackLabel = new Label();
-                    _fallbackLabel.AddToClassList("vs-sprite-fallback-label");
-                    _spriteElement.Add(_fallbackLabel);
+                    _fallbackLabel.style.display = DisplayStyle.None;
                 }
-
-                _fallbackLabel.text = string.IsNullOrEmpty(_characterName) ? "?" : _characterName.Substring(0, 1);
-                _fallbackLabel.style.display = DisplayStyle.Flex;
             }
         }
 
@@ -128,20 +147,23 @@ namespace TTTXO.Game.UI.Screens
         }
 
         /// <summary>
-        /// Shows "EMPATE" text instead of character.
+        /// Shows draw state - keeps character sprite visible with Idle animation,
+        /// the "EMPATE" label is shown by the parent VS screen.
         /// </summary>
         public void ShowDraw()
         {
             if (_disposed) return;
             StopAnimation();
             _state = AnimationState.Draw;
-            _spriteElement.style.backgroundImage = StyleKeyword.Null;
+            // Keep sprite visible - play Idle animation during draw
+            SanitizeSpriteElement();
+            _spriteElement.RemoveFromClassList("vs-sprite--draw");
             _spriteElement.RemoveFromClassList("vs-sprite--fallback");
-            _spriteElement.AddToClassList("vs-sprite--draw");
             if (_fallbackLabel != null)
             {
                 _fallbackLabel.style.display = DisplayStyle.None;
             }
+            PlayIdle();
         }
 
         /// <summary>
@@ -152,6 +174,7 @@ namespace TTTXO.Game.UI.Screens
             if (_disposed) return;
             _spriteElement.RemoveFromClassList("vs-sprite--draw");
             _spriteElement.RemoveFromClassList("vs-sprite--fallback");
+            SanitizeSpriteElement();
             PlayIdle();
         }
 
@@ -169,6 +192,9 @@ namespace TTTXO.Game.UI.Screens
             StopAnimation();
             _state = state;
             _currentFrame = 0;
+            
+            SanitizeSpriteElement();
+            
             ApplyFrame(frames[0]);
 
             int totalFrames = frames.Length;
@@ -213,8 +239,11 @@ namespace TTTXO.Game.UI.Screens
                 _fallbackLabel.style.display = DisplayStyle.None;
             }
 
+            // Force transparent background (StyleKeyword.Null restores USS which may have gray)
+            _spriteElement.style.backgroundColor = new StyleColor(Color.clear);
+            
+            // Use the Texture2D as background image
             _spriteElement.style.backgroundImage = new StyleBackground(tex);
-            // Element size is fixed in USS; background-size: contain centers the frame
         }
 
         private void StopAnimation()

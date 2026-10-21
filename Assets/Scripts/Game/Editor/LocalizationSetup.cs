@@ -315,10 +315,9 @@ namespace TTTXO.Game.Editor
 
             // --- Store ---
             ["Store/Title"] = new[] { "Store", "Tienda", "Boutique", "Shop", "Loja", "Negozio", "Toko", "Cửa hàng", "Mağaza", "Sklep" },
-            ["Store/TabPieces"] = new[] { "Pieces", "Fichas", "Pions", "Steine", "Peças", "Pedine", "Bidak", "Quân cờ", "Taşlar", "Pionki" },
-            ["Store/TabBoards"] = new[] { "Boards", "Tableros", "Plateaux", "Felder", "Tabuleiros", "Tabelloni", "Papan", "Bàn cờ", "Tahtalar", "Plansze" },
+            ["Store/TabSkins"] = new[] { "Skins", "Aspectos", "Apparences", "Skins", "Skins", "Skin", "Skin", "Giao diện", "Skin", "Skórki" },
+            ["Store/TabArenas"] = new[] { "Arenas", "Arenas", "Arènes", "Arenen", "Arenas", "Arene", "Arena", "Đấu trường", "Arenalar", "Arena" },
             ["Store/TabFx"] = new[] { "FX", "FX", "FX", "FX", "FX", "FX", "FX", "FX", "FX", "FX" },
-            ["Store/TabSound"] = new[] { "Sound", "Sonido", "Son", "Sound", "Som", "Audio", "Suara", "Âm thanh", "Ses", "Dźwięk" },
             ["Store/ComingSoonCardTitle"] = new[] { "Coming soon", "Próximamente", "Bientôt disponible", "Demnächst", "Em breve", "In arrivo", "Segera hadir", "Sắp ra mắt", "Yakında", "Wkrótce" },
             ["Store/ComingSoonCardDescription"] = new[]
             {
@@ -387,8 +386,17 @@ namespace TTTXO.Game.Editor
 
             ["RpsCharacterSelect/Title"] = new[] { "Choose your fighter", "Elige a tu luchador", "Choisis ton combattant", "Wähle deinen Kämpfer", "Escolha seu lutador", "Scegli il tuo combattente", "Pilih petarungmu", "Chọn đấu sĩ của bạn", "Dövüşçünü seç", "Wybierz swojego wojownika" },
             ["RpsCharacterSelect/Subtitle"] = new[] { "Each fighter has unique animations", "Cada luchador tiene animaciones únicas", "Chaque combattant a des animations uniques", "Jeder Kämpfer hat einzigartige Animationen", "Cada lutador tem animações únicas", "Ogni combattente ha animazioni uniche", "Setiap petarung punya animasi unik", "Mỗi đấu sĩ có animation riêng", "Her dövüşçünün benzersiz animasyonları var", "Każdy wojownik ma unikalne animacje" },
+            ["RpsCharacterSelect/Guerrero"] = new[] { "Guerrero", "Guerrero", "Guerrier", "Krieger", "Guerreiro", "Guerriero", "Ksatria", "Chiến binh", "Savaşçı", "Wojownik" },
+            ["RpsCharacterSelect/Maga"] = new[] { "Maga", "Maga", "Mage", "Magier", "Maga", "Maga", "Mage", "Pháp sư", "Büyücü", "Mag" },
+            ["RpsCharacterSelect/Asesino"] = new[] { "Asesino", "Asesino", "Assassin", "Attentäter", "Assassino", "Assassino", "Assassin", "Sát thủ", "Suikastçı", "Zabójca" },
+            ["RpsCharacterSelect/SingleTurn"] = new[] { "Choose your fighter", "Elige a tu luchador", "Choisis ton combattant", "Wähle deinen Kämpfer", "Escolha seu lutador", "Scegli il tuo combattente", "Pilih petarungmu", "Chọn đấu sĩ của bạn", "Dövüşçünü seç", "Wybierz swojego wojownika" },
+            ["RpsCharacterSelect/PlayerOneTurn"] = new[] { "Player 1, choose your fighter", "Jugador 1, elige a tu luchador", "Joueur 1, choisis ton combattant", "Spieler 1, wähle deinen Kämpfer", "Jogador 1, escolha seu lutador", "Giocatore 1, scegli il tuo combattente", "Pemain 1, pilih petarungmu", "Người chơi 1, chọn đấu sĩ của bạn", "Oyuncu 1, dövüşçünü seç", "Gracz 1, wybierz swojego wojownika" },
+            ["RpsCharacterSelect/PlayerTwoTurn"] = new[] { "Player 2, choose your fighter", "Jugador 2, elige a tu luchador", "Joueur 2, choisis ton combattant", "Spieler 2, wähle deinen Kämpfer", "Jogador 2, escolha seu lutador", "Giocatore 2, scegli il tuo combattente", "Pemain 2, pilih petarungmu", "Người chơi 2, chọn đấu sĩ của bạn", "Oyuncu 2, dövüşçünü seç", "Gracz 2, wybierz swojego wojownika" },
+            ["RpsCharacterSelect/RoundFormat"] = new[] { "Round {0} · Best of five", "Ronda {0} · Mejor de cinco", "Manche {0} · Au meilleur des cinq", "Runde {0} · Best of five", "Rodada {0} · Melhor de cinco", "Manche {0} · Al meglio di cinque", "Ronde {0} · Best of five", "Vòng {0} · Best of five", "Tur {0} · Beşten üç", "Runda {0} · Best of five" },
+            ["RpsCharacterSelect/ScoreFormat"] = new[] { "{0} {1}   ·   {2} {3}", "{0} {1}   ·   {2} {3}", "{0} {1}   ·   {2} {3}", "{0} {1}   ·   {2} {3}", "{0} {1}   ·   {2} {3}", "{0} {1}   ·   {2} {3}", "{0} {1}   ·   {2} {3}", "{0} {1}   ·   {2} {3}", "{0} {1}   ·   {2} {3}", "{0} {1}   ·   {2} {3}" },
 
             ["RpsGame/Rock"] = new[] { "Rock", "Piedra", "Pierre", "Stein", "Pedra", "Sasso", "Batu", "Đá", "Taş", "Kamień" },
+            ["RpsGame/RoundFormat"] = new[] { "Round {0}", "Ronda {0}", "Manche {0}", "Runde {0}", "Rodada {0}", "Manche {0}", "Ronde {0}", "Vòng {0}", "Tur {0}", "Runda {0}" },
             ["RpsGame/Paper"] = new[] { "Paper", "Papel", "Papier", "Papier", "Papel", "Carta", "Kertas", "Giấy", "Kâğıt", "Papier" },
             ["RpsGame/Scissors"] = new[] { "Scissors", "Tijeras", "Ciseaux", "Schere", "Tesoura", "Forbici", "Gunting", "Kéo", "Makas", "Nożyce" },
             ["RpsGame/RoundYourMove"] = new[]

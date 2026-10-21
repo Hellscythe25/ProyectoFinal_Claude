@@ -142,6 +142,7 @@ namespace TTTXO.Game.UI.Screens
 
             if (_mode == RpsMatchMode.SinglePlayer)
             {
+                // Reveal the AI's character
                 _rightSprite.style.visibility = Visibility.Visible;
                 _rightName.text = DisplayName(_lastResult.MoveTwo);
                 _rightAnim?.PlayIdle();
@@ -151,8 +152,10 @@ namespace TTTXO.Game.UI.Screens
             {
                 _drawLabel.text = UiText.RpsGame.DrawLabel;
                 _drawLabel.style.display = DisplayStyle.Flex;
-                _leftAnim?.ShowDraw();
-                _rightAnim?.ShowDraw();
+                
+                // Both characters play Attack animation simultaneously for draw
+                _leftAnim?.PlayAttack();
+                _rightAnim?.PlayAttack();
 
                 var drawGeneration = _generation;
                 _drawTask = _root.schedule.Execute(() => FinishRound(drawGeneration)).StartingIn(DrawHoldMs);

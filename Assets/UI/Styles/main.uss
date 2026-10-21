@@ -197,6 +197,7 @@
     width: 100%;
     max-width: 480px;
     margin-bottom: 20px;
+    min-height: 40px;
 }
 
 .screen-header-title {
@@ -205,6 +206,12 @@
     -unity-font-style: bold;
     margin-left: 12px;
     flex-shrink: 1;
+    overflow: visible;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    padding-bottom: 6px;
+    line-height: 28px;
 }
 
 /* Coin badges (soft/hard currency), used in Home and Store headers. */
@@ -541,15 +548,27 @@
 }
 
 .secondary-nav-icon {
-    font-size: 28px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    font-size: 18px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 6px;
-    -unity-text-align: upper-center;
+    flex-shrink: 0;
 }
 
 .secondary-nav-label {
     font-size: 15px;
     color: var(--color-text-muted);
     -unity-text-align: upper-center;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .rps-menu-subtitle {
@@ -1846,8 +1865,47 @@
     flex-grow: 1;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 32px 24px;
+}
+
+.screen-rps-character-select .screen-header {
+    margin-bottom: 12px;
+}
+
+.screen-rps-character-select .rps-menu-subtitle {
+    margin-bottom: 8px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.charselect-turn {
+    font-size: 20px;
+    color: var(--color-accent);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    margin: 8px 0;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 24px;
+    padding-bottom: 4px;
+}
+
+.charselect-score {
+    font-size: 16px;
+    color: var(--color-text-muted);
+    -unity-text-align: upper-center;
+    margin: 8px 0;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 20px;
+    padding-bottom: 2px;
 }
 
 .charselect-character-row {
@@ -1857,8 +1915,8 @@
     align-items: stretch;
     width: 100%;
     max-width: 600px;
-    margin: 24px 0;
-    gap: 16px;
+    margin: 16px 0;
+    gap: 12px;
 }
 
 .charselect-character-card {
@@ -1869,9 +1927,9 @@
     border-width: 2px;
     border-color: var(--color-border);
     border-radius: 16px;
-    padding: 24px 16px;
-    min-width: 160px;
-    max-width: 180px;
+    padding: 20px 12px;
+    min-width: 140px;
+    max-width: 170px;
     flex: 1;
     transition-property: border-color, background-color, scale;
     transition-duration: 0.12s;
@@ -1889,35 +1947,25 @@
 }
 
 .charselect-character-sprite {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    background-color: transparent;
 }
 
 .charselect-character-name {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--color-text);
     -unity-font-style: bold;
     -unity-text-align: upper-center;
     white-space: nowrap;
-}
-
-.charselect-turn {
-    font-size: 22px;
-    color: var(--color-accent);
-    -unity-font-style: bold;
-    -unity-text-align: upper-center;
-    margin-top: 4px;
-}
-
-.charselect-score {
-    font-size: 16px;
-    color: var(--color-text-muted);
-    -unity-text-align: upper-center;
-    margin-top: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    max-width: 140px;
 }
 
 /* VS Screen (Rock-Paper-Scissors animated showdown) */
@@ -1937,6 +1985,13 @@
     color: var(--color-text-muted);
     -unity-font-style: bold;
     -unity-text-align: upper-center;
+    width: 100%;
+    max-width: 720px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 24px;
+    padding-bottom: 2px;
 }
 
 .vs-score-label {
@@ -1945,6 +2000,13 @@
     -unity-font-style: bold;
     -unity-text-align: upper-center;
     margin-bottom: 8px;
+    width: 100%;
+    max-width: 720px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 22px;
+    padding-bottom: 2px;
 }
 
 .vs-stage {
@@ -1954,18 +2016,28 @@
     flex-wrap: wrap;
     width: 100%;
     max-width: 720px;
+    gap: 24px;
 }
 
 .vs-series-label {
-    font-size: 28px;
+    font-size: 24px;
     color: var(--color-accent);
     -unity-font-style: bold;
     -unity-text-align: upper-center;
     margin-top: 8px;
+    width: 100%;
+    max-width: 720px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 28px;
+    padding-bottom: 2px;
 }
 
 .vs-button-row {
     margin-top: 24px;
+    width: 100%;
+    max-width: 720px;
 }
 
 .vs-side {
@@ -1973,18 +2045,26 @@
     align-items: center;
     justify-content: center;
     flex: 1;
-    max-width: 300px;
-    min-width: 200px;
+    max-width: 280px;
+    min-width: 180px;
 }
 
 .vs-sprite {
-    width: 256px;
-    height: 256px;
+    width: 200px;
+    height: 200px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     transition: scale 0.1s ease-out;
+    background-color: transparent;
+}
+
+@media (max-width: 600px) {
+    .vs-sprite {
+        width: 160px;
+        height: 160px;
+    }
 }
 
 .vs-sprite:active {
@@ -2009,26 +2089,34 @@
     left: 0;
     right: 0;
     bottom: 0;
-    font-size: 56px;
+    font-size: 48px;
     color: var(--color-accent);
     -unity-font-style: bold;
     -unity-text-align: middle-center;
 }
 
 .vs-name {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--color-text);
     -unity-font-style: bold;
     -unity-text-align: upper-center;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    max-width: 280px;
+    line-height: 22px;
+    padding-bottom: 2px;
 }
 
 .vs-draw-label {
-    font-size: 48px;
+    font-size: 36px;
     color: var(--color-warning);
     -unity-font-style: bold;
     -unity-text-align: upper-center;
-    margin: 0 24px;
+    margin: 0 16px;
+    width: 100%;
+    max-width: 720px;
     animation: vs-draw-pulse 1.5s ease-in-out infinite;
 }
 

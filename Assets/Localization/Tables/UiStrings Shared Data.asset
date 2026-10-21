@@ -627,6 +627,62 @@ MonoBehaviour:
     m_Key: RpsGame/MenuButton
     m_Metadata:
       m_Items: []
+  - m_Id: 32699714749067264
+    m_Key: Store/TabSkins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593216
+    m_Key: Store/TabArenas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593217
+    m_Key: RpsCharacterSelect/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593218
+    m_Key: RpsCharacterSelect/Subtitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593219
+    m_Key: RpsCharacterSelect/Guerrero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593220
+    m_Key: RpsCharacterSelect/Maga
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593221
+    m_Key: RpsCharacterSelect/Asesino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593222
+    m_Key: RpsCharacterSelect/SingleTurn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593223
+    m_Key: RpsCharacterSelect/PlayerOneTurn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593224
+    m_Key: RpsCharacterSelect/PlayerTwoTurn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593225
+    m_Key: RpsCharacterSelect/RoundFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593226
+    m_Key: RpsCharacterSelect/ScoreFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593227
+    m_Key: RpsGame/RoundFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32699714803593228
+    m_Key: RpsGame/DrawLabel
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
