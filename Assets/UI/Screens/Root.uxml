@@ -37,6 +37,10 @@
                     <ui:Label name="settings-music-label" class="section-label" />
                     <ui:Slider name="settings-music-slider" low-value="0" high-value="1" class="settings-slider" />
                 </ui:VisualElement>
+                <ui:VisualElement class="card settings-card">
+                    <ui:Label name="settings-duel-label" class="section-label" />
+                    <ui:Toggle name="settings-duel-demo-toggle" class="settings-toggle" />
+                </ui:VisualElement>
             </ui:ScrollView>
             <ui:Button name="settings-delete-account-button" class="danger-button" />
         </ui:VisualElement>
@@ -52,6 +56,10 @@
                 <ui:Button name="rps-play-button" class="primary-button primary-button--large" />
             </ui:VisualElement>
             <ui:VisualElement class="home-secondary-row">
+                <ui:VisualElement name="rps-menu-duels-button" class="secondary-nav-button">
+                    <ui:Label name="rps-menu-duels-icon-label" class="secondary-nav-icon" />
+                    <ui:Label name="rps-menu-duels-label" class="secondary-nav-label" />
+                </ui:VisualElement>
                 <ui:VisualElement name="rps-menu-store-button" class="secondary-nav-button">
                     <ui:Label name="rps-menu-store-icon-label" class="secondary-nav-icon" />
                     <ui:Label name="rps-menu-store-label" class="secondary-nav-label" />
@@ -124,6 +132,85 @@
             <ui:VisualElement class="button-row vs-button-row">
                 <ui:Button name="vs-rematch-button" class="primary-button" style="display: none;" />
                 <ui:Button name="vs-menu-button" class="secondary-button" style="display: none;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-duel-hub" class="screen screen-duel-hub" style="display: none;">
+            <ui:VisualElement class="screen-header">
+                <ui:Button name="duel-hub-back-button" class="icon-button back-button" />
+                <ui:Label name="duel-hub-title-label" class="screen-header-title" />
+            </ui:VisualElement>
+            <ui:Label name="duel-hub-empty-label" class="duel-empty-label" />
+            <ui:ScrollView name="duel-hub-list" mode="Vertical" class="duel-hub-list" />
+            <ui:Button name="duel-hub-new-button" class="primary-button" />
+            <ui:Button name="duel-hub-idle-button" class="secondary-button" style="display: none;" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-duel" class="screen screen-duel" style="display: none;">
+            <ui:VisualElement class="screen-header">
+                <ui:Button name="duel-back-button" class="icon-button back-button" />
+                <ui:Label name="duel-round-label" class="screen-header-title" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="duel-stage">
+                <ui:VisualElement class="duel-side">
+                    <ui:VisualElement name="duel-left-sprite" class="duel-sprite" />
+                    <ui:Label name="duel-left-name" class="duel-name" />
+                    <ui:VisualElement class="duel-hp-track">
+                        <ui:VisualElement name="duel-left-hp-fill" class="duel-hp-fill" />
+                    </ui:VisualElement>
+                    <ui:Label name="duel-left-hp-label" class="duel-hp-label" />
+                </ui:VisualElement>
+                <ui:Label name="duel-vs-label" class="duel-vs-label" text="VS" />
+                <ui:VisualElement class="duel-side">
+                    <ui:VisualElement name="duel-right-sprite" class="duel-sprite" />
+                    <ui:Label name="duel-right-name" class="duel-name" />
+                    <ui:VisualElement class="duel-hp-track">
+                        <ui:VisualElement name="duel-right-hp-fill" class="duel-hp-fill duel-hp-fill--rival" />
+                    </ui:VisualElement>
+                    <ui:Label name="duel-right-hp-label" class="duel-hp-label" />
+                    <ui:VisualElement class="duel-slot-row duel-slot-row--rival">
+                        <ui:Label name="duel-rival-slot-0" class="duel-slot duel-slot--rival" />
+                        <ui:Label name="duel-rival-slot-1" class="duel-slot duel-slot--rival" />
+                        <ui:Label name="duel-rival-slot-2" class="duel-slot duel-slot--rival" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:Label name="duel-status-label" class="duel-status" />
+            <ui:Label name="duel-countdown-label" class="duel-countdown" />
+
+            <ui:VisualElement name="duel-slot-row" class="duel-slot-row">
+                <ui:Button name="duel-slot-0" class="duel-slot" />
+                <ui:Button name="duel-slot-1" class="duel-slot" />
+                <ui:Button name="duel-slot-2" class="duel-slot" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="duel-picker-row" class="duel-picker-row">
+                <ui:VisualElement name="duel-pick-guerrero" class="duel-pick">
+                    <ui:Label name="duel-pick-guerrero-icon" class="duel-pick-icon" />
+                    <ui:Label name="duel-pick-guerrero-label" class="duel-pick-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="duel-pick-maga" class="duel-pick">
+                    <ui:Label name="duel-pick-maga-icon" class="duel-pick-icon" />
+                    <ui:Label name="duel-pick-maga-label" class="duel-pick-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="duel-pick-asesino" class="duel-pick">
+                    <ui:Label name="duel-pick-asesino-icon" class="duel-pick-icon" />
+                    <ui:Label name="duel-pick-asesino-label" class="duel-pick-label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:Button name="duel-confirm-button" class="primary-button" />
+            <ui:Button name="duel-claim-button" class="danger-button" style="display: none;" />
+
+            <ui:VisualElement name="duel-result-overlay" class="overlay" style="display: none;">
+                <ui:VisualElement class="duel-result-panel">
+                    <ui:Label name="duel-result-title-label" class="screen-title" />
+                    <ui:Label name="duel-result-detail-label" class="duel-result-detail" />
+                    <ui:VisualElement name="duel-result-rows" class="duel-result-rows" />
+                    <ui:Button name="duel-result-continue-button" class="primary-button" />
+                </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
 

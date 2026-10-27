@@ -4,7 +4,8 @@ namespace TTTXO.Game.UI.Screens
 {
     /// <summary>
     /// Rock-Paper-Scissors start menu and hub of the game. "Play" opens the mode picker; the second
-    /// row opens the Store and Settings. There is no back button because this is the root screen.
+    /// row opens the async duel hub, the Store and Settings. There is no back button because this is
+    /// the root screen.
     /// </summary>
     public class RpsMenuScreenController : IScreenController
     {
@@ -25,6 +26,9 @@ namespace TTTXO.Game.UI.Screens
             root.Q<Label>("rps-menu-settings-icon-label").text = UiText.Icons.Settings;
             root.Q<VisualElement>("rps-menu-settings-button").RegisterCallback<ClickEvent>(_ => _router.Show(ScreenId.Settings));
 
+            root.Q<Label>("rps-menu-duels-icon-label").text = UiText.Icons.Duel;
+            root.Q<VisualElement>("rps-menu-duels-button").RegisterCallback<ClickEvent>(_ => _router.Show(ScreenId.DuelHub));
+
             ApplyLocalizedText();
         }
 
@@ -35,6 +39,7 @@ namespace TTTXO.Game.UI.Screens
             _root.Q<Button>("rps-play-button").text = UiText.RpsMenu.PlayButton;
             _root.Q<Label>("rps-menu-store-label").text = UiText.RpsMenu.StoreLabel;
             _root.Q<Label>("rps-menu-settings-label").text = UiText.RpsMenu.SettingsLabel;
+            _root.Q<Label>("rps-menu-duels-label").text = UiText.RpsMenu.DuelsLabel;
         }
 
         public void OnShow()

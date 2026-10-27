@@ -34,6 +34,7 @@ namespace TTTXO.Game.UI.Screens
         private readonly Slider _soundSlider;
         private readonly Slider _musicSlider;
         private readonly DropdownField _languageDropdown;
+        private readonly Toggle _duelDemoToggle;
         private readonly List<string> _languageNativeNames = new();
 
         public SettingsScreenController(VisualElement root, ScreenRouter router, GameManager gameManager)
@@ -66,6 +67,9 @@ namespace TTTXO.Game.UI.Screens
             _musicSlider = root.Q<Slider>("settings-music-slider");
             _musicSlider.RegisterValueChangedCallback(evt => _gameManager.SetMusicVolume(evt.newValue));
 
+            _duelDemoToggle = root.Q<Toggle>("settings-duel-demo-toggle");
+            _duelDemoToggle.RegisterValueChangedCallback(evt => _gameManager.SetDuelDemoTimeout(evt.newValue));
+
             var deleteButton = root.Q<Button>("settings-delete-account-button");
             deleteButton.clicked += OnDeleteAccountClicked;
 
@@ -78,6 +82,8 @@ namespace TTTXO.Game.UI.Screens
             _root.Q<Label>("settings-language-label").text = UiText.Settings.LanguageLabel;
             _root.Q<Label>("settings-sound-label").text = UiText.Settings.SoundLabel;
             _root.Q<Label>("settings-music-label").text = UiText.Settings.MusicLabel;
+            _root.Q<Label>("settings-duel-label").text = UiText.Settings.DuelSectionLabel;
+            _duelDemoToggle.label = UiText.Settings.DuelDemoTimeoutLabel;
             _root.Q<Button>("settings-delete-account-button").text = UiText.Settings.DeleteAccountButton;
 
             // Native language names in the dropdown are never translated (a language picker always
@@ -90,6 +96,7 @@ namespace TTTXO.Game.UI.Screens
         {
             _soundSlider.SetValueWithoutNotify(_gameManager.SoundVolume);
             _musicSlider.SetValueWithoutNotify(_gameManager.MusicVolume);
+            _duelDemoToggle.SetValueWithoutNotify(_gameManager.DuelDemoTimeout);
             SyncLanguageDropdown();
         }
 

@@ -62,6 +62,8 @@ namespace TTTXO.Game.UI
             public const string RpsRock = "✊";
             public const string RpsPaper = "✋";
             public const string RpsScissors = "✌";
+            /// <summary>Crossed swords for the async duel hub entry.</summary>
+            public const string Duel = "⚔";
         }
 
         public static class Splash
@@ -102,6 +104,7 @@ namespace TTTXO.Game.UI
             public static string PlayButton => Localize("RpsMenu/PlayButton", "Play");
             public static string StoreLabel => Localize("RpsMenu/StoreLabel", "Store");
             public static string SettingsLabel => Localize("RpsMenu/SettingsLabel", "Settings");
+            public static string DuelsLabel => Localize("RpsMenu/DuelsLabel", "Duels");
         }
 
         public static class RpsModeSelect
@@ -162,6 +165,66 @@ namespace TTTXO.Game.UI
             public static string DrawLabel => Localize("RpsGame/DrawLabel", "EMPATE");
             public static string RematchButton => Localize("RpsGame/RematchButton", "Rematch");
             public static string MenuButton => Localize("RpsGame/MenuButton", "Menu");
+        }
+
+        /// <summary>
+        /// Async duel screens (Hub Central + combat). The duel itself is not best-of-five: it is a
+        /// sequence of rounds of three clashes each, with 100 HP and 15 damage per clash won.
+        /// </summary>
+        public static class Duel
+        {
+            public static string HubTitle => Localize("Duel/HubTitle", "Active duels");
+            public static string HubEmpty => Localize(
+                "Duel/HubEmpty", "You have no active duels. Start a new one and come back whenever you want.");
+            public static string NewDuelButton => Localize("Duel/NewDuelButton", "New duel (practice)");
+            public static string IdleDemoButton => Localize("Duel/IdleDemoButton", "Demo: silent rival (timeout)");
+
+            public static string CardYourTurn => Localize("Duel/CardYourTurn", "Your turn");
+            public static string CardWaitingRival => Localize("Duel/CardWaitingRival", "Waiting for rival");
+            public static string CardFinished => Localize("Duel/CardFinished", "Finished");
+            /// <summary>Hub card line, e.g. "Round 3 · You 100 HP · Rival 85 HP".</summary>
+            public static string CardSummaryFormat => Localize(
+                "Duel/CardSummaryFormat", "Round {0} · You {1} HP · Rival {2} HP");
+
+            /// <summary>Name stored in the document for the practice bot (and shown in the Hub card).</summary>
+            public static string PracticeRivalName => Localize("Duel/PracticeRivalName", "Practice rival");
+            /// <summary>Name stored in the document for the editor-only silent rival.</summary>
+            public static string IdleRivalName => Localize("Duel/IdleRivalName", "Silent rival");
+
+            public static string Title => Localize("Duel/Title", "Duel");
+            public static string RoundFormat => Localize("Duel/RoundFormat", "Round {0}");
+            public static string YourTurn => Localize("Duel/YourTurn", "Your turn: fill the three slots");
+            public static string WaitingRival => Localize(
+                "Duel/WaitingRival", "Moves sent. Your rival will answer the next time you open this duel.");
+            public static string WaitingCountdownFormat => Localize(
+                "Duel/WaitingCountdownFormat", "Claim unlocks in {0}:{1:00} · inactivity window {2} min");
+            public static string ClaimButton => Localize("Duel/ClaimButton", "Claim victory");
+            public static string ConfirmButton => Localize("Duel/ConfirmButton", "Send moves");
+            public static string ConfirmIncomplete => Localize("Duel/ConfirmIncomplete", "Fill the three slots");
+            /// <summary>Empty action slot placeholder - a glyph, not language content.</summary>
+            public const string SlotEmpty = "—";
+            /// <summary>Compact HP readout, e.g. "85 / 100". Nothing to translate.</summary>
+            public const string HpFormat = "{0} / {1}";
+
+            public static string ResultRoundTitleFormat => Localize("Duel/ResultRoundTitleFormat", "Clashes of round {0}");
+            public static string ResultWin => Localize("Duel/ResultWin", "Victory!");
+            public static string ResultLoss => Localize("Duel/ResultLoss", "Defeat");
+            public static string ResultDraw => Localize("Duel/ResultDraw", "Draw");
+            public static string ResultContinue => Localize("Duel/ResultContinue", "Continue");
+            public static string ResultBackToHub => Localize("Duel/ResultBackToHub", "Back to Hub");
+
+            /// <summary>One clash row: "Guerrero vs Asesino".</summary>
+            public static string ClashFormat => Localize("Duel/ClashFormat", "{0} vs {1}");
+            public static string ClashDraw => Localize("Duel/ClashDraw", "Same class · no damage");
+            /// <summary>Clash winner + damage, e.g. "Guerrero wins · 15 damage".</summary>
+            public static string ClashDamageFormat => Localize("Duel/ClashDamageFormat", "{0} wins · {1} damage");
+            public static string WinByKo => Localize("Duel/WinByKo", "Victory by KO");
+            public static string WinByAbandon => Localize("Duel/WinByAbandon", "Victory by abandonment");
+            public static string DrawByLimit => Localize("Duel/DrawByLimit", "Draw: round limit reached");
+            public static string LossReasonFormat => Localize("Duel/LossReasonFormat", "Your rival wins · {0}");
+            /// <summary>Short reason used inside <see cref="LossReasonFormat"/>.</summary>
+            public static string ReasonKo => Localize("Duel/ReasonKo", "KO");
+            public static string ReasonAbandon => Localize("Duel/ReasonAbandon", "abandonment");
         }
 
         public static class ModeSelect
@@ -395,6 +458,9 @@ namespace TTTXO.Game.UI
             public static string MusicLabel => Localize("Settings/MusicLabel", "Music");
             public static string DeleteAccountButton => Localize("Settings/DeleteAccountButton", "Delete account & data");
             public static string DeleteAccountConfirmTitle => Localize("Settings/DeleteAccountConfirmTitle", "Delete account & data?");
+            public static string DuelSectionLabel => Localize("Settings/DuelSectionLabel", "Duels");
+            public static string DuelDemoTimeoutLabel => Localize(
+                "Settings/DuelDemoTimeoutLabel", "Short timeout (2 min) for demos and evaluation");
         }
 
         /// <summary>

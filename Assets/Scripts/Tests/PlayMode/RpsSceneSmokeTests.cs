@@ -1,6 +1,8 @@
 using System.Collections;
+using System.Globalization;
 using NUnit.Framework;
 using TTTXO.Core;
+using TTTXO.Core.Duel;
 using TTTXO.Game.UI;
 using TTTXO.Game.UI.Screens;
 using UnityEngine;
@@ -66,6 +68,74 @@ namespace TTTXO.Game.PlayModeTests
             _router.GoBack(ScreenId.RpsMenu);
             yield return null;
             Assert.AreEqual(ScreenId.RpsMenu, _router.CurrentScreen);
+        }
+
+        [UnityTest]
+        public IEnumerator Duels_HubAndCombat_RenderTheAsyncFlow()
+        {
+            DuelStateDto duel = null;
+            try
+            {
+                _router.Show(ScreenId.DuelHub);
+                yield return null;
+
+                Assert.AreEqual(ScreenId.DuelHub, _router.CurrentScreen);
+                Assert.AreEqual(UiText.Duel.HubTitle, _root.Q<Label>("duel-hub-title-label").text);
+                Assert.IsNotNull(_root.Q<Button>("duel-hub-new-button"), "the hub needs its create button");
+                Assert.IsNotNull(_root.Q<ScrollView>("duel-hub-list"), "the hub needs its card list");
+
+                duel = _router.Duels.CreatePracticeDuel(UiText.Duel.PracticeRivalName);
+                _router.Show(ScreenId.DuelHub);
+                yield return null;
+
+                Assert.IsTrue(
+                    _root.Q<ScrollView>("duel-hub-list").contentContainer.childCount > 0,
+                    "a created duel must appear as a card in the hub");
+
+                _router.Show(ScreenId.DuelCombat);
+                yield return null;
+
+                Assert.AreEqual(ScreenId.DuelCombat, _router.CurrentScreen);
+                Assert.AreEqual(DuelRules.MaxHp, _router.Duels.Current.jugador1.hp);
+                Assert.AreEqual(DuelRules.MaxHp, _router.Duels.Current.jugador2.hp);
+
+                for (int i = 0; i < DuelRules.SlotsPerRound; i++)
+                {
+                    Assert.IsNotNull(_root.Q<Button>("duel-slot-" + i), "the player needs three slots");
+                    Assert.IsNotNull(_root.Q<Label>("duel-rival-slot-" + i), "the rival needs three slots");
+                }
+
+                string fullHp = string.Format(CultureInfo.InvariantCulture, UiText.Duel.HpFormat, DuelRules.MaxHp, DuelRules.MaxHp);
+                Assert.AreEqual(fullHp, _root.Q<Label>("duel-left-hp-label").text);
+                Assert.AreEqual(fullHp, _root.Q<Label>("duel-right-hp-label").text);
+                Assert.AreEqual(UiText.Duel.YourTurn, _root.Q<Label>("duel-status-label").text);
+                Assert.AreEqual(UiText.Duel.SlotEmpty, _root.Q<Button>("duel-slot-0").text);
+                Assert.AreEqual(UiText.Duel.SlotEmpty, _root.Q<Label>("duel-rival-slot-0").text, "the rival's moves stay hidden");
+                Assert.IsFalse(_root.Q<Button>("duel-confirm-button").enabledSelf, "an empty draft cannot be sent");
+                Assert.IsNotNull(_root.Q<Button>("duel-claim-button"));
+
+                var resolution = _router.Duels.Submit(new[] { RpsMove.Rock, RpsMove.Paper, RpsMove.Scissors });
+                Assert.IsNull(resolution, "the practice rival answers on the next open");
+                Assert.AreEqual(DuelRules.StateWaitingRival, _router.Duels.Current.estado_partida);
+
+                _router.Show(ScreenId.DuelCombat);
+                yield return null;
+
+                Assert.AreEqual(UiText.Duel.WaitingRival, _root.Q<Label>("duel-status-label").text);
+                Assert.AreEqual(DisplayStyle.None, _root.Q<Button>("duel-confirm-button").style.display.value);
+                Assert.AreEqual(DisplayStyle.Flex, _root.Q<Label>("duel-countdown-label").style.display.value);
+                Assert.AreEqual(UiText.Duel.SlotEmpty, _root.Q<Label>("duel-rival-slot-1").text);
+                Assert.AreEqual(UiText.RpsCharacterSelect.Guerrero, _root.Q<Button>("duel-slot-0").text,
+                    "the moves you already sent stay visible while you wait");
+            }
+            finally
+            {
+                if (duel != null)
+                {
+                    _router.DuelStore.Delete(duel.match_id);
+                    _router.Duels.Refresh();
+                }
+            }
         }
 
         [UnityTest]

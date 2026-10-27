@@ -3,6 +3,9 @@
     "rootNamespace": "TTTXO.Game",
     "references": [
         "TTTXO.Core",
+        "Unity.Services.Core",
+        "Unity.Services.Authentication",
+        "Unity.Services.CloudSave",
         "Unity.Localization",
         "Unity.ResourceManager"
     ],

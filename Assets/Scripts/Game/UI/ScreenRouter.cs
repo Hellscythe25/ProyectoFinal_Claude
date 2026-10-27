@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using TTTXO.Game.Bootstrap;
+using TTTXO.Game.Duel;
 using TTTXO.Game.UI.Screens;
 using UnityEngine;
 using UnityEngine.Localization;
@@ -25,7 +26,9 @@ namespace TTTXO.Game.UI
             { ScreenId.RpsCharacterSelect, "screen-rps-character-select" },
             { ScreenId.RpsVs, "screen-rps-vs" },
             { ScreenId.Store, "screen-store" },
-            { ScreenId.Settings, "screen-settings" }
+            { ScreenId.Settings, "screen-settings" },
+            { ScreenId.DuelHub, "screen-duel-hub" },
+            { ScreenId.DuelCombat, "screen-duel" }
         };
 
         /// <summary>Where <see cref="Initialize"/> lands after startup.</summary>
@@ -42,6 +45,19 @@ namespace TTTXO.Game.UI
 
         public RpsVsScreenController RpsVsScreen { get; private set; }
         public RpsCharacterSelectScreenController RpsCharacterSelectScreen { get; private set; }
+
+        /// <summary>
+        /// Async duel state (active matches and the open one). Shared by the Hub and the combat
+        /// screen; lives here for the same reason <see cref="RpsSeries"/> does - both screens must see
+        /// the same documents.
+        /// </summary>
+        public DuelHub Duels { get; private set; }
+
+        /// <summary>
+        /// Store behind <see cref="Duels"/>: the local mirror plus the background Cloud Save push.
+        /// Exposed so the bootstrap can pull the account's documents into the mirror at startup.
+        /// </summary>
+        public DuelCloudStore DuelStore { get; private set; }
 
         /// <summary>The screen currently visible, or null before <see cref="Initialize"/> shows one.</summary>
         public ScreenId? CurrentScreen => _currentScreen;
@@ -94,6 +110,19 @@ namespace TTTXO.Game.UI
 
             var gameManager = GameManager.Instance;
 
+            // Duel identity/timeout: from the local profile while there is no account, from Unity
+            // Authentication once Phase 4 lands. The Hub only needs the values, not the source.
+            var localPlayerId = gameManager != null ? gameManager.LocalPlayerId : "jugador-local";
+            var localPlayerName = gameManager != null ? gameManager.PlayerName : "Invitado";
+            Func<TimeSpan> duelTimeout = gameManager != null
+                ? (Func<TimeSpan>)(() => gameManager.DuelTimeout)
+                : null;
+            // Offline-first: the local mirror is the source of truth and every save is also pushed to
+            // Cloud Save in the background once the anonymous session is up. If the network (or the
+            // project link) is missing, the whole flow still works against the files.
+            DuelStore = new DuelCloudStore();
+            Duels = new DuelHub(DuelStore, localPlayerId, localPlayerName, duelTimeout);
+
             _controllers[ScreenId.Store] = new StoreScreenController(_screenRoots[ScreenId.Store], this, gameManager);
             _controllers[ScreenId.Settings] = new SettingsScreenController(_screenRoots[ScreenId.Settings], this, gameManager);
             _controllers[ScreenId.RpsMenu] = new RpsMenuScreenController(_screenRoots[ScreenId.RpsMenu], this);
@@ -102,6 +131,8 @@ namespace TTTXO.Game.UI
             RpsVsScreen = new RpsVsScreenController(_screenRoots[ScreenId.RpsVs], this);
             _controllers[ScreenId.RpsCharacterSelect] = RpsCharacterSelectScreen;
             _controllers[ScreenId.RpsVs] = RpsVsScreen;
+            _controllers[ScreenId.DuelHub] = new DuelHubScreenController(_screenRoots[ScreenId.DuelHub], this, Duels);
+            _controllers[ScreenId.DuelCombat] = new DuelCombatScreenController(_screenRoots[ScreenId.DuelCombat], this, Duels);
 
             foreach (var pair in _screenRoots)
             {
