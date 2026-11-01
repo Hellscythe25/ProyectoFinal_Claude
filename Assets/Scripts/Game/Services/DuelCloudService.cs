@@ -210,8 +210,10 @@ namespace TTTXO.Game.Services
             await WriteLock.WaitAsync();
             try
             {
+                // The Models overload is the current API; the parameterless-options overload is obsolete.
                 await CloudSaveService.Instance.Data.Player.DeleteAsync(
-                    KeyFor(matchId), new Unity.Services.CloudSave.Models.Data.Player.DeleteOptions());
+                    KeyFor(matchId),
+                    new Unity.Services.CloudSave.Models.Data.Player.DeleteOptions());
                 await RemoveFromIndexAsync(matchId);
                 return true;
             }

@@ -122,6 +122,18 @@ El PR deja la **autoridad** lista; falta que el juego la use. Las tareas están 
 - Cada PR debe actualizar este archivo con la prueba que permite verificarlo.
 - Antes de pedir revisión, corran `dotnet test` y el Test Runner de Unity.
 
+### Tarea para los tres — ponerse de acuerdo con su documento de instrucciones para la IA
+
+Su `Assets/Docs/Instrucciones_IA.md` (el plan de vuelo que lee la herramienta de IA con la que trabajan) dice cosas que **este PR contradice**. Si no se actualiza, la IA los empujará en sentido contrario cada vez que le pidan algo:
+
+| En `Instrucciones_IA.md` | Con este PR |
+|---|---|
+| Regla 3: "Sin servidores en tiempo real: toda la persistencia es subir y descargar un JSON en Cloud Save". | El PvP lo decide un módulo de **Cloud Code**; Cloud Save *custom data* solo lo toca el servidor. |
+| Regla 4: solo Authentication, Cloud Save, Matchmaker y Analytics. | Se añade **Cloud Code** (paquete `com.unity.services.cloudcode` 2.10.4). |
+| Sección 4: "el cliente que envía el turno final descarga el JSON, resuelve los 3 choques localmente y sube el resultado". | El **servidor** resuelve la ronda con `DuelResolver`; el cliente solo dibuja el `DuelView`. Resolver en el cliente permite falsear `hp` y `ganador`. |
+
+**Qué hacer:** decidan como equipo si adoptan la autoridad en el servidor (lo que propone el PR) y, si es así, actualicen ese documento y el `CLAUDE.md`. Si deciden *no* adoptarla, expliquen en el PR por qué y qué harían para evitar que un cliente modificado falsee el resultado. Lo importante es que lo que escribe la herramienta de IA coincida con lo que el equipo decidió.
+
 ## D. Preguntas para discutir en el equipo
 
 1. ¿Por qué el estado del duelo no puede vivir en Cloud Save Player Data? (pista: clase de acceso Default).
