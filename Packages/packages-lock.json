@@ -79,7 +79,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.localization": {
-      "version": "1.5.12",
+      "version": "1.5.13",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -166,7 +166,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.services.authentication": {
-      "version": "3.7.3",
+      "version": "3.8.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -235,18 +235,6 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
-    },
-    "dev.tryfinally.conduit": {
-      "version": "https://github.com/apkd/Conduit.git?path=/Conduit.Unity#release",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.test-framework": "1.6.0",
-        "com.unity.modules.imgui": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0",
-        "com.unity.modules.unitywebrequest": "1.0.0"
-      },
-      "hash": "1b979da23a2cd859a86ac63d356b9d91420e5057"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
